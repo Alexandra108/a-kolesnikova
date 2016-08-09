@@ -1,0 +1,25 @@
+/* ---------------------------------------------- /*
+ * FORM
+/* ---------------------------------------------- */
+form {
+	.form-control{
+		height: 45px;
+   	background-color: #f7f7f7;
+   	border: 1px solid #e8e8e8;
+   	._border_radius(0);
+   	.box-shadow (none);
+   	&:focus{
+	   	border-color: #68c3a3;
+    		.box-shadow (none);
+	   }
+	   &.error{
+	    	border-color:#e88988;
+	   }
+	   &.not_error{
+	    	border-color: #68c3a3;
+	   }
+	}
+	.form_inform_box{
+		margin-top: 10px;
+	}
+}

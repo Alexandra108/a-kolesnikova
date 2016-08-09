@@ -1,0 +1,111 @@
+/* ---------------------------------------------- /*
+ * Cosmetic
+ /* ---------------------------------------------- */
+
+ /*Buttons*/
+ .btn{
+  border: 0;
+  border-bottom: 3px solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.42857;
+  font-size:14px;
+  padding: 9px 22px;
+  .box-shadow(none);
+  .transition(all; 0.125s; ease-in-out; 0s);
+  @media @mobile-area{
+    padding: 7px 12px;
+  }
+}
+.btn-primary {
+  background-color: #68c3a3;
+  border-color: rgba(51, 51, 51, 0.15);
+  &:hover,&:focus,&:active,&:active:hover{
+    background-color: #4eb28f;
+    border-color: #4eb28f;
+    color: #fff;
+  }
+}
+
+/*Heading*/
+.heading {
+  padding-bottom: 70px;
+  text-align: center;
+  @media @tablets, @smartphones{
+    padding-bottom: 35px;
+  }
+  @media @mobile-area{
+    padding-bottom: 17px;
+  }
+  & > h2{
+    display: inline-block;
+    font-size: 50px;
+    color:#2c3e50;
+    line-height: 105px;
+    margin-bottom: 20px;
+    position: relative;
+    @media @tablets, @smartphones{
+      font-size: 43px;
+      line-height: 90px;
+    }
+    @media @mobile-area{
+      font-size: 37px;
+      line-height: 77px;
+      margin-bottom: 5px;
+    }
+    &:after{
+      background:url(../images/section-divider.png) no-repeat;
+      bottom: 0px;
+      content: "";
+      display: block;
+      height: 13px;
+      left: 50%;
+      margin-left: -56px;
+      position: absolute;
+      width: 112px;
+    }
+  }
+  & > h3{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-bottom: 0;
+    text-transform: none;
+    @media @mobile-area{
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+/*Lightbox*/
+.lb-container{
+  padding: 0;
+}
+.lb-outerContainer{
+  ._border_radius(0px);
+}
+.lb-dataContainer{
+  background: #181b22;
+  ._border_radius(0px);
+  padding: 10px 0;
+}
+.lb-data .lb-close{
+  margin-right: 10px;
+}
+.lb-data .lb-number{
+  margin-left: 10px;
+}
+.lightbox .lb-image{
+  ._border_radius(0px);
+}
+
+/*Isotope*/
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}

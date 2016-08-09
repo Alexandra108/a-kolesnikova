@@ -1,0 +1,32 @@
+/* ---------------------------------------------- /*
+ * MOUSE ICON
+/* ---------------------------------------------- */
+
+.mouse-icon {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	border: 2px solid #fff;
+	._border_radius(16px);
+	height: 50px;
+	width: 30px;
+	margin-left: -17px;
+	display: block;
+	z-index: 10;
+}
+
+.mouse-icon_e {
+	position: relative;
+	.animation(drop 1s infinite);
+	._border_radius(10px);
+	background: #fff;
+	width: 4px;
+	height: 10px;
+	top: 4px;
+	margin: 0 auto;
+}
+.keyframes(drop;{
+	0% { top:5px;  opacity: 0; }
+   30% { top:10px; opacity: 1; }
+   100% { top:25px; opacity: 0; }
+});

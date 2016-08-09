@@ -1,0 +1,45 @@
+/* ---------------------------------------------- /*
+ * SKILLBAR
+ /* ---------------------------------------------- */
+
+ .skillbar {
+  margin-top: 13px;
+  @media @tablets, @smartphones, @mobile-area{
+    margin-top: 50px;
+  }
+}
+.skillbar_i {
+  position:relative;
+  display:block;
+  margin-bottom:53px;
+  width:100%;
+  background:#e2e1e2;
+  height:7px;
+  ._border_radius(3px);
+  .transition(width, background-color; 0.4s; linear; 0s);
+  &:last-child{
+    margin-bottom:0px;
+  }
+}
+.skillbar_i_t {
+  position:absolute;
+  top:-27px;
+  left:0;
+  font-weight:400;
+  font-size:14px;
+  line-height:27px;
+  text-transform:capitalize;
+  color:#5b4c5c;
+}
+.skillbar-bar{
+  height:7px;
+  width:0px;
+  background:#e88988;
+}
+.skillbar-percent {
+  color: #796f7a;
+  font-size: 12px;
+  margin-left: -20px;
+  position: absolute;
+  top: -27px;
+}

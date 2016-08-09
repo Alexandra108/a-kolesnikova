@@ -1,0 +1,35 @@
+/* ---------------------------------------------- /*
+ * CONTACTS
+ /* ---------------------------------------------- */
+
+ .contacts{
+    .container{
+        padding-bottom: 90px;
+        @media @mobile-area{
+           padding-bottom: 35px; 
+        }
+    }
+    & address, & .contacts-number{
+        overflow: hidden;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 41px;
+    }
+    strong {
+        display: block;
+        font-size: 24px;
+        line-height: 1;
+        text-transform: uppercase;
+        @media @tablets, @smartphones{
+            font-size: 21px;
+        }
+        @media @mobile-area{
+            font-size: 18px;
+        }
+    }
+    div > i{
+        float: left;
+        font-size: 45px;
+        margin-right: 20px;
+    }
+}

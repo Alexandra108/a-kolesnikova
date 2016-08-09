@@ -1,0 +1,30 @@
+/* ---------------------------------------------- /*
+* HEADER
+/* ---------------------------------------------- */
+
+.header{
+  margin-bottom: 97px;
+  @media @tablets, @smartphones{
+    margin-bottom: 60px;
+  }
+  @media @mobile-area{
+    margin-bottom: 25px;
+  }
+}
+.header_cnt{
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1px;
+  position: relative;
+  width: 100%;
+  z-index: 7;
+  &:after{
+    border-bottom: 1px solid #eee;
+    bottom: 1px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}

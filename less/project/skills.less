@@ -1,0 +1,30 @@
+/* ---------------------------------------------- /*
+ * SKILLS
+ /* ---------------------------------------------- */
+
+ .skills {
+ 	.container{
+ 		padding-bottom: 90px;
+ 		@media @tablets, @smartphones{
+ 			padding-bottom: 75px;
+ 		}
+ 		@media @mobile-area{
+	      padding-bottom: 35px;
+	   }
+ 		ul li{
+ 			position: relative;
+ 			font-size: 14px;
+    		line-height: 28px;
+    		@media @mobile-area{
+		      line-height: 21px;
+   			margin-bottom: 10px;
+		   }
+ 			&:before{
+ 				content: "\f00c";
+ 				font-family: fontawesome;
+ 				color: #68c3a3;
+ 				margin-right: 10px;
+ 			}
+ 		}
+ 	}
+ }
