@@ -1,6 +1,6 @@
 <?php
-$to  = "<admin@example.com>, " ;
-$to .= "admin@example.com>";
+$to  = "<shytik108@mail.ru>, " ;
+$to .= "shytik108@mail.ru";
 
 $subject = "Запись на сеанс";
 $name    = $_POST['name'];

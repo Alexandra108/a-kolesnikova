@@ -3,7 +3,7 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = "test@mail.ru";
+    $to = "shytik108@mail.ru";
     $subject = "От поситителя сайта";
     $text =  "Написал(а): {$name}\r\nКонтактный email - {$email}\r\nТекст письма: {$message}\r\n";
 
