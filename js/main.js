@@ -304,12 +304,12 @@
 	 		preload: [0,1],
 	 		tPrev: 'Предыдущий',
 	 		tNext: 'Следующий',
-	 		tCounter: '%curr% из %total%'
+	 		tCounter: ''
 	 	},
 	 	image: {
 	 		tError: '<a href="%url%">Изображение #%curr%</a> не было загружено.',
 	 		titleSrc: function(item) {
-	 			return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">GitHub</a>';
+	 			return item.el.attr('title') + ' &middot; <a class="portfolio_i_a" href="'+item.el.attr('data-href')+'" target="_blank">Перейти на сайт</a>&nbsp;&middot;&nbsp;<a class="portfolio_i_a" href="'+item.el.attr('data-source')+'" target="_blank">GitHub</a>';
 	 		},
 	 		cursor: 'mfp-fade'
 	 	},
