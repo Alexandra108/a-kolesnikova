@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="libs/jqueryui/jquery-ui.min.css">
+    <title>Главная страница</title>
+    <!--[if IE]>
+    <script src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="/" id="header_logo"></a>
+            </div>
+        </header>
+        <section class="general-section">
+            <div class="general-section_child">
+                <div class="container">
+                    <div class="general-section_child_cnt cf">
+                        <div class="general-section_child_l">
+                            <div class="main-slider">
+                                <div class="main-slider_cnt" data-current=0>
+                                    <div class="main-slider_cnt_i">
+                                        <img src="img/slide_1.jpg" alt="">
+                                    </div>
+                                    <div class="main-slider_cnt_i">
+                                        <img src="img/slide_2.jpg" alt="">
+                                    </div>
+                                    <div class="main-slider_cnt_i">
+                                        <img src="img/slide_3.jpg" alt="">
+                                    </div>
+                                    <div class="main-slider_cnt_i">
+                                        <img src="img/slide_4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="main-slider_navigation"></div>
+                            </div>
+                        </div>
+                        <div class="general-section_child_r">
+                            <h3>Join us now. It's FREE</h3>
+                            <form method="post" class="registration-form form" action="">
+                                <div class="register-form_field_search form_i">
+                                    <div class="form_l_n">I am</div>
+                                    <div class="form_el">
+                                        <div class="sex-block">
+                                            <div class="sex-block_i">
+                                                <input id="i-female" type="radio" name="my-sex" checked/>
+                                                <label for="i-female"><span></span></label>
+                                            </div>
+                                            <div class="sex-block_i">
+                                                <input id="i-man" type="radio" name="my-sex"/>
+                                                <label for="i-man"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="looking">looking for</div>
+                                        <div class="sex-block">
+                                            <div class="sex-block_i">
+                                                <input id="he-female" type="radio" name="he-sex" checked/>
+                                                <label for="he-female"><span></span></label>
+                                            </div>
+                                            <div class="sex-block_i">
+                                                <input id="he-man" type="radio" name="he-sex"/>
+                                                <label for="he-man"><span></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register-form_field_name form_i error cf">
+                                    <div class="form_l_n">Name</div>
+                                    <div class="form_el">
+                                        <input class="form_it" type="text" name="name"/>
+                                    </div>
+                                    <div class="form_verify">
+                                        <div class="form_verify_icon"></div>
+                                        <div class="form_verify_msg">
+                                            <div class="form_verify_cnt">Enter your name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register-form_field_age form_i successfully cf">
+                                    <div class="form_l_n">Age</div>
+                                    <div class="form_el">
+                                        <div class="day main_select">
+                                            <p></p>
+                                            <i></i>
+                                            <select>
+                                                <option value="13" selected="selected">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                            </select>
+                                        </div>
+                                        <div class="month main_select">
+                                            <p></p>
+                                            <i></i>
+                                            <select>
+                                                <option value="october" selected="selected">october</option>
+                                                <option value="december">december</option>
+                                                <option value="november">november</option>
+                                            </select>
+                                        </div>
+                                        <div class="year main_select">
+                                            <p></p>
+                                            <i></i>
+                                            <select>
+                                                <option value="1985" selected="selected">1985</option>
+                                                <option value="1986">1986</option>
+                                                <option value="1987">1987</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_verify">
+                                        <div class="form_verify_icon successfully"></div>
+                                        <div class="form_verify_msg">
+                                            <div class="form_verify_cnt">Enter your name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register-form_field_city form_i cf">
+                                    <div class="form_l_n">City</div>
+                                    <div class="form_el">
+                                        <div class="city main_select">
+                                            <p></p>
+                                            <i></i>
+                                            <select>
+                                                <option value="London" selected="selected">London</option>
+                                                <option value="New York">New York</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_verify">
+                                        <div class="form_verify_icon"></div>
+                                        <div class="form_verify_msg">
+                                            <div class="form_verify_cnt">Enter your name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register-form_field_motto form_i cf">
+                                    <div class="register-form_field_motto_child form_el">
+                                        <div class="l_col">
+                                            <div class="l_col_i checkbox-e">
+                                                <input type="checkbox" id="check1" name="check1" />
+                                                <label for="check1"><span></span>I’m cool</label>
+                                            </div>
+                                            <div class="l_col_i checkbox-e">
+                                                <input type="checkbox" id="check2" name="check2" />
+                                                <label for="check2"><span></span>Life’s good</label>
+                                            </div>
+                                        </div>
+                                        <div class="r_col">
+                                            <div class="r_col_i radio-el">
+                                                <input type="radio" id="radio1" name="rr" checked="" />
+                                                <label for="radio1"><span></span>Tee</label>
+                                            </div>
+                                            <div class="r_col_i radio-el">
+                                                <input type="radio" id="radio2" name="rr" />
+                                                <label for="radio2"><span></span>Beer</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_verify">
+                                        <div class="form_verify_icon"></div>
+                                        <div class="form_verify_msg">
+                                            <div class="form_verify_cnt">Enter your name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Start Now" class="button">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="b-shadow"></div>
+                </div>
+            </div>
+        </section>
+        <main class="main-content">
+            <div class="container">
+                <div class="main-content_t cf">
+                    <div class="main-content_t_l cf">
+                        <h3>Code this block</h3>
+                        <div class="main-content_t_l_tx">
+                            <div class='shape circle right'>
+                                <svg xmlns='http://www.w3.org/2000/svg' width="173px" height="173px">
+                                  <defs>
+                                    <pattern id="image" patternUnits="userSpaceOnUse" height="173" width="173">
+                                      <image x="0" y="0" height="173px" width="173px" xlink:href="https://a-kolesnikova.github.io/portfolio/img/image.png"></image>
+                                    </pattern>
+                                  </defs>
+                                  <circle cx='50%' cy='50%' r='50%' fill="url(#image)"/>
+                                </svg>
+                            </div>
+                            <p>This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. We believe that the best way to find a compatible romantic partner is to spend time getting to</p>
+                        </div>
+                    </div>
+                    <div class="main-content_t_r">
+                        <h3>Users list</h3>
+                        <div class="user-slider">
+                            <div class="user-slider_ac_next"></div>
+                            <div class="user-slider_ac_prev"></div>
+                            <div class="user-slider_ctn">
+                                <div class="user-slider_slides cf">
+                                    <div class="user-slider_slides_i">
+                                        <div class="user-slider_slide_descr">
+                                            <span>Name User</span>
+                                            <div class="user-slider_slide_actions">
+                                                <a class="flirt" href=""></a>
+                                                <a class="add" href=""></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/sm_img.png" alt="">
+                                    </div>
+                                    <div class="user-slider_slides_i">
+                                        <div class="user-slider_slide_descr">
+                                            <span>Name User</span>
+                                            <div class="user-slider_slide_actions">
+                                                <a class="flirt" href=""></a>
+                                                <a class="add" href=""></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/slide_4.jpg" alt="">
+                                    </div>
+                                    <div class="user-slider_slides_i">
+                                        <div class="user-slider_slide_descr">
+                                            <span>Name User</span>
+                                            <div class="user-slider_slide_actions">
+                                                <a class="flirt" href=""></a>
+                                                <a class="add" href=""></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/slide_1.jpg" alt="">
+                                    </div>
+                                    <div class="user-slider_slides_i">
+                                        <div class="user-slider_slide_descr">
+                                            <span>Name User</span>
+                                            <div class="user-slider_slide_actions">
+                                                <a class="flirt" href=""></a>
+                                                <a class="add" href=""></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/sm_img.png" alt="">
+                                    </div>
+                                    <div class="user-slider_slides_i">
+                                        <div class="user-slider_slide_descr">
+                                            <span>Name User</span>
+                                            <div class="user-slider_slide_actions">
+                                                <a class="flirt" href=""></a>
+                                                <a class="add" href=""></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/slide_2.jpg" alt="">
+                                    </div>
+                                    <div class="user-slider_slides_i">
+                                        <div class="user-slider_slide_descr">
+                                            <span>Name User</span>
+                                            <div class="user-slider_slide_actions">
+                                                <a class="flirt" href=""></a>
+                                                <a class="add" href=""></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/slide_3.jpg" alt="">
+                                    </div>
+                                    <div class="user-slider_slides_i">
+                                        <div class="user-slider_slide_descr">
+                                            <span>Name User</span>
+                                            <div class="user-slider_slide_actions">
+                                                <a class="flirt" href=""></a>
+                                                <a class="add" href=""></a>
+                                            </div>
+                                        </div>
+                                        <img src="img/sm_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <ul class="tabs_lk cf">
+                                <li data-section="#section-1" class="tabs_lk_active"><div class="tabs_i"><a href="#">Users List</a></div></li>
+                                <li data-section="#section-2"><div class="tabs_i"><a href="#">Active list tab</a><span>38</span></div></li>
+                            </ul>
+                            <div class="tabs_cnt">
+                                <div id="section-1" class="tabs_cnt_section active cf">
+                                    <div class="tabs_cnt_section_l">
+                                        <div class="progress-bar">
+                                            <span class="progress-bar_value" max="80" style="width:0%"><span></span></span>
+                                        </div>
+                                        <ul class="steps cf">
+                                            <li class="steps_i first done">Step 1</li>
+                                            <li class="steps_i done">Step 2<span></span></li>
+                                            <li class="steps_i inprogress">Step 3<span></span></li>
+                                            <li class="steps_i">Step 4<span></span></li>
+                                            <li class="steps_i last">Step 5<span></span></li>
+                                        </ul>
+                                        <div id="range"></div>
+                                    </div>
+                                    <div class="tabs_cnt_section_r">
+                                        <canvas id="diaframm" width="92" height="92">
+                                            <p>Ваш браузер не поддерживает рисование</p>
+                                        </canvas>
+                                        <div class="rating">
+                                            <input type="radio" checked="checked" id="star1" name="star">
+                                            <label for="star1"><span class="star"></span></label>
+                                            <input type="radio" id="star2" name="star">
+                                            <label for="star2"><span class="star"></span></label>
+                                            <input type="radio" id="star3" name="star">
+                                            <label for="star3"><span class="star"></span></label>
+                                            <input type="radio" id="star4" name="star">
+                                            <label for="star4"><span class="star"></span></label>
+                                            <input type="radio" id="star5" name="star">
+                                            <label for="star5"><span class="star"></span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="section-2" class="tabs_cnt_section">текст второй таб</div>
+                            </div>
+                    </div>
+             </div>
+         </div>
+         <div class="main-content_b cf">
+            <h3>How to succeed in online dating</h3>
+            <div class="main-content_b_cnt">
+                <p>There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.</p>
+                <blockquote>In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</blockquote>
+                <br>
+                <p>You can also upload photos to your dating profile from your Facebook account. </p>
+                <ul>
+                    <li><span>Access your dating life even when you’re not browsing <a href="#">Cupid.com</a>!</span></li>
+                    <li><span>Search for new matches from your browser easily</span></li>
+                    <li><span>Read and write messages & chat with members are online or have updated their profile info</span></li>
+                    <li><span>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends </span></li>
+                </ul>
+                <div class="comment">
+                    In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
+                    <a href="#">Click here to view more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="end"></div>
+</div>
+<footer>
+    <div class="container cf">
+        <div class="footer_l">
+            <a href="#" class="footer_logo"></a>
+        </div>
+        <div class="footer_r">
+            <p><span>VD</span> Web Coder Test  Task</p>
+            <p class="footer_year">2013</p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="libs/jqueryui/jquery-ui.min.js"></script>
+<script src="libs/inview/jquery.inview.min.js"></script>
+<script src="libs/shapes-polyfill/shapes-polyfill.min.js"></script>
+<script src="js/common.js"></script>
+<!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+</body>
+</html>

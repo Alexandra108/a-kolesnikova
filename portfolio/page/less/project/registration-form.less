@@ -1,0 +1,174 @@
+.registration-form{
+    margin-top: 23px;
+    @media @tablets,@smartphones,@mobile {
+        margin-top: 25px;
+    }
+}
+.register-form_field_search{
+    font-size: 0;
+    line-height: 1;
+    .form_el{
+        .looking{
+            font-weight: 300;
+            font-size: 18px;
+            color: #666;
+            display:inline-block;
+            vertical-align: middle;
+            margin-left: 18px;
+            margin-right: 13px;
+            letter-spacing: normal;
+            @media @mobile {
+                font-size: 14px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            &:before{
+                background:url(../img/sprite.png);
+                background-position: -22px -120px;
+                content: "";
+                display: inline-block;
+                height: 15px;
+                position: relative;
+                left: -8px;
+                top: 2px;
+                width: 15px;
+                @media @mobile {
+                    display: none;
+                }
+            }
+        }
+        @media @mobile {
+            width:233px;
+        }
+    }
+}
+.register-form_field_name{
+    > div{
+        float:left;
+    }
+    .form_l_n{
+        margin-top: 8px;
+        @media @mobile {
+            margin-top: 4px;
+        }
+    }
+}
+.register-form_field_age{
+    &.form_i{
+        margin-top: 14px;
+        font-size: 0;
+        line-height: 1;
+    }
+    .form_l_n{
+        margin-top: 6px;
+        vertical-align: top;
+    }
+    .form_el{
+        font-size: 0;
+        line-height: 1;
+        vertical-align: top;
+        .main_select{
+            &.day{
+                max-width: 85px;
+                width: 100%;
+                @media @mobile {
+                    width:100%;
+                    margin:0 0 5px 0;
+                    max-width: 207px;
+                }
+            }
+            &.month{
+                margin: 0 3px;
+                max-width: 120px;
+                width: 100%;
+                @media @mobile {
+                    width:100%;
+                    margin:0 0 5px 0;
+                    max-width: 207px;
+                }
+            }
+            &.year{
+                max-width: 109px;
+                width: 100%;
+                @media @mobile {
+                    width:100%;
+                    margin:0 0 5px 0;
+                    max-width: 207px;
+                }
+            }
+        }
+    }
+    .form_verify{
+        vertical-align: top;
+    }
+}
+.register-form_field_city{
+    &.form_i{
+        margin-top: 14px;
+    }
+    .form_l_n{
+        margin-top: 3px;
+    }
+     > div{
+        float:left;
+    }
+    .main_select{
+        width:100%;
+        .select;
+        p{
+            left: 11px;
+        }
+        &.day{
+            width:83px;
+        }
+        &.month{
+            width:119px;
+            margin:0 5px 0 4px;
+        }
+        &.year{
+            width:107px;
+        }
+    }
+}
+.register-form_field_motto{
+    font-size: 0;
+    line-height: 1;
+    width:77%;
+    .form_el{
+        width:92%;
+        @media @mobile {
+            max-width: 207px;
+        }
+    }
+    &.form_i{
+        margin-left: 100px;
+        margin-top: 13px;
+        @media @mobile {
+            margin-left: 50px;
+        }
+    }
+    .l_col,.r_col{
+        float:left;
+    }
+    .l_col{
+        .l_col_i{
+            &:nth-child(2){
+                margin-top:12px;
+            }
+        }
+    }
+    .r_col{
+        margin-left: 69px;
+        @media @mobile {
+            margin-left: 26px;
+        }
+        .r_col_i{
+            &:nth-child(2){
+                margin-top:12px;
+            }
+        }
+    }
+    @media @mobile {
+       width:235px;
+    }
+}

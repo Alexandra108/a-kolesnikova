@@ -1,0 +1,125 @@
+.form_order_t{
+   margin-left: 42px;
+    .form_it_name{
+        width:172px;
+        @media @tablets,@smartphones {
+            width: 112px;
+        }
+    }
+    .form_it_phone{
+        width:172px;
+        @media @tablets,@smartphones {
+            width: 112px;
+        }
+    }
+    .form_it_email{
+        width:360px;
+        @media @tablets,@smartphones {
+            width: 229px;
+        }
+    }
+    .form_is {
+        input{
+            padding: 16px 28px;
+            @media @tablets{
+                padding: 8px 10px;
+            }
+            @media @smartphones {
+                padding: 8px 32px;
+                margin-top: 10px;
+            }
+        }
+        @media @mobile{
+            margin: 20px 0 0;
+            width: 80%;
+        }
+    }
+    @media @mobile{
+        margin-left: 0;
+        text-align:center;
+    }
+    .form_e{
+        @media @mobile {
+            width:80%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .form_cnt{
+        @media @mobile {
+            display: inline;
+        }
+    }
+    @media @mobile{
+        .form_verify_tx{
+            margin: 0 auto 5px;
+        }
+    }
+}
+.form_order_b{
+    .form_it_name{
+        width:176px;
+        letter-spacing: normal;
+        @media @tablets,@smartphones{
+            width: 112px;
+        }
+        @media @mobile {
+            margin: 0 0 10px;
+        }
+    }
+    .form_it_phone{
+        width:176px;
+        @media @tablets,@smartphones{
+            width: 112px;
+        }
+        @media @mobile {
+            margin: 0 0 10px;
+        }
+    }
+    .form_it_email{
+        width:369px;
+        margin-top: 16px;
+        & input{
+            @media @mobile {
+                margin-bottom: 30px;
+            }
+        }
+        @media @tablets,@smartphones{
+            width: 234px;
+            margin-top: 10px;
+        }
+        @media @mobile {
+            display:table-footer-group;
+        }
+    }
+    .form_is{
+        margin-right: 0px;
+        & input{
+            padding: 15px 18px;
+            @media @tablets,@smartphones{
+                padding: 8px 10px;
+            }
+        }
+        @media @mobile {
+            display:table-footer-group;
+            padding: 8px 10px;
+        }
+    }
+    .form_e{
+        @media @mobile {
+            width:100%;
+        }
+    }
+    .form_verify_tx{
+        @media @smartphones{
+            margin-left: 58px;
+        }
+    }
+    .form_cnt{
+        @media @mobile {
+            display: table;
+            width:80%;
+            margin:0 auto;
+        }
+    }
+}

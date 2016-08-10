@@ -1,0 +1,32 @@
+.progress-bar_value{
+    font-size: 9px;
+    font-family: Verdana,sans-serif;
+    color: #4e4e4e;
+    height: 100%;
+    display: block;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.42);
+    .gradient (rgba(255,137,31,1) 0%, rgba(255,174,2,1) 100%, 90deg);
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.32) inset, 0 0 0 1px rgba(0, 0, 0, 0.21) inset;
+    position: relative;
+    text-align: right;
+    overflow: hidden;
+    border-radius: 3px;
+    & span{
+        left: 0;
+        position: absolute;
+        right:5px;
+        top: -1px;
+    }
+}
+.progress-bar{
+    border: none;
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.61) inset, 0 0 0 1px rgba(0, 0, 0, 0.21) inset;
+    border-radius: 3px;
+    .gradient (rgba(230,230,230,1) 0%, rgba(245,250,251,1) 100%, 90deg);
+    width: 100%;
+    box-sizing: border-box;
+    height: 16px;
+    padding: 2px;
+    overflow: hidden;
+    position: relative;
+}

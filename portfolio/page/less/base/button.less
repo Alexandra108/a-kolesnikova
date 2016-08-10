@@ -1,0 +1,31 @@
+.button{
+    background: #94c516; /* Old browsers */
+    background: -moz-linear-gradient(top,  #94c516 4%, #8eb92a 52%, #8eb92a 52%, #72aa00 52%, #a8c732 92%, #b9ce44 100%);
+    background: -webkit-linear-gradient(top,  #94c516 4%,#8eb92a 52%,#8eb92a 52%,#72aa00 52%,#a8c732 92%,#b9ce44 100%);
+    background: linear-gradient(to bottom,  #94c516 4%,#8eb92a 52%,#8eb92a 52%,#72aa00 52%,#a8c732 92%,#b9ce44 100%);
+    border: medium none;
+    ._border_radius(35px);
+    color: #fff;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    cursor: pointer;
+    font-weight: 200;
+    margin-left: 100px;
+    margin-top: 24px;
+    box-shadow: 0 0 0px 1px #7fa607 inset, 0px 0 0px 3px #bfdc73 inset;
+    padding: 1px 0 4px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+    width: 320px;
+    @media @mobile {
+        font-size: 28px;
+        margin-left: 32px;
+        margin-top: 20px;
+        width: 76%;
+    }
+    ._transition(all .4s ease);
+    &:hover{
+        .opacity(0.8);
+        filter: alpha(opacity=80);
+    }
+}

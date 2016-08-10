@@ -1,0 +1,120 @@
+.form_i{
+    margin-top: 10px;
+    &.error{
+        .form_it,.main_select{
+            border:1px solid rgba(209,0,0,0.49);
+        }
+        .form_verify{
+            right: 0;
+            top: 11px;
+            @media @mobile {
+                top:6px;
+            }
+            .form_verify_icon{
+                background:url(../img/sprite.png);
+                background-position: -19px -242px;
+                height:17px;
+                background-repeat: no-repeat;
+                width:17px;
+            }
+            .form_verify_msg{
+                display: block;
+            }
+        }
+    }
+    &.successfully{
+        .form_verify{
+            left:3px;
+            top: 7px;
+            @media @mobile {
+                top:3px;
+            }
+            .form_verify_icon{
+                background:url(../img/sprite.png);
+                background-position: -0px -187px;
+                height:19px;
+                width:21px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+.form_it{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6e6e6+0,f5fafb+100 */
+    background: #e6e6e6; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e6e6e6 0%,#f5fafb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#f5fafb',GradientType=0 ); /* IE6-9 */
+    border: 1px inset rgba(0, 0, 0, 0.21);
+    ._border_radius(20px);
+    .box-sizing (border-box);
+    .inner-shadow (0px, 1px, 3px, 0, 0.33);
+    color: #656c71;
+    display: block;
+    padding: 9px;
+    width: 100%;
+
+    @media @mobile {
+       height:29px;
+    }
+    &.register-form_verify_msg{
+        border:1px solid rgba(209,0,0,0.49);
+    }
+}
+.form_i .form_el{
+    max-width: 320px;
+    width: 100%;
+    letter-spacing: -4px;
+    @media @mobile {
+        width:207px;
+    }
+}
+.form_el,.form_l_n,.form_verify{
+    display: inline-block;
+    vertical-align: middle;
+}
+.form_verify_msg{
+    left:28px;
+    display: none;
+    top:-28px;
+    font-size: 16px;
+    position: absolute;
+    width: 175px;
+    @media only screen and (max-width : 1302px) {
+        display:none !important;
+    }
+}
+.form_l_n{
+    font-size: 18px;
+    font-weight: 300;
+    color: #666666;
+    width:101px;
+    padding-left: 3px;
+    @media @mobile {
+        width:50px;
+        font-size: 15px;
+    }
+}
+.form_verify_cnt{
+    background: rgba(0,0,0,0.8);
+    ._border_radius(6px);
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 27px 22px 30px 34px;
+    &:before{
+        content: '';
+        border: 8px solid transparent;
+        border-right: 9px solid #000;
+        border-left: 0px solid #000;
+        display: inline-block;
+        left: -9px;
+        .opacity(0.8);
+        filter: alpha(opacity=80);
+        position: absolute;
+        top: 29px;
+    }
+}
+.form_verify{
+    left:8px;
+    position: relative;
+}

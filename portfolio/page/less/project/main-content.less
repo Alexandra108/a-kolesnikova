@@ -1,0 +1,102 @@
+.main-content{
+    .container{
+        padding:42px 0 43px;
+    }
+}
+.main-content_t_l{
+    float: left;
+    width:50%;
+    padding-left: 8px;
+    padding-right: 10px;
+    @media @tablets {
+        width: 43%;
+    }
+    @media @smartphones,@mobile {
+        float: none;
+        padding-left: 8px;
+        padding-right: 10px;
+        width: 100%;
+    }
+}
+.main-content_t_l_tx{
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 22px;
+    padding-top: 24px;
+    .shape{
+        float: left;
+        margin:5px 17px 0 0;
+        border-radius: 50%;
+        max-width: 173px;
+        shape-outside: circle(50%);
+        clip-path: circle(50%);
+        -webkit-shape-outside: circle(50%);
+        -webkit-clip-path: circle(50%);
+        max-height: 173px;
+    }
+}
+.main-content_t_r{
+    padding-left: 69px;
+    float: right;
+    width:50%;
+    @media @tablets {
+        padding-left: 20px;
+        width: 57%;
+    }
+    @media @smartphones,@mobile {
+        float: none;
+        padding-left: 8px;
+        padding-top: 25px;
+        width: 100%;
+    }
+    h3{
+        padding-left: 8px;
+        @media @tablets,@smartphones,@mobile {
+            padding-left: 0px;
+        }
+    }
+}
+.main-content_b{
+    padding: 15px 10px 0;
+    @media @tablets,@smartphones,@mobile{
+        padding: 25px 8px 0;
+    }
+    h3{
+        margin-bottom: 14px;
+    }
+    p{
+        color: #4e4e4e;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding-bottom: 17px;
+    }
+    blockquote{
+        border-left: 3px solid #ffc28c;
+        color: #ffa352;
+        margin:0 auto;
+        line-height: 16px;
+        padding-bottom: 6px;
+        padding-left: 19px;
+    }
+    ul{
+        list-style-type:decimal;
+        list-style-position: inside;
+        li{
+            color: #a3a3a3;
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 22px;
+            padding-bottom: 2px;
+            span{
+                color: #4e4e4e;
+                font-size: 14px;
+                padding-left: 4px;
+            }
+        }
+    }
+}
+.main-content_b_cnt{
+    ._columns(300px 3);
+    ._column-gap(20px);
+}

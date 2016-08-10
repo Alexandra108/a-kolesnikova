@@ -1,0 +1,66 @@
+.main-slider{
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    @media @tablets,@smartphones,@mobile {
+        border:1px solid #dcdcdc;
+    }
+}
+.main-slider_cnt{
+   ._transition(all .6s ease 0s);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+.main-slider_cnt_i{
+    float: left;
+    width:479px;
+    height:466px;
+    position: relative;
+    img{
+        display: block;
+        position: absolute;
+        top:50%;
+        left:50%;
+    }
+    &:after{
+        position: absolute;
+        content:"";
+        right:0;
+        top:0;
+        background: url("../img/sl-line.png");
+        background-repeat: repeat-y;
+        height: 100%;
+        width:1px;
+        @media @tablets,@smartphones,@mobile {
+            background: none;
+        }
+    }
+    @media @mobile {
+        width:310px;
+        height:250px;
+    }
+}
+.main-slider_navigation{
+    bottom: 19px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-size: 0;
+    line-height: 1;
+}
+.main-slider_navigation_i{
+    background: url("../img/sprite.png");
+    background-position: -0px -206px;
+    cursor: pointer;
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+    &.__active{
+        background-position:0 -225px;
+    }
+}

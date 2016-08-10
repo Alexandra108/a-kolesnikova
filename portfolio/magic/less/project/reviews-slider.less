@@ -1,0 +1,134 @@
+.reviews-slider{
+    .container{
+        padding: 45px 0 45px 0;
+    }
+}
+.reviews-slider_cnt{
+    padding-left: 156px;
+    padding-right: 240px;
+    & .owl-prev,& .owl-next{
+        position: absolute;
+        top: 7px;
+        @media @smartphones{
+            top: -15px;
+        }
+        @media @mobile{
+            top:-10px;
+        }
+    }
+    & .owl-prev{
+        right: 112px;
+        @media @tablets{
+            right:60px;
+        }
+        @media @smartphones{
+            right:50px;
+        }
+        @media @mobile{
+            right:37px;
+        }
+    }
+    & .owl-next{
+        right: 0px;
+    }
+    @media @tablets{
+        padding-right: 110px;
+    }
+    @media @smartphones{
+        padding-left: 80px;
+        padding-right: 110px;
+    }
+    @media @mobile{
+        padding-left: 0px;
+        padding-right: 80px;
+    }
+    .icon-chevron_l,.icon-chevron_r{
+        position: relative;
+        color: #151515;
+        font-family: "Glyphicons Halflings";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        &:before{
+            display: inline-block;
+            position: relative;
+            top: 0;
+            @media @smartphones{
+                font-size: 54px;
+            }
+            @media @mobile{
+                font-size: 40px;
+            }
+        }
+        &:hover{
+            color:#9b59b6;
+        }
+    }
+    .icon-chevron_l{
+        &:before{
+            content: "\e257";
+        }
+    }
+    .icon-chevron_r{
+        &:before{
+            content: "\e258";
+        }
+    }
+}
+.reviews-slider_icon{
+    float: left;
+    height: 76px;
+    position: relative;
+    top: 6px;
+    width: 112px;
+    background-image: url(../img/review.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media @smartphones{
+        width:50px;
+    }
+    @media @mobile{
+        display: none;
+    }
+}
+.reviews-slider_i_txt,.reviews-slider_i_name,.reviews-slider_i_city{
+    font-weight: 300;
+    text-transform: none;
+    color:#000;
+}
+.reviews-slider_i_txt{
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 15px;
+    @media @tablets{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    @media @smartphones{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    @media @mobile{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+}
+.reviews-slider_i_name,.reviews-slider_i_city{
+    font-size: 24px;
+    line-height: 24px;
+    @media @tablets{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    @media @smartphones{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    @media @mobile{
+        font-size: 14px;
+        line-height: 1;
+    }
+}

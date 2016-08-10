@@ -309,7 +309,7 @@
 	 	image: {
 	 		tError: '<a href="%url%">Изображение #%curr%</a> не было загружено.',
 	 		titleSrc: function(item) {
-	 			return item.el.attr('title');
+	 			return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">GitHub</a>';
 	 		},
 	 		cursor: 'mfp-fade'
 	 	},

@@ -1,0 +1,50 @@
+.comment{
+    color: #9a9a9a;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    margin-top: 26px;
+    padding-bottom: 42px;
+    padding-left: 27px;
+    padding-right: 30px;
+    position: relative;
+    @media @tablets,@smartphones,@mobile {
+        padding-left: 37px;
+    }
+    a{
+        bottom: 0;
+        display: block;
+        font-style: normal;
+        position: absolute;
+        right: 7px;
+        color: #ffb575;
+        z-index: 1;
+        &:before{
+            content:"\25B6";
+            display: inline-block;
+            font-size: 12px;
+            text-decoration: none;
+            margin-right: 3px;
+        }
+    }
+    &:before,&:after{
+        color: #cfcfcf;
+        font-size: 72px;
+        font-weight: 200;
+        position: absolute;
+    }
+    &:before{
+        content: "\201C";
+        left: -8px;
+        top: 15px;
+        @media @tablets,@smartphones,@mobile {
+            left:-7px;
+        }
+    }
+    &:after{
+        bottom:20px;
+        right:14px;
+        content: "\201D";
+
+    }
+}

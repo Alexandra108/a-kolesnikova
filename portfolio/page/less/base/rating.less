@@ -1,0 +1,43 @@
+.rating{
+    font-size:0;
+    line-height: 1;
+    &:hover{
+        label > .star{
+            background-position: -0px -244px !important;
+        }
+    }
+    input{
+        &:checked ~ label .star {
+            background-position: -0px -260px;
+        }
+        &:checked + label .star {
+            background-position: -0px -244px;
+        }
+    }
+    label{
+        position: relative;
+        display: inline-block;
+        z-index:1;
+        width:16px;
+        height:17px;
+        margin-right: 2px;
+        &:hover ~ label .star {
+            background-position: -0px -260px !important;
+        }
+    }
+    input[type=radio] {
+       display: none;
+    }
+    .star{
+        background: url("../img/sprite.png") no-repeat;
+        background-position: -0px -244px;
+        height:16px;
+        width:17px;
+        z-index:1;
+        position: absolute;
+        top: 0;
+        display:block;
+        cursor:pointer;
+        left: 0px;
+    }
+}

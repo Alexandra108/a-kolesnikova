@@ -1,0 +1,69 @@
+.sex-block{
+    display:inline-block;
+    vertical-align: middle;
+    font-size:0;
+}
+.sex-block_i{
+    float:left;
+    &:first-child label{
+        border-top-left-radius:20px;
+        padding: 4px 12px 2px 19px;
+        border-bottom-left-radius:20px;
+        @media @mobile {
+            padding: 2px 9px 2px 12px;
+        }
+    }
+    &:nth-child(2) label{
+        border-top-right-radius:20px;
+        padding: 4px 19px 2px 12px;
+        border-bottom-right-radius:20px;
+        @media @mobile {
+            padding: 2px 12px 2px 9px;
+        }
+    }
+    input{
+        position: absolute;
+        left: -9999px;
+        &:not(:checked) + label{
+            border:1px solid #b89679;
+        }
+        & + label span{
+            cursor:pointer;
+            height:29px;
+            width:16px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background:url("../img/sprite.png");
+            background-position: -0px -36px;
+        }
+        &:checked + label{
+            .inner-shadow (2px, 3px, 5px, @spread: 0, 0.36);
+            .gradient (#ff891f 0%, #ffae02 100%, 270deg);
+        }
+    }
+    input#i-female,input#he-female{
+        & + label span{
+            background-position: -0px -36px;
+        }
+        &:checked + label span{
+            background-position: -0px -65px;
+        }
+    }
+    input#i-man, input#he-man{
+        & + label span{
+            background-position: -16px -36px;
+        }
+        &:checked + label span{
+            background-position: -16px -65px;
+        }
+    }
+    label{
+        display: block;
+        margin: 0 0 0 -1px;
+        padding: 5px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.21);
+        .inner-shadow (0, 2px, 5px, 0, 0.12);
+        cursor: pointer;
+        .gradient (#e6e6e6 0%, #f5fafb 100%, 270deg);
+    }
+}

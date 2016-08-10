@@ -1,0 +1,52 @@
+.article{
+    background-image: url("../img/section_center.jpg");
+    background-position: center top;
+    background-repeat: repeat;
+    &.specialists{
+        background-image: url("../img/specialists_fon.jpg");
+        background-repeat:repeat-y;
+        background-size: cover;
+        background-position: center center;
+        .container{
+            padding: 38px 0 71px;
+        }
+    }
+    .container{
+        padding: 38px 158px 71px;
+        &.inner{
+            padding: 23px 108px 54px;
+            @media @smartphones,@mobile{
+               padding: 23px 10px 54px;
+            }
+        }
+        &.slider{
+            padding: 38px 0 71px;
+        }
+        &.static{
+            padding: 38px 0 71px;
+        }
+        @media @tablets, @smartphones,@mobile{
+            padding: 38px 15px 45px;
+        }
+    }
+}
+.article_t{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    margin-top: 13px;
+    text-align: center;
+    @media @tablets,@smartphones,@mobile {
+        font-size: 15px;
+    }
+}
+.article_tx_lst{
+  list-style: disc inside;
+  & li{
+    font-size: 14px;
+    @media @tablets,@smartphones,@mobile {
+        font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.steps{
+     margin-top: 24px;
+}
+.steps_i{
+    display:inline;
+    float:left;
+    background:url("../img/steps.png") no-repeat -16px 0;
+    height:28px;
+    color:#4e4e4e;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.42);
+    line-height:28px;
+    font-size:9px;
+    cursor:pointer;
+    font-family: Verdana,sans-serif;
+    padding:0 5px 0 3px;
+    position:relative;
+    span{
+        margin:0px;
+        z-index:2000;
+        background:url("../img/steps.png") no-repeat -1px 0px;
+        display:block;
+        position:absolute;
+        height:28px;
+        line-height:28px;
+        width:11px;
+        top:0;
+        left:-9px;
+        padding:0;
+    }
+    &.first{
+        background-position: -13px -56px !important;
+        padding: 0 11px 0 5px;
+    }
+    &.inprogress{
+        background-position:-59px -28px;
+        span{
+            background-position:-1px -28px;
+        }
+    }
+    &.done{
+        background-position: -20px -56px;
+        span{
+            background-position:-1px -56px;
+        }
+    }
+    &.last{
+        background-position:right 0;
+        span{
+            background-position:0px 0px;
+        }
+    }
+    &.lastinprogress{
+         background-position: right -28px;
+         span{
+             background-position: 0px -28px;
+         }
+    }
+    &.ldone{
+         background-position: right -56px;
+         span{
+             background-position: 0px -56px;
+         }
+    }
+}

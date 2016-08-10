@@ -1,0 +1,29 @@
+.arrow-b{
+    background: none;
+    bottom: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    position: fixed;
+    right: 19.8%;
+    width: 111px;
+    &:hover{
+        color:#9b59b6;
+    }
+    &:hover div.arrow-b_t{
+        background-position: 0 -300px;
+    }
+}
+.arrow-b_t{
+    background-image: url("../img/sprite.png");
+    background-position: 0 -320px;
+    background-repeat: no-repeat;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+    height: 20px;
+    margin-left: 21px;
+    position: relative;
+    width: 23px;
+}

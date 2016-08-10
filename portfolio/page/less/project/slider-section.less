@@ -1,0 +1,91 @@
+.general-section{
+    .gradient (rgba(255,137,32,1) 0%, rgba(255,162,0,1) 100%, 90deg);
+}
+.general-section_child{
+    background-image: url("../img/slider-bg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    padding: 20px 0 17px 0;
+    .container{
+        border: 1px solid rgba(0,0,0,0.2);
+        .box-shadow (0px 0px 4px 0px rgba(0, 0, 0, 0.45));
+        .box-sizing (content-box);
+        .b-shadow{
+            position: absolute;
+            bottom: -18px;
+            height: 31px;
+            right:0;
+            left:0;
+            background: url("../img/b-shadow.png");
+            background-position:center center;
+        }
+    }
+}
+.general-section_child_cnt{
+    background: #f8f8f8;
+    position: relative;
+    z-index: 1;
+}
+.general-section_child_l{
+    float: left;
+    width:50%;
+    @media @tablets,@smartphones {
+        width:480px;
+        padding-top: 25px;
+        float: none;
+        margin:0 auto;
+    }
+    @media @mobile {
+        width:310px;
+        padding-top: 25px;
+        float: none;
+        margin:0 auto;
+    }
+}
+.general-section_child_r{
+    float: left;
+    padding: 19px 10px 0px 19px;
+    width:50%;
+    @media @tablets{
+        float:none;
+        width:550px;
+        margin:0 auto;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    @media @smartphones,@mobile{
+        width:100%;
+        margin:0 auto;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        float:none;
+    }
+    h3{
+        position: relative;
+        color: #ff800c;
+        font-weight: 300;
+        font-size: 44px;
+        @media @tablets,@smartphones {
+            font-size: 31px;
+        }
+        @media @mobile {
+            text-align: center;
+            font-size: 31px;
+        }
+        &:before{
+            content:"";
+            display:block;
+            position:absolute;
+            left:0;
+            height:33px;
+            top:0;
+            pointer-events:none;
+            width:100%;
+            .gradient (rgba(248,248,248,0.1) 0%, rgba(248,248,248,1) 100%, 90deg);
+            @media @mobile {
+                height:21px;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    background-color: #282828;
+    &.inner{
+        background-color: #fff;
+    }
+}
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
+.container{
+    width:1140px;
+    margin: 0 auto;
+    position: relative;
+    ._transition(all 0.3s ease 0s);
+    @media @tablets {
+        width:768px;
+    }
+    @media @smartphones {
+        width:540px;
+    }
+    @media @mobile {
+        width:320px;
+    }
+}
+.end{
+    height:65px;
+    &.inner{
+        height: 545px;
+        @media @tablets,@smartphones,@mobile {
+            height:auto;
+        }
+    }
+    @media @tablets,@smartphones,@mobile {
+        height:auto;
+    }
+}

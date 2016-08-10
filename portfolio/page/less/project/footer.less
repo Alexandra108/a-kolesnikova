@@ -1,0 +1,55 @@
+footer{
+    height:104px;
+    margin-top: -104px;
+    position: relative;
+    @media @mobile {
+        height:91px;
+        margin-top: -91px;
+    }
+    .container{
+        border-top: 1px solid #cfcfcf;
+        padding: 4px 0 21px;
+        width: 940px;
+        @media @tablets {
+            width: 758px;
+        }
+        @media @smartphones {
+            width: 530px;
+        }
+        @media @mobile {
+            width: 310px;
+        }
+    }
+}
+.footer_l{
+    float:left;
+}
+.footer_logo{
+    background: url("../img/logo-f.png") no-repeat;
+    width:112px;
+    height:33px;
+    margin: 16px auto 9px;
+    display: block;
+}
+.footer_r{
+    float: right;
+    padding-top: 11px;
+    text-align: right;
+    p{
+        font-weight:300;
+        color:#4e4e4e;
+        font-size: 20px;
+        @media @mobile {
+            font-size: 15px;
+        }
+        &.footer_year,span{
+            color:#cfcfcf;
+        }
+    }
+}
+.footer_year{
+    font-size: 31px;
+     @media @mobile {
+        font-size: 26px;
+    }
+}

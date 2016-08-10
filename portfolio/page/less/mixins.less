@@ -1,0 +1,153 @@
+//Media query
+@mobile:      ~"only screen and (max-width: 540px)";
+@smartphones:      ~"only screen and (min-width: 540px) and (max-width: 768px)";
+@tablets:     ~"only screen and (min-width: 768px) and (max-width: 1100px)";
+//Общие стили
+@peach-color:#ffa352;
+._border_radius(@value) {
+    -moz-border-radius: @value;
+    -ms-border-radius: @value;
+    -o-border-radius: @value;
+    -webkit-border-radius: @value;
+    border-radius: @value;
+}
+._transition(@value) {
+    -moz-transition: @value;
+    -ms-transition: @value;
+    -o-transition: @value;
+    -webkit-transition: @value;
+    transition: @value;
+}
+.gradient (@startColor, @endColor, @angle) {
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(@angle, @startColor, @endColor);
+    background: -moz-linear-gradient(@angle, @startColor, @endColor);
+    background: -ms-linear-gradient(@angle, @startColor, @endColor);
+    background: -o-linear-gradient(@angle, @startColor, @endColor);
+}
+.box-shadow (@value) {
+    -moz-box-shadow: @value;
+    -ms-box-shadow: @value;
+    -o-box-shadow: @value;
+    -webkit-box-shadow: @value;
+    box-shadow: @value;
+}
+.inner-shadow (@x: 0px, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.box-sizing (@type) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing:    @type;
+    box-sizing:         @type;
+}
+.opacity (@opacity) {
+    -webkit-opacity:    @opacity;
+    -moz-opacity:       @opacity;
+    opacity:        @opacity;
+}
+._transform(@value) {
+    -moz-transform: @value;
+    -ms-transform: @value;
+    -o-transform: @value;
+    -webkit-transform: @value;
+    transform: @value;
+}
+._appearance(@value){
+    -webkit-appearance: @value;
+    -moz-appearance: @value;
+    appearance: @value;
+}
+._column-gap(@value){
+    -webkit-column-gap: @value;
+    -moz-column-gap: @value;
+    column-gap: @value;
+}
+._columns(@value){
+    -webkit-columns: @value;
+    -moz-columns: @value;
+    columns: @value;
+}
+//Стили для стилизированных селектов
+.select() {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.33) inset;
+    color: #656c71;
+    position: relative;
+    height: 37px;
+    letter-spacing: normal;
+    border-radius: 20px;
+    border:1px inset rgba(0, 0, 0, 0.21);
+    box-sizing: border-box;
+    display: inline-block;
+    .gradient(rgba(245,250,251,1) 0%, rgba(230,230,230,1) 100%, 90deg);
+    @media @mobile {
+        height:29px;
+    }
+    p{
+        color: #666666;
+        font-size: 18px;
+        font-weight: 300;
+        height: 100%;
+        left: 15px;
+        line-height: 37px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        @media @mobile {
+            left: 10px;
+            line-height: 29px;
+            font-size: 14px;
+            top:-1px;
+        }
+    }
+    select {
+        width:100%;
+        height:37px;
+        position:reative;
+        border:none;
+        opacity:0;
+        filter: alpha(opacity=0);
+        @media @mobile {
+            height:29px;
+        }
+    }
+    i{
+        content:"";
+        position: absolute;
+        background-image:url("../img/select_arrow.png");
+        background-position: 0px 0px;
+        background-size: auto 100%;
+        width:37px;
+        height:36px;
+        right:0;
+        cursor:pointer;
+        @media @mobile {
+            width:28px;
+            height:28px;
+        }
+    }
+}
+//Стили для стилизированных checkbox и radiobutton
+.checkboxRadiobutton() {
+    input{
+        display:none;
+    }
+    input + label span {
+        display:inline-block;
+        width:14px;
+        height:14px;
+        margin:-3px 14px 0 1px;
+        vertical-align:middle;
+        cursor:pointer;
+    }
+    label{
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: normal;
+        @media @mobile {
+            font-size: 14px;
+        }
+    }
+}

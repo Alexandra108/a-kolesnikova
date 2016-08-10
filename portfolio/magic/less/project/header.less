@@ -1,0 +1,35 @@
+header{
+    padding-top: 22px;
+}
+.header_logo{
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: Uni Sans Heavy,sans-serif;
+    font-size: 41px;
+    position: relative;
+    ._transition(all 0.4s ease 0s);
+    cursor:pointer;
+    &:hover{
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+    @media @mobile{
+        font-size: 24px;
+    }
+}
+.header_phones{
+    float:right;
+    & p{
+        text-align:left;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 15px;
+        &:first-child{
+            margin-bottom: 8px;
+        }
+        @media @mobile{
+            font-size: 14px;
+            line-height: 11px;
+        }
+    }
+}

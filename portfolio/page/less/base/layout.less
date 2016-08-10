@@ -1,0 +1,33 @@
+.wrapper {
+ position: relative;
+ min-height: 100%;
+}
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
+.container{
+    width:960px;
+    margin: 0 auto;
+    position: relative;
+    ._transition(width .2s ease);
+    @media @tablets {
+        width:768px;
+    }
+    @media @smartphones {
+        width:540px;
+    }
+    @media @mobile {
+        width:320px;
+    }
+}
+.end{
+    height:104px;
+    @media @mobile {
+        height:91px;
+    }
+}
