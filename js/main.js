@@ -50,16 +50,17 @@
 	 /* ---------------------------------------------- */  
 	 (function () { 
 	 	var $container = $('.portfolio_cnt');
-	 	$container.isotope({
-	 		itemSelector: '.isotope-item',
-	 		filter: '*',
-	 		resizable: false,
-	 		masonry: {
-	 			columnWidth: $container.width() / 4
-	 		},
-	 		percentPosition: true,
-	 		animationEngine: 'jquery'	
-
+	 	$container.imagesLoaded(function(){
+		 	$container.isotope({
+		 		itemSelector: '.isotope-item',
+		 		filter: '*',
+		 		resizable: false,
+		 		masonry: {
+		 			columnWidth: $container.width() / 4
+		 		},
+		 		percentPosition: true,
+		 		animationEngine: 'jquery'	
+		 	});
 	 	});
 
 	 	$(window).smartresize(function(){
