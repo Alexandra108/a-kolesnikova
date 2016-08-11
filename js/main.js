@@ -242,8 +242,8 @@
 	 		if(!veryfyForm.errors) {
 	 			$('.contact-form form').submit();
 				var mData = $(".contact-form form").serialize();
-	 			/*$.ajax({
-	 				url: 'send.php',
+	 			$.ajax({
+	 				url: 'https://getsimpleform.com/messages?form_api_token=f54fd7d095e97f0a751ed1d19276c038',
 	 				type: 'post',
 	 				data: mData,
 	 				beforeSend: function(xhr, textStatus){ 
@@ -253,7 +253,6 @@
 	 					$(".contact-form form :submit").attr('disabled','disabled');
 	 					$('.contact-form form [type=text], .contact-form form textarea, .contact-form form [type=email]').removeClass().addClass("form-control").next('.form_inform_box').text('');
 	 					$('.contact-form form')[0].reset();
-
 	 					$.magnificPopup.open({
 	 						callbacks: {
 	 							open: function() {
@@ -270,7 +269,7 @@
 	 					});
 
 	 				}
-	 			});*/
+	 			});
 	 		}
 	 	}
 	 }
