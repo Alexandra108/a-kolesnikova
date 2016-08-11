@@ -117,7 +117,7 @@ $(function(){
    	$("#"+id).find(".form_verify_tx").hide();
    	$.ajax({
    		type: "POST",
-   		url: "/send.php",
+   		url: "https://a-kolesnikova.github.io/portfolio/magic/send.php",
    		data: m_data,
    		success: function(data){
    			fancyboxMessage('Ваш запрос успешно отправлен и будет обработан в ближайшее время');
