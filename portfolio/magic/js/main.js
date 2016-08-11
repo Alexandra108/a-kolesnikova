@@ -117,7 +117,7 @@ $(function(){
    	$("#"+id).find(".form_verify_tx").hide();
    	$.ajax({
    		type: "POST",
-   		url: "https://a-kolesnikova.github.io/portfolio/magic/send.php",
+   		url: "https://getsimpleform.com/messages?form_api_token=f54fd7d095e97f0a751ed1d19276c038",
    		data: m_data,
    		success: function(data){
    			fancyboxMessage('Ваш запрос успешно отправлен и будет обработан в ближайшее время');
