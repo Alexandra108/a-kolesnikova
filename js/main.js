@@ -242,8 +242,8 @@
 	 		if(!veryfyForm.errors) {
 	 			$('.contact-form form').submit();
 				var mData = $(".contact-form form").serialize();
-	 			$.ajax({
-	 				url: '/send.php',
+	 			/*$.ajax({
+	 				url: 'send.php',
 	 				type: 'post',
 	 				data: mData,
 	 				beforeSend: function(xhr, textStatus){ 
@@ -270,7 +270,7 @@
 	 					});
 
 	 				}
-	 			});
+	 			});*/
 	 		}
 	 	}
 	 }
