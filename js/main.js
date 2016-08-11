@@ -243,7 +243,7 @@
 	 			$('.contact-form form').submit();
 				var mData = $(".contact-form form").serialize();
 	 			$.ajax({
-	 				url: 'send.php',
+	 				url: '/send.php',
 	 				type: 'post',
 	 				data: mData,
 	 				beforeSend: function(xhr, textStatus){ 
@@ -257,7 +257,7 @@
 	 					$.magnificPopup.open({
 	 						callbacks: {
 	 							open: function() {
-	 								$('html').removeAttr("style");
+	 								$('html').attr('style','');
 	 							}
 	 						},
 	 						items:{
@@ -311,7 +311,7 @@
 	 	},
 	 	callbacks: {
 	 		open: function() {
-	 			$('html').removeAttr("style");
+	 			$('html').attr('style','');
 	 		}
 	 	}
 	 });
