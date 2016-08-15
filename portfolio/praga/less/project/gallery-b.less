@@ -1,0 +1,121 @@
+/* ---------------------------------------------- /*
+ * GALLERY-B
+ /* ---------------------------------------------- */
+ .gallery-b{
+ 	padding:0 16px;
+ 	margin-top: 40px;
+ 	margin-bottom: 37px;
+ 	position: relative;
+ 	&:after{
+ 		content:url(../images/shadow_b.png);
+ 		position: absolute;
+ 		bottom:-53px;
+ 	}
+ }
+ .gallery-b_cnt{
+ 	background: #f4f4f4;
+ 	position: relative;
+ 	.border-radius(19px);
+ 	padding: 26px 19px 35px 19px;
+ }
+ .gallery-b_slider{
+ 	margin-top: 19px;
+ 	font-size: 0;
+ 	line-height: 0;
+ 	li{
+ 		border: 1px solid #dfdfdf;
+ 		cursor:pointer;
+ 		display: inline-block;
+ 		&:hover{
+ 			.gallery-b_slider_i_img{
+ 				.opacity (0.65);
+ 			}
+ 		}
+ 		figure{
+ 			margin: 0;
+ 			padding: 0;
+ 			figcaption{
+ 				background: #fff;
+ 				padding: 16px 13px 15px;
+ 				text-align: center;
+ 			}
+ 		}
+ 	}
+ }
+ .gallery-b_slider_i_img{
+ 	background: #fff;
+ 	max-height: 180px;
+ 	overflow: hidden;
+ 	.transition(opacity; 0.3s; ease; 0s);
+ 	img{
+ 		display: block;
+ 		max-width: 100%;
+ 	}
+ }
+ .gallery-b_slider_i_t{
+ 	color: #000;
+ 	font-size: 16px;
+ 	font-weight: 700;
+ 	line-height: 1;
+ 	margin-bottom: 7px;
+ }
+ .gallery-b_slider_i_price{
+ 	color: #787878;
+ 	font-size: 16px;
+ 	line-height: 1;
+ }
+ .gallery-b_slider_navigation{
+ 	font-size: 0;
+ 	line-height: 1;
+ 	position: absolute;
+ 	right: 19px;
+ 	top: 29px;
+ 	.prev,.next{
+ 		background: #cbced1;
+ 		cursor: pointer;
+ 		float:left;
+ 		display: block;
+ 		.transition(background; 0.3s; ease; 0s);
+ 		padding: 5px;
+ 		.border-radius(6px);
+ 	}
+ 	.prev{
+ 		&:hover{
+ 			background: #afb2b4;
+ 		}
+ 	}
+ 	.next{
+ 		margin-left:10px;
+ 		&:hover{
+ 			background: #afb2b4;
+ 		}
+ 	}
+ 	.icon-chevron_l,.icon-chevron_r{
+ 		position: relative;
+ 		font-family: "Glyphicons Halflings";
+ 		font-size: 15px;
+ 		color:#fff;
+ 		font-style: normal;
+ 		font-weight: normal;
+ 		line-height: 12px;
+ 		&:before{
+ 			display:-moz-inline-stack;
+ 			display:inline-block;
+ 			zoom:1;
+ 			*display:inline;
+ 			position: relative;
+ 			top: 0;
+ 			vertical-align: middle;
+ 		}
+ 	}
+ 	.icon-chevron_l{
+ 		&:before{
+ 			content: "\e257";
+ 		}
+ 	}
+ 	.icon-chevron_r{
+ 		&:before{
+ 			content: "\e258";
+ 		}
+ 	}
+ }

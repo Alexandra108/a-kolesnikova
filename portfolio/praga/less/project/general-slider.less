@@ -1,0 +1,125 @@
+/* ---------------------------------------------- /*
+ * GENERAL-SLIDER
+ /* ---------------------------------------------- */
+ .general-slider{
+ 	position: relative;
+ 	margin: 0 auto;
+ 	width:1000px;
+ 	height:377px;
+ 	@media @medium-devices{
+     width:910px;
+     height:343px;
+   }
+ }
+ .general-slider_cnt{
+ 	height: 377px;
+ 	position: relative;
+ 	overflow: hidden;
+ 	max-width: 1000px;
+ 	@media @medium-devices{
+     height:343px;
+   }
+ }
+ .general-slider_i{
+ 	width:1000px;
+ 	background-color: #e6e6fa;
+ 	height:377px;
+ 	@media @medium-devices{
+     width:910px;
+     height:343px;
+   }
+ }
+ .general-slider_i_l{
+ 	background: url("../images/elips.png") no-repeat;
+ 	height: 380px;
+ 	padding-left: 85px;
+ 	padding-top: 59px;
+ 	position: absolute;
+ 	width: 440px;
+ 	z-index: 1;
+ }
+ .general-slider_i_t{
+ 	font-size:40px;
+ 	font-weight:700;
+ 	line-height:65px;
+ }
+ .general-slider_i_price{
+ 	font-size:18px;
+ 	margin-top: 20px;
+ 	line-height:1;
+ }
+ .general-slider_i_btn{
+ 	background: url("../images/general-slider_i_btn.png") repeat;
+ 	font-weight:700;
+ 	padding: 0px 37px 0px 12px;
+ 	.box-shadow (0 -2px 0 0 rgba(0, 0, 0, 0.3) inset);
+ 	display: inline-block;
+ 	position: relative;
+ 	.transition(opacity; 400ms; ease; 0s);
+ 	margin-top: 37px;
+ 	line-height: 35px;
+ 	border-radius: 5px;
+ 	font-size: 18px;
+ 	&:hover{
+ 		text-decoration: none;
+ 		.box-shadow (0 2px 0 0 rgba(0, 0, 0, 0.3) inset);
+ 	}
+ 	&:after{
+ 		font-family: "Glyphicons Halflings";
+ 		content:"\e258";
+ 		font-size: 15px;
+ 		right:15px;
+ 		top:1px;
+ 		color:#000;
+ 		font-weight: bold;
+ 		position: absolute;
+ 	}
+ }
+ #general-slider_ac-prev,#general-slider_ac-next{
+ 	display: block;
+ 	background: url("../images/sprite.png") no-repeat;
+ 	height: 32px;
+ 	.opacity (0.8);
+ 	position: absolute;
+ 	text-indent: -9999px;
+ 	top: 50%;
+ 	margin-top: -16px;
+ 	width: 32px;
+ 	z-index: 2;
+ 	&:hover{
+ 		.opacity (1);
+ 	}
+ }
+ #general-slider_ac-prev{
+ 	left:22px;
+ 	background-position: -48px -24px;
+ }
+ #general-slider_ac-next{
+ 	right:18px;
+ 	background-position: -48px -56px;
+ }
+ .general-slider_controls{
+ 	position: absolute;
+ 	bottom: 14px;
+ 	text-align: center;
+ 	left:0;
+ 	right:0;
+ }
+ .general-slider_control{
+ 	display: inline-block;
+ 	height: 13px;
+ 	position: relative;
+ 	margin: 3px;
+ 	cursor: pointer;
+ 	text-indent: -9999px;
+ 	width: 13px;
+ 	background: url("../images/sprite.png") no-repeat;
+ 	background-position: -60px -163px;
+ 	&:hover{
+ 		background-position: -60px -150px;
+ 	}
+ 	&.active{
+ 		background-position: -60px -150px;
+ 	}
+ }
+ 

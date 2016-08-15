@@ -26,6 +26,14 @@
     background: -ms-linear-gradient(@angle, @startColor, @endColor);
     background: -o-linear-gradient(@angle, @startColor, @endColor);
 }
+.shape-outside(@value){
+    shape-outside: @value;
+    -webkit-shape-outside: @value;
+}
+.clip-path(@value){
+    clip-path: @value;
+    -webkit-clip-path: @value;
+}
 .box-shadow (@value) {
     -moz-box-shadow: @value;
     -ms-box-shadow: @value;
@@ -69,6 +77,16 @@
     -webkit-columns: @value;
     -moz-columns: @value;
     columns: @value;
+}
+.animation(@arguments) {
+    -moz-animation: @arguments;
+    -webkit-animation: @arguments;
+    animation: @arguments;
+}
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
 }
 //Стили для стилизированных селектов
 .select() {

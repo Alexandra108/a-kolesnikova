@@ -1,0 +1,139 @@
+@import "mixins.less";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic);
+@font-face {
+  font-family: "BravoSC";
+  src: url("../fonts/BravoSC.eot");
+  src: url("../fonts/BravoSC.eot?#iefix") format("embedded-opentype"), 
+      url("../fonts/BravoSC.woff") format("woff"), 
+      url("../fonts/BravoSC.ttf") format("opentype"), 
+      url("../fonts/BravoSC.svg#BravoSC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url("../fonts/glyphicons-halflings-regular.eot");
+    src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/glyphicons-halflings-regular.woff") format("woff"),
+         url("../fonts/glyphicons-halflings-regular.ttf") format("opentype"),
+         url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/PTSans-Narrow.eot");
+    src: url("../fonts/PTSans-Narrow.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/PTSans-Narrow.woff") format("woff"),
+         url("../fonts/PTSans-Narrow.ttf") format("opentype"),
+         url("../fonts/PTSans-Narrow.svg#PTSans-Narrow") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight:400;
+  font-size: 14px;
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+  color:#190100;
+  background:url('../images/background.png') repeat-x;
+}
+html, body {
+  height: 100%;
+}
+body,div, span, a, p, i, s, b, h1, h2, h3, h4, h5, img, ul, li {
+  margin: 0;
+  padding: 0;
+  .box-sizing (border-box);
+  text-decoration: none;
+}
+::-webkit-input-placeholder {
+ color: #000;
+ .opacity(1);
+}
+:-moz-placeholder { /* Firefox 18- */
+ color: #000;
+ .opacity(1);
+}
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #000;
+ .opacity(1);
+}
+:-ms-input-placeholder {
+ color: #000;
+ .opacity(1);
+}
+ul{
+  list-style-type: none;
+}
+li{
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+}
+input[type=text] { 
+  ._appearance(none);
+  background: transparent;
+  outline: none; 
+}
+a{
+  text-decoration: none;
+  color:#000;
+  outline:none;
+  &:active,&:visited{
+    text-decoration: none;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: PT Sans Narrow;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 30px;
+  color:#13862e;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 30px;
+  color:#13862e;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 30px;
+  color:#13862e;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 24px;
+  color:#13862e;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 30px;
+  color:#13862e;
+  line-height: 1;
+}
+
+h6 {
+  font-size: 30px;
+  color:#13862e;
+  line-height: 1;
+}
+
+p{
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}

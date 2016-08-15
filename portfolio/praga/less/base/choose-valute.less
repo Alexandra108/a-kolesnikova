@@ -1,0 +1,58 @@
+/* ---------------------------------------------- /*
+ * CHOOSE-VALUTE
+/* ---------------------------------------------- */
+.choose-valute{
+	float: right;
+  font-size: 0;
+  letter-spacing: -3px;
+  line-height: 1;
+}
+.choose-valute_i{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: normal;
+  padding: 1px 12px 3px;
+  position: relative;
+  .border-radius(5px 0px 0px 5px);
+  &:hover{
+    text-decoration: none;
+    background: url("../images/choose-valute_bg.png") repeat;
+    .box-shadow (1px 1px 1px 0 rgba(0, 0, 0, 0.46) inset);
+    &:last-child{
+      .border-radius(0px 5px 5px 0px);
+      .box-shadow (-1px 1px 1px 0 rgba(0, 0, 0, 0.46) inset);
+    }
+  }
+  &:after{
+    content:"";
+    position: absolute;
+    right:-1px;
+    height: 28px;
+    top:-2px;
+    border-right:1px dashed #fff;
+  }
+  &:before{
+    border-right: 1px dashed #a68631;
+    content: "";
+    height: 28px;
+    position: absolute;
+    right: -1px;
+    top: -2px;
+  }
+  &.active{
+    background: url("../images/choose-valute_bg.png") repeat;
+    .box-shadow (1px 1px 1px 0 rgba(0, 0, 0, 0.46) inset);
+    &:last-child{
+      .border-radius(0px 5px 5px 0px);
+    }
+  }
+  &:last-child{
+    &.active{
+      .box-shadow (-1px 1px 1px 0 rgba(0, 0, 0, 0.46) inset);
+    }
+    &:after,&:before{
+      border: none;
+    }
+  }
+}

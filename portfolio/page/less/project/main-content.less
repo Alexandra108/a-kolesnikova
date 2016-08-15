@@ -26,12 +26,10 @@
     .shape{
         float: left;
         margin:5px 17px 0 0;
-        border-radius: 50%;
+        ._border_radius(50%);
         max-width: 173px;
-        shape-outside: circle(50%);
-        clip-path: circle(50%);
-        -webkit-shape-outside: circle(50%);
-        -webkit-clip-path: circle(50%);
+        .shape-outside(circle(50%));
+        .clip-path(circle(50%));
         max-height: 173px;
     }
 }

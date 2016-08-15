@@ -1,0 +1,31 @@
+/* ---------------------------------------------- /*
+ * PAY-SYSTEM
+/* ---------------------------------------------- */
+.pay-system{
+  font-size:0;
+  line-height: 1;
+  li{
+    display: inline-block;
+    margin-right: 19px;
+    vertical-align: middle;
+    & a{
+      display: block;
+      background:url('../images/sprite.png') no-repeat;
+      &.pay{
+        background-position: -0px -0px;
+        width: 89px;
+        height: 24px;
+      }
+      &.visa{
+        background-position: -0px -53px;
+        width: 48px;
+        height: 15px;
+      }
+      &.master-card{
+        background-position: -0px -24px;
+        width: 48px; 
+        height: 29px;
+      }
+    }
+  }
+}

@@ -6,17 +6,15 @@
 .sex-block_i{
     float:left;
     &:first-child label{
-        border-top-left-radius:20px;
         padding: 4px 12px 2px 19px;
-        border-bottom-left-radius:20px;
+        ._border_radius(20px 0 0 20px);
         @media @mobile {
             padding: 2px 9px 2px 12px;
         }
     }
     &:nth-child(2) label{
-        border-top-right-radius:20px;
         padding: 4px 19px 2px 12px;
-        border-bottom-right-radius:20px;
+        ._border_radius(0px 20px 20px 0px);
         @media @mobile {
             padding: 2px 12px 2px 9px;
         }

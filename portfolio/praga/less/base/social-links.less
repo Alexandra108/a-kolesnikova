@@ -1,0 +1,32 @@
+/* ---------------------------------------------- /*
+ * SOCIAL-LINKS
+ /* ---------------------------------------------- */
+ .social-links{
+  font-size:0;
+  line-height: 1;
+  li{
+    display: inline-block;
+    margin-left: 5px;
+    &:first-child{
+      margin-left: 0px;
+    }
+    & a{
+      display: block;
+      width:30px;
+      height:30px;
+      background:url('../images/sprite.png') no-repeat;
+      &.vk{
+        background-position: -30px -111px;
+        &:hover{
+          background-position: -30px -141px;
+        }
+      }
+      &.fb{
+        background-position: -0px -91px;
+        &:hover{
+          background-position: -0px -121px;
+        }
+      }
+    }
+  }
+}

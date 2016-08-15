@@ -1,0 +1,36 @@
+/* ---------------------------------------------- /*
+ * AUTHORIZATION
+/* ---------------------------------------------- */
+.authorization{
+	float:left;
+	margin-left: 23px;
+   margin-top: 12px;
+	ul{
+		font-size: 0;
+		line-height: 1;
+		li{
+			display: inline-block;
+			a{
+				display: block;
+				color:#fff;
+				position: relative;
+				padding: 0 14px;
+				&:after{
+					background: #fff;
+					height:11px;
+					width:2px;
+					right: 0;
+				   top:2px;
+					content: "";
+   				display: block;
+   				position: absolute;
+				}
+			}
+			&:last-child{
+				& a:after{
+					background: transparent;
+				}
+			}
+		}
+	}
+}

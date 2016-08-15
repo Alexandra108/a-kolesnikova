@@ -10,7 +10,7 @@
     position: relative;
     text-align: right;
     overflow: hidden;
-    border-radius: 3px;
+    ._border_radius(3px);
     & span{
         left: 0;
         position: absolute;
@@ -20,11 +20,11 @@
 }
 .progress-bar{
     border: none;
+    .box-sizing (border-box);
     box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.61) inset, 0 0 0 1px rgba(0, 0, 0, 0.21) inset;
-    border-radius: 3px;
+    ._border_radius(3px);
     .gradient (rgba(230,230,230,1) 0%, rgba(245,250,251,1) 100%, 90deg);
     width: 100%;
-    box-sizing: border-box;
     height: 16px;
     padding: 2px;
     overflow: hidden;

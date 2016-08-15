@@ -1,0 +1,131 @@
+/* ---------------------------------------------- /*
+ * ENTERTAINMENT
+ /* ---------------------------------------------- */
+ .entertainment{
+ 	font-size: 0;
+ 	line-height: 1;
+ 	 margin-top: 24px;
+ 	& h3{
+ 		margin-bottom:28px;
+ 	}
+ }
+ .entertainment_i{
+ 	margin-right: 20px;
+ 	cursor: pointer;
+ 	height: 261px;
+ 	float:left;
+ 	max-width: 235px;
+ 	vertical-align: top;
+ 	position: relative;
+ 	@media @medium-devices{
+     max-width: 205px;
+     height:auto;
+   }
+ }
+ .entertainment-row{
+ 	& .entertainment_i{
+ 		&:nth-child(2n+1){
+ 			margin-top: 25px;
+ 		}
+ 		&:last-child{
+ 			margin-right: 0;
+ 		}
+ 	}
+ }
+
+ .entertainment_i figure {
+ 	position: relative;
+ 	overflow: hidden;
+ 	margin: 0px;
+ 	background: #fff;
+ }
+ .entertainment_i_img{
+ 	position: relative;
+ 	&:after{
+ 		bottom: 0;
+ 		background: url("../images/img_f.png") repeat;
+ 		content: "";
+ 		display: block;
+ 		height: 100%;
+ 		left: 0;
+ 		.transition(opacity,transform; 0.3s; ease; 0s);
+ 		position: absolute;
+ 		right: 0;
+ 		top: 0;
+ 		opacity: 0;
+ 		width: 100%;
+ 		z-index: 1;
+ 	}
+ }
+ .entertainment_i_img img {
+ 	position: relative;
+ 	display: block;
+ 	width: 100%;
+ }
+
+ .entertainment_i figcaption {
+ 	position: absolute;
+ 	top: 0;
+ 	z-index: 11;
+ 	padding: 0px;
+ 	width: 100%;
+ 	height: 100%;
+ 	text-align: center;
+ }
+ .entertainment_i figcaption h2 {
+ 	margin: 0 0 20px 0;
+ 	color: #fff;
+ 	font-family: PT Sans Narrow;
+ 	font-weight: 400;
+ 	font-size:24px;
+ 	.transition(transform; 0.3s; ease; 0s);
+ }
+ .entertainment_i figcaption h2 {
+ 	._transform(translateY(33px));
+ }
+
+ .entertainment_i figure button {
+ 	padding: 7px 12px;
+ 	line-height: 1;
+ 	margin: 0 auto;
+ 	position: absolute;
+ 	left:15%;
+ 	top:62%;
+ 	background: none;
+ 	z-index: 1;
+ 	.opacity (0);
+ 	.transition(opacity,transform; 0.3s; ease; 0s);
+ 	border: 3px solid #fff;
+ 	color: #fff;
+ 	font-size: 22px;
+ 	._transform(translateY(-62%) translateX(15%) scale(0.25));
+ 	@media @medium-devices{
+     left:11%;
+     ._transform(translateY(-62%) translateX(11%) scale(0.25));
+   }
+ }
+
+ .entertainment_i figcaption,
+ .entertainment_i figcaption h2,
+ .entertainment_i figure button {
+ 	.backface-visibility(hidden);
+ }
+ .entertainment_i svg {
+ 	position: absolute;
+ 	top: 0px;
+ 	z-index: 1;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .entertainment_i:hover{
+ 	& h2{
+ 	   ._transform(translateY(12px));
+ 	}
+ 	& button{
+ 		.opacity (1);
+ 		._transform(translateY(-50%) translateX(0%) scale(1));
+ 	}
+ 	& .entertainment_i_img:after{
+ 		.opacity (1);
+ 	}
+ }

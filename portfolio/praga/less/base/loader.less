@@ -1,0 +1,46 @@
+/* ---------------------------------------------- /*
+ * LOADER
+ /* ---------------------------------------------- */
+ #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: #fff;
+}
+.preloader_e{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -18px 0 0 -19px;
+  .loading{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    padding: 4px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-top-color: #f60;
+    border-bottom-color: #f60;
+    border-radius: 50% 0;
+    box-shadow: 0 0 4px/2 #f60 inset;
+  }
+
+  .outer{
+   .animation(loader 0.25s infinite linear);
+ }
+
+ .inner{
+  .animation(loader 0.35s infinite linear);
+}
+
+}
+
+.keyframes(loader;{
+  0% { ._transform(rotateZ(0deg)); }
+  100% { ._transform(rotateZ(360deg)); }
+  });

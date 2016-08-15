@@ -1,0 +1,40 @@
+/* ---------------------------------------------- /*
+ * CHOOSE-LANGUAGE
+ /* ---------------------------------------------- */
+ .choose-language{
+   float: right;
+   font-size: 0;
+   line-height: 1;
+   margin-right: 33px;
+   margin-top: 8px;
+   ul{
+    li{
+     display: inline-block;
+     padding-right: 9px;
+     & a{
+      background:url('../images/header-bg.png') repeat-x;
+      height:39px;
+      display: block;
+      .transition(all; 0.5s; ease-out; 0s);
+      &.ru{
+       background:url('../images/sprite.png') no-repeat;
+       width:31px;
+       background-position: -32px -88px;
+       height:23px;
+     }
+     &.en{
+       background:url('../images/sprite.png') no-repeat;
+       width:32px;
+       background-position: -0px -68px;
+       height:23px;
+     }
+     &:hover{
+      .box-shadow (0 0 6px #ff0711);
+     }
+   }
+   &:last-child{
+    padding-right: 0px;
+  }
+}
+}
+}
