@@ -143,7 +143,7 @@ function progressbar(){
   $('.progress-bar').one('inview', function(event, visible, visiblePartX, visiblePartY) {
     if (visible){
       var progressbar = $('.progress-bar_value');
-      var valueMax = progressbar.attr('max');
+      var valueMax = progressbar.data('max');
       var procentStep = 0;
       var procent = 1200/valueMax,
       time = 50/valueMax;

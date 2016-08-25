@@ -4,7 +4,7 @@
  .entertainment{
  	font-size: 0;
  	line-height: 1;
- 	 margin-top: 24px;
+ 	margin-top: 24px;
  	& h3{
  		margin-bottom:28px;
  	}
@@ -18,9 +18,9 @@
  	vertical-align: top;
  	position: relative;
  	@media @medium-devices{
-     max-width: 205px;
-     height:auto;
-   }
+ 		max-width: 205px;
+ 		height:auto;
+ 	}
  }
  .entertainment-row{
  	& .entertainment_i{
@@ -33,7 +33,7 @@
  	}
  }
 
- .entertainment_i figure {
+ .entertainment_i_cnt {
  	position: relative;
  	overflow: hidden;
  	margin: 0px;
@@ -63,7 +63,7 @@
  	width: 100%;
  }
 
- .entertainment_i figcaption {
+ .entertainment_i_t {
  	position: absolute;
  	top: 0;
  	z-index: 11;
@@ -71,25 +71,23 @@
  	width: 100%;
  	height: 100%;
  	text-align: center;
+ 	& h2{
+ 		margin: 0 0 20px 0;
+ 		color: #fff;
+ 		font-family: PT Sans Narrow;
+ 		font-weight: 400;
+ 		font-size:24px;
+ 		.transition(transform; 0.3s; ease; 0s);
+ 		._transform(translateY(33px));
+ 	}
  }
- .entertainment_i figcaption h2 {
- 	margin: 0 0 20px 0;
- 	color: #fff;
- 	font-family: PT Sans Narrow;
- 	font-weight: 400;
- 	font-size:24px;
- 	.transition(transform; 0.3s; ease; 0s);
- }
- .entertainment_i figcaption h2 {
- 	._transform(translateY(33px));
- }
-
- .entertainment_i figure button {
+ .entertainment_i_cnt a {
  	padding: 7px 12px;
  	line-height: 1;
  	margin: 0 auto;
+ 	display: block;
  	position: absolute;
- 	left:15%;
+ 	left:18%;
  	top:62%;
  	background: none;
  	z-index: 1;
@@ -98,16 +96,16 @@
  	border: 3px solid #fff;
  	color: #fff;
  	font-size: 22px;
- 	._transform(translateY(-62%) translateX(15%) scale(0.25));
+ 	._transform(translateY(-62%) translateX(18%) scale(0.25));
  	@media @medium-devices{
-     left:11%;
-     ._transform(translateY(-62%) translateX(11%) scale(0.25));
-   }
+ 		left:13%;
+ 		._transform(translateY(-62%) translateX(13%) scale(0.25));
+ 	}
  }
 
- .entertainment_i figcaption,
- .entertainment_i figcaption h2,
- .entertainment_i figure button {
+ .entertainment_i_t,
+ .entertainment_i_t h2,
+ .entertainment_i a {
  	.backface-visibility(hidden);
  }
  .entertainment_i svg {
@@ -119,9 +117,9 @@
  }
  .entertainment_i:hover{
  	& h2{
- 	   ._transform(translateY(12px));
+ 		._transform(translateY(12px));
  	}
- 	& button{
+ 	& a{
  		.opacity (1);
  		._transform(translateY(-50%) translateX(0%) scale(1));
  	}
