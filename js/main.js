@@ -304,7 +304,15 @@
 	 	image: {
 	 		tError: '<a href="%url%">Изображение #%curr%</a> не было загружено.',
 	 		titleSrc: function(item) {
-	 			return item.el.attr('title') + ' &middot; <a class="portfolio_i_a" href="'+item.el.attr('data-href')+'" target="_blank">Перейти на сайт</a>&nbsp;&middot;&nbsp;<a class="portfolio_i_a" href="'+item.el.attr('data-source')+'" target="_blank">GitHub</a>';
+				var links ="";
+				if(item.el.attr('title')){
+					links = item.el.attr('title') + ' &middot; <a class="portfolio_i_a" href="'+item.el.attr('data-href')+'" target="_blank">Перейти на сайт</a>';
+				}
+				if(item.el.attr('data-source')){
+					links += '&middot;&nbsp;<a class="portfolio_i_a" href="'+item.el.attr('data-source')+'" target="_blank">GitHub</a>';
+				}
+				
+	 			return links;
 	 		},
 	 		cursor: 'mfp-fade'
 	 	},
