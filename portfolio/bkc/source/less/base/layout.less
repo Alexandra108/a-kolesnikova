@@ -1,0 +1,38 @@
+
+/* ---------------------------------------------- /*
+ * LAYOUT
+ /* ---------------------------------------------- */
+ .wrapper{
+    margin-left: 112px;
+    @media @mobile-area{
+        margin-left: 0px;
+    }
+}
+.container{
+    margin:0 auto;
+    position:relative;
+    max-width: 1920px;
+    min-width:480px;
+    transition: width 0.2s ease 0s;
+    @media(min-width : 1800px){
+        width:1230px;
+    }
+    @media @medium-devices{
+        width:1000px;
+    }
+    @media @tablets {
+        width:748px;
+    }
+    @media @smartphones {
+        width:540px;
+    }
+    @media @mobile-area {
+        width:auto;
+    }
+}
+@media(min-width : 1800px){
+    main{
+        width: 1230px;
+        margin:0 auto;
+    }
+}

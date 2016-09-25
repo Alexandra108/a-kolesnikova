@@ -1,0 +1,29 @@
+{
+  "name": "BKC",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-combine-media-queries": "^1.0.20",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-csscomb": "^3.1.1",
+    "grunt-replace": "^1.0.1",
+    "grunt-sprite-generator": "0.0.5",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "browsers": {
+    "android": 4,
+    "chrome": 35,
+    "firefox": 30,
+    "ie": 10,
+    "ios": 6,
+    "opera": 12,
+    "safari": 5
+  }
+}

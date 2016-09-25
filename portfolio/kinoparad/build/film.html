@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Кинопарад Фильм</title>
+	<meta name="keywords" content="Кинопарад">
+	<meta name="description" content="Кинопарад">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="imagetoolbar" content="no">
+	<meta name="msthemecompatible" content="no">
+	<meta name="copyright" content="Авторские права">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="cleartype" content="on"/>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link rel="stylesheet" href="css/sumoselect.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="css/video-js.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container cf">
+				<div class="header_l">
+					<a href="#" class="logo">
+						<img src="images/logo.png" alt="Кинопарад">
+					</a>
+				</div>
+				<div class="header_r">
+					<div class="header_search">
+						<form action="search.php">
+							<input type="text" placeholder="Поиск">
+						</form>
+					</div>
+					<div class="header_menu">
+						<nav>
+							<ul class="header_menu_lst">
+								<li class="header_menu_lst_i">
+									<a class="header_menu_i" href="#">Фильмы</a>
+									<div class="header_menu_dropdown_m dropdown_m cf">
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По жанру</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">АНИМЕ</a></li>
+													<li><a href="#">БИОГРАФИЯ</a></li>
+													<li><a href="#">БОЕВИК</a></li>
+													<li><a href="#">ВЕСТЕРН</a></li>
+													<li><a href="#">ВОЕННЫЙ</a></li>
+													<li><a href="#">ДЕТЕКТИВ</a></li>
+													<li><a href="#">ДЕТСКИЙ</a></li>
+													<li><a href="#">ДОКУМЕНТАЛЬНЫЙ</a></li>
+													<li><a href="#">ДРАМА</a></li>
+												</ul>
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">ИСТОРИЯ</a></li>
+													<li><a href="#">КОМЕДИЯ</a></li>
+													<li><a href="#">КОРОТКОМЕТРАЖКА </a></li>
+													<li><a href="#">КРИМИНАЛ</a></li>
+													<li><a href="#">МЕЛОДРАМА</a></li>
+													<li><a href="#">МИСТИКА</a></li>
+													<li><a href="#">НУАР</a></li>
+													<li><a href="#">ПРИКЛЮЧЕНИЯ</a></li>
+													<li><a href="#">СЕМЕЙНЫЙ</a></li>
+												</ul>
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">ТРИЛЛЕР</a></li>
+													<li><a href="#">УЖАСЫ</a></li>
+													<li><a href="#">ФАНТАСТИКА</a></li>
+													<li><a href="#">ФЭНТЕЗИ</a></li>
+													<li><a href="#">МУЗЫКА</a></li>
+													<li><a href="#">СПОРТ</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По жанру</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">Стивен Спилберг</a></li>
+													<li><a href="#">Питер Джексон</a></li>
+													<li><a href="#">Мартин Скорсезе</a></li>
+													<li><a href="#">Кристофер Нолан</a></li>
+													<li><a href="#">Стивен Содерберг</a></li>
+													<li><a href="#">Ридли Скотт</a></li>
+													<li><a href="#">Квентин Тарантино</a></li>
+													<li><a href="#">Клинт Иствуд</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По актерам</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">Джим Керри</a></li>
+													<li><a href="#">Тим Роббинс</a></li>
+													<li><a href="#">Робин Уильямс</a></li>
+													<li><a href="#">Сэмюэл Л. Джексон</a></li>
+													<li><a href="#">Мэл Гибсон</a></li>
+													<li><a href="#">Дензел Вашингтон</a></li>
+													<li><a href="#">Антонио Бандерас</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По году</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">2016</a></li>
+													<li><a href="#">2015</a></li>
+													<li><a href="#">2014</a></li>
+													<li><a href="#">2013</a></li>
+													<li><a href="#">2012</a></li>
+													<li><a href="#">2011</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+									</div>
+								</li>
+								<li class="header_menu_lst_i">
+									<a class="header_menu_i" href="#">Сериалы</a>
+									<div class="header_menu_dropdown_m dropdown_m cf">
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По жанру2</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">АНИМЕ</a></li>
+													<li><a href="#">БИОГРАФИЯ</a></li>
+													<li><a href="#">БОЕВИК</a></li>
+													<li><a href="#">ВЕСТЕРН</a></li>
+													<li><a href="#">ВОЕННЫЙ</a></li>
+													<li><a href="#">ДЕТЕКТИВ</a></li>
+													<li><a href="#">ДЕТСКИЙ</a></li>
+													<li><a href="#">ДОКУМЕНТАЛЬНЫЙ</a></li>
+													<li><a href="#">ДРАМА</a></li>
+												</ul>
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">ИСТОРИЯ</a></li>
+													<li><a href="#">КОМЕДИЯ</a></li>
+													<li><a href="#">КОРОТКОМЕТРАЖКА </a></li>
+													<li><a href="#">КРИМИНАЛ</a></li>
+													<li><a href="#">МЕЛОДРАМА</a></li>
+													<li><a href="#">МИСТИКА</a></li>
+													<li><a href="#">НУАР</a></li>
+													<li><a href="#">ПРИКЛЮЧЕНИЯ</a></li>
+													<li><a href="#">СЕМЕЙНЫЙ</a></li>
+												</ul>
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">ТРИЛЛЕР</a></li>
+													<li><a href="#">УЖАСЫ</a></li>
+													<li><a href="#">ФАНТАСТИКА</a></li>
+													<li><a href="#">ФЭНТЕЗИ</a></li>
+													<li><a href="#">МУЗЫКА</a></li>
+													<li><a href="#">СПОРТ</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По жанру</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">Стивен Спилберг</a></li>
+													<li><a href="#">Питер Джексон</a></li>
+													<li><a href="#">Мартин Скорсезе</a></li>
+													<li><a href="#">Кристофер Нолан</a></li>
+													<li><a href="#">Стивен Содерберг</a></li>
+													<li><a href="#">Ридли Скотт</a></li>
+													<li><a href="#">Квентин Тарантино</a></li>
+													<li><a href="#">Клинт Иствуд</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По актерам</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">Джим Керри</a></li>
+													<li><a href="#">Тим Роббинс</a></li>
+													<li><a href="#">Робин Уильямс</a></li>
+													<li><a href="#">Сэмюэл Л. Джексон</a></li>
+													<li><a href="#">Мэл Гибсон</a></li>
+													<li><a href="#">Дензел Вашингтон</a></li>
+													<li><a href="#">Антонио Бандерас</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По году</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">2016</a></li>
+													<li><a href="#">2015</a></li>
+													<li><a href="#">2014</a></li>
+													<li><a href="#">2013</a></li>
+													<li><a href="#">2012</a></li>
+													<li><a href="#">2011</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+									</div>
+								</li>
+								<li class="header_menu_lst_i">
+									<a class="header_menu_i" href="#">Мультфильмы</a>
+									<div class="header_menu_dropdown_m dropdown_m cf">
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По жанру3</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">АНИМЕ</a></li>
+													<li><a href="#">БИОГРАФИЯ</a></li>
+													<li><a href="#">БОЕВИК</a></li>
+													<li><a href="#">ВЕСТЕРН</a></li>
+													<li><a href="#">ВОЕННЫЙ</a></li>
+													<li><a href="#">ДЕТЕКТИВ</a></li>
+													<li><a href="#">ДЕТСКИЙ</a></li>
+													<li><a href="#">ДОКУМЕНТАЛЬНЫЙ</a></li>
+													<li><a href="#">ДРАМА</a></li>
+												</ul>
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">ИСТОРИЯ</a></li>
+													<li><a href="#">КОМЕДИЯ</a></li>
+													<li><a href="#">КОРОТКОМЕТРАЖКА </a></li>
+													<li><a href="#">КРИМИНАЛ</a></li>
+													<li><a href="#">МЕЛОДРАМА</a></li>
+													<li><a href="#">МИСТИКА</a></li>
+													<li><a href="#">НУАР</a></li>
+													<li><a href="#">ПРИКЛЮЧЕНИЯ</a></li>
+													<li><a href="#">СЕМЕЙНЫЙ</a></li>
+												</ul>
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">ТРИЛЛЕР</a></li>
+													<li><a href="#">УЖАСЫ</a></li>
+													<li><a href="#">ФАНТАСТИКА</a></li>
+													<li><a href="#">ФЭНТЕЗИ</a></li>
+													<li><a href="#">МУЗЫКА</a></li>
+													<li><a href="#">СПОРТ</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По жанру</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">Стивен Спилберг</a></li>
+													<li><a href="#">Питер Джексон</a></li>
+													<li><a href="#">Мартин Скорсезе</a></li>
+													<li><a href="#">Кристофер Нолан</a></li>
+													<li><a href="#">Стивен Содерберг</a></li>
+													<li><a href="#">Ридли Скотт</a></li>
+													<li><a href="#">Квентин Тарантино</a></li>
+													<li><a href="#">Клинт Иствуд</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По актерам</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">Джим Керри</a></li>
+													<li><a href="#">Тим Роббинс</a></li>
+													<li><a href="#">Робин Уильямс</a></li>
+													<li><a href="#">Сэмюэл Л. Джексон</a></li>
+													<li><a href="#">Мэл Гибсон</a></li>
+													<li><a href="#">Дензел Вашингтон</a></li>
+													<li><a href="#">Антонио Бандерас</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+										<div class="dropdown_m_i">
+											<div class="dropdown_m_i_n">По году</div>
+											<div class="dropdown_m_i_cnt cf">
+												<ul class="dropdown_m_i_lst">
+													<li><a href="#">2016</a></li>
+													<li><a href="#">2015</a></li>
+													<li><a href="#">2014</a></li>
+													<li><a href="#">2013</a></li>
+													<li><a href="#">2012</a></li>
+													<li><a href="#">2011</a></li>
+												</ul>
+											</div>
+											<a class="dropdown_m_i_all" href="#">ВЕСЬ СПИСОК</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header_account">
+						<div class="header_account-enter">Войти</div>
+						<div class="header_account-user">
+							<div class="header_account-user_n">kak_radyga</div>
+							<div class="header_account-user_count">7</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<article class="card film">
+			<div class="container cf">
+				<div class="card_l">
+					<div class="card_l_cnt">
+						<div class="card_descr cf">
+							<div class="card_l_cnt_l">
+								<div class="card_img">
+									<img src="images/films/1.jpg" alt="">
+								</div>
+								<div class="card_buttons">
+									<div class="watch-online button">Смотреть онлайн</div>
+									<div class="see-later button">Посмотреть позже</div>
+								</div>
+							</div>
+							<div class="card_info">
+								<div class="card_t">Боги Египта</div>
+								<div class="card_t_en">Gods of Egypt</div>
+								<div class="card-rating">
+									<span class="card-rating-total">10.0</span>
+									<div class="card-rating_cnt">
+										<div class="card-rating-all-stars">14 357 <br>оценок</div>
+										<div class="card-rating-t">Моя оценка</div>
+										<div class="card-rating_stars">
+											<div id="card-rating_stars_cnt">
+												<div class="rating-card" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+													<meta itemprop="worstRating" content = "1"/>
+													<input type="radio" value="1" checked="checked" id="group-1-0" name="group-1" itemprop="ratingValue">
+													<label for="group-1-0"><span class="star"></span></label>
+													<input type="radio" value="2" id="group-1-1" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-1"><span class="star"></span></label>
+													<input type="radio" value="3" id="group-1-2" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-2"><span class="star"></span></label>
+													<input type="radio" value="4" id="group-1-3" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-3"><span class="star"></span></label>
+													<input type="radio" value="5" id="group-1-4" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-4"><span class="star"></span></label>
+													<input type="radio" value="6" id="group-1-5" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-5"><span class="star"></span></label>
+													<input type="radio" value="7" id="group-1-6" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-6"><span class="star"></span></label>
+													<input type="radio" value="8" id="group-1-7" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-7"><span class="star"></span></label>
+													<input type="radio" value="9" id="group-1-8" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-8"><span class="star"></span></label>
+													<input type="radio" value="10" id="group-1-9" name="group-1" itemprop="ratingValue" autocomplete='off'>
+													<label for="group-1-9"><span class="star"></span></label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card_tx">
+									<div class="card_tx_i">
+										<div class="card_tx_i_t">хронометраж</div>
+										<div class="card_tx_i_tx">
+											<div class="card_tx_i_chronometry">1 ч. 31 мин.<i>16+</i></div>
+										</div>
+									</div>
+									<div class="card_tx_i">
+										<div class="card_tx_i_t">Жанр</div>
+										<div class="card_tx_i_tx">
+											<a href="#">боевик</a>
+											<a href="#">приключения</a>
+											<a href="#">фэнтези</a>
+										</div>
+									</div>
+									<div class="card_tx_i">
+										<div class="card_tx_i_t">год</div>
+										<div class="card_tx_i_tx">
+											<a href="#">2016</a>
+										</div>
+									</div>
+									<div class="card_tx_i">
+										<div class="card_tx_i_t">страна</div>
+										<div class="card_tx_i_tx">
+											<a href="#">США</a>
+											<a href="#">Австралия</a>
+										</div>
+									</div>
+									<div class="card_tx_i">
+										<div class="card_tx_i_t">режиссёр</div>
+										<div class="card_tx_i_tx">
+											<a href="#">Алекс Пройас</a>
+										</div>
+									</div>
+									<div class="card_tx_i">
+										<div class="card_tx_i_t">в ролях</div>
+										<div class="card_tx_i_tx">
+											<a href="#">Дрерард Батлер</a>
+											<a href="#">Брайан Браун</a>
+											<a href="#">Кортни Итон</a>
+											<a href="#">Брентон Туэйтс</a>
+											<a href="#">Джеффри Раш</a>
+											<a href="#">Эмма Бут</a>
+										</div>
+									</div>
+								</div>
+								<div class="card_tx_chapter">
+									<h4>Сюжет</h4>
+									<p>Некогда мирное и процветающее египетское царство погружается в хаос: беспощадный бог тьмы Сет убивает своего брата Осириса и узурпирует трон. Вызов ему неожиданно бросает простой смертный, находчивый молодой вор. Чтобы вернуть к жизни свою прекрасную возлюбленную, ему приходится заручиться поддержкой могущественного и мстительного бога Гора. Лишь выдержав испытание на прочность и принеся в жертву все самое дорогое, им удастся противостоять Сету и его приспешникам в мире живых и мире мертвых.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card_r">
+					<div class="banner">
+						<img src="images/banner.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</article>
+		<section class="cadres-of-films">
+			<div class="container cf">
+				<div class="cadres-of-films_l">
+					<h3>Трейлер</h3>
+					<div class="cadres-of-films_l_cnt">
+						<div class="trailer" id="ItXHwqetNV4"></div>
+					</div>
+				</div>
+				<div class="cadres-of-films_r">
+					<h3>Кадры из фильма</h3>
+					<div class="cadres-of-films_r_cnt horizontal-only">
+						<div class="cadres-of-films_r_tx">
+							<div class="row cf">
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/trailer.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/3.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/4.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/5.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/5.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/6.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/7.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="row cf">
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/2.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/3.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/4.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/5.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/6.jpg" alt="">
+									</div>
+								</div>
+								<div class="cadres-of-films_i">
+									<div class="cadres-of-films_i_cnt">
+										<img src="images/films/7.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="look-film">
+			<div class="container cf">
+				<h3>Смотрите фильм «Боги Египта» онлайн</h3>
+				<div class="look-film_cnt">
+				<video id="my_video_1" class="video-js vjs-default-skin" width="917px" height="458px"
+					controls preload="none" poster='videos/poster/1v.png'
+					data-setup='{ "aspectRatio":"917:458", "playbackRates": [1, 1.5, 2] }'>
+					<source src="videos/mp4/oceans.mp4" type='video/mp4' />
+					<source src="videos/webm/oceans.webm" type='video/webm' />
+				</video>
+				<div id="jp-play" class="jp-play_btn_e"></div>
+				<div class="social-b">
+					<ul>
+						<li>
+							<a href="#" class="social-b-btn social-btn-f"></a>
+						</li>
+						<li>
+							<a href="#" class="social-b-btn social-btn-vk"></a>
+						</li>
+						<li>
+							<a href="#" class="social-b-btn social-btn-tw"></a>
+						</li>
+						<li>
+							<a href="#" class="social-b-btn social-btn-ok"></a>
+						</li>
+						<li>
+							<a href="#" class="social-b-btn social-btn-google"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="similar-films">
+		<div class="container cf">
+			<h3>Похожие фильмы</h3>
+			<div class="similar-films_cnt catalog-card-view-list cf">
+				<div class="catalog-card_i catalog-card_i_grid">
+					<div class="catalog-card_i_cnt">
+						<div class="catalog-card_i_img">
+							<i></i>
+							<img src="images/look-online/image-1.jpg" alt="">
+						</div>
+						<div class="catalog-card_i_desc card-decription">
+							<div class="card-decription_n">Ограбление по-американски</div>
+							<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+							<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+							<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+							<div class="card-decription_b">
+								<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content = "1"/>
+									<input type="radio" value="1" checked="checked" id="group-1-0" name="group-1" itemprop="ratingValue">
+									<label for="group-1-0"><span class="star"></span></label>
+									<input type="radio" value="2" id="group-1-1" name="group-1" itemprop="ratingValue">
+									<label for="group-1-1"><span class="star"></span></label>
+									<input type="radio" value="3" id="group-1-2" name="group-1" itemprop="ratingValue">
+									<label for="group-1-2"><span class="star"></span></label>
+									<input type="radio" value="4" id="group-1-3" name="group-1" itemprop="ratingValue">
+									<label for="group-1-3"><span class="star"></span></label>
+									<input type="radio" value="5" id="group-1-4" name="group-1" itemprop="ratingValue">
+									<label for="group-1-4"><span class="star"></span></label>
+									<span class="rating_t" itemprop="bestRating">7.8</span>
+								</div>
+								<a href="#" class="review">23</a>
+								<div class="view-later">Смотреть позже</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-card_i catalog-card_i_grid">
+					<div class="catalog-card_i_cnt">
+						<div class="catalog-card_i_img">
+							<i></i>
+							<img src="images/look-online/image-2.jpg" alt="">
+						</div>
+						<div class="catalog-card_i_desc card-decription">
+							<div class="card-decription_n">Ограбление по-американски</div>
+							<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+							<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+							<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+							<div class="card-decription_b">
+								<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content = "1"/>
+									<input type="radio" value="1" checked="checked" id="group-2-0" name="group-2" itemprop="ratingValue">
+									<label for="group-2-0"><span class="star"></span></label>
+									<input type="radio" value="2" id="group-2-1" name="group-2" itemprop="ratingValue">
+									<label for="group-2-1"><span class="star"></span></label>
+									<input type="radio" value="3" id="group-2-2" name="group-2" itemprop="ratingValue">
+									<label for="group-2-2"><span class="star"></span></label>
+									<input type="radio" value="4" id="group-2-3" name="group-2" itemprop="ratingValue">
+									<label for="group-2-3"><span class="star"></span></label>
+									<input type="radio" value="5" id="group-2-4" name="group-2" itemprop="ratingValue">
+									<label for="group-2-4"><span class="star"></span></label>
+									<span class="rating_t" itemprop="bestRating">7.8</span>
+								</div>
+								<a href="#" class="review">23</a>
+								<div class="view-later">Смотреть позже</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-card_i catalog-card_i_grid">
+					<div class="catalog-card_i_cnt">
+						<div class="catalog-card_i_img">
+							<i></i>
+							<img src="images/look-online/image-3.jpg" alt="">
+						</div>
+						<div class="catalog-card_i_desc card-decription">
+							<div class="card-decription_n">Ограбление по-американски</div>
+							<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+							<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+							<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+							<div class="card-decription_b">
+								<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content = "1"/>
+									<input type="radio" value="1" checked="checked" id="group-3-0" name="group-3" itemprop="ratingValue">
+									<label for="group-3-0"><span class="star"></span></label>
+									<input type="radio" value="2" id="group-3-1" name="group-3" itemprop="ratingValue">
+									<label for="group-3-1"><span class="star"></span></label>
+									<input type="radio" value="3" id="group-3-2" name="group-3" itemprop="ratingValue">
+									<label for="group-3-2"><span class="star"></span></label>
+									<input type="radio" value="4" id="group-3-3" name="group-3" itemprop="ratingValue">
+									<label for="group-3-3"><span class="star"></span></label>
+									<input type="radio" value="5" id="group-3-4" name="group-3" itemprop="ratingValue">
+									<label for="group-3-4"><span class="star"></span></label>
+									<span class="rating_t" itemprop="bestRating">7.8</span>
+								</div>
+								<a href="#" class="review">23</a>
+								<div class="view-later">Смотреть позже</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-card_i catalog-card_i_grid">
+					<div class="catalog-card_i_cnt">
+						<div class="catalog-card_i_img">
+							<i></i>
+							<img src="images/look-online/image-4.jpg" alt="">
+						</div>
+						<div class="catalog-card_i_desc card-decription">
+							<div class="card-decription_n">Ограбление по-американски</div>
+							<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+							<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+							<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+							<div class="card-decription_b">
+								<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content = "1"/>
+									<input type="radio" value="1" checked="checked" id="group-4-0" name="group-4" itemprop="ratingValue">
+									<label for="group-4-0"><span class="star"></span></label>
+									<input type="radio" value="2" id="group-4-1" name="group-4" itemprop="ratingValue">
+									<label for="group-4-1"><span class="star"></span></label>
+									<input type="radio" value="3" id="group-4-2" name="group-4" itemprop="ratingValue">
+									<label for="group-4-2"><span class="star"></span></label>
+									<input type="radio" value="4" id="group-4-3" name="group-4" itemprop="ratingValue">
+									<label for="group-4-3"><span class="star"></span></label>
+									<input type="radio" value="5" id="group-4-4" name="group-4" itemprop="ratingValue">
+									<label for="group-4-4"><span class="star"></span></label>
+									<span class="rating_t" itemprop="bestRating">7.8</span>
+								</div>
+								<a href="#" class="review">23</a>
+								<div class="view-later">Смотреть позже</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-card_i catalog-card_i_grid">
+					<div class="catalog-card_i_cnt">
+						<div class="catalog-card_i_img">
+							<i></i>
+							<img src="images/look-online/image-5.jpg" alt="">
+						</div>
+						<div class="catalog-card_i_desc card-decription">
+							<div class="card-decription_n">Ограбление по-американски</div>
+							<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+							<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+							<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+							<div class="card-decription_b">
+								<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content = "1"/>
+									<input type="radio" value="1" checked="checked" id="group-5-0" name="group-5" itemprop="ratingValue">
+									<label for="group-5-0"><span class="star"></span></label>
+									<input type="radio" value="2" id="group-5-1" name="group-5" itemprop="ratingValue">
+									<label for="group-5-1"><span class="star"></span></label>
+									<input type="radio" value="3" id="group-5-2" name="group-5" itemprop="ratingValue">
+									<label for="group-5-2"><span class="star"></span></label>
+									<input type="radio" value="4" id="group-5-3" name="group-5" itemprop="ratingValue">
+									<label for="group-5-3"><span class="star"></span></label>
+									<input type="radio" value="5" id="group-5-4" name="group-5" itemprop="ratingValue">
+									<label for="group-5-4"><span class="star"></span></label>
+									<span class="rating_t" itemprop="bestRating">7.8</span>
+								</div>
+								<a href="#" class="review">23</a>
+								<div class="view-later">Смотреть позже</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews-films">
+		<div class="container cf">
+			<div class="reviews-films_l">
+				<div class="reviews-films_l_w">
+					<div class="reviews-films_l_h cf">
+						<h3 class="reviews-films_t">Рецензии и отзывы к фильму</h3>
+						<div class="reviews-films_count">23</div>
+						<div class="add-review button">Добавить отзыв</div>
+					</div>
+					<div class="reviews-films_l_cnt">
+						<div class="reviews-films_i cf" itemscope="">
+							<div class="reviews-films_i_l">
+								<a rel="nofollow" style="background-image: url('images/review/1.jpg');" class="reviews-films_i_photo" href="#"></a>
+								<div class="reviews-films_i_evaluation">
+									<div class="btn">Моя оценка</div>
+									<div class="stars">8</div>
+								</div>
+							</div>
+							<div class="reviews-films_i_r">
+								<div class="reviews-films_i_r_h cf">
+									<a rel="nofollow" class="reviews-films_i_n-user" href="#">
+										<span itemprop="reviewer">D_Winchester</span>
+									</a>
+									<div class="reviews-films_i_time">
+										<time datetime="2016-03-04T21:32:26+03:00" itemprop="dtreviewed">04 марта 2016 в 21:32</time>
+									</div>						
+									<div class="reviews-films_i_question">			
+										<div class="reviews-films_i_question_t">Отзыв был полезен?</div>
+										<div class="reviews-films_i_question_cnt">
+											<a rel="nofollow" class="reviews-films_i_answer yes" href="#">
+												<span rel="nofollow" class="reviews-films_i_answer_n">Да</span>
+												<span rel="nofollow" class="reviews-films_i_answer_hover">+1</span>	
+											</a>
+											<span class="reviews-films_i_answer_value">123</span>
+											<a rel="nofollow" class="reviews-films_i_answer no" href="#">
+												<span rel="nofollow" class="reviews-films_i_answer_hover">-1</span>
+												<span rel="nofollow" class="reviews-films_i_answer_n">Нет</span>
+											</a>
+											<span class="reviews-films_i_answer_value">18</span>
+										</div>
+									</div>
+								</div>
+								<div itemprop="description" class="reviews-films_i_descr">Тот редкий случай когда в фильме нет ни одной сцены, что бы не вместили спецефекты!! Фильм мега эпичный, поклонникам Мумии, Тора и Битвы Титанов понравиться!! Здесь присудствуют такие сцены, что только задаешься вопросом: почему именно их не показали в трейлере?! Фильм зрелищный, и полон сюрпризов, как скурпулезник и критик по качеству спецефектов просто АПОКАЛЕПТИЧЕСКИ советую его посмотреть!!</div>
+							</div>
+						</div>
+						<div class="reviews-films_i cf" itemscope="">
+							<div class="reviews-films_i_l">
+								<a rel="nofollow" style="background-image: url('images/review/2.jpg');" class="reviews-films_i_photo" href="#"></a>
+								<div class="reviews-films_i_evaluation">
+									<div class="btn">Моя оценка</div>
+									<div class="stars">8</div>
+								</div>
+							</div>
+							<div class="reviews-films_i_r">
+								<div class="reviews-films_i_r_h cf">
+									<a rel="nofollow" class="reviews-films_i_n-user" href="#">
+										<span itemprop="reviewer">D_Winchester</span>
+									</a>
+									<div class="reviews-films_i_time">
+										<time datetime="2016-03-04T21:32:26+03:00" itemprop="dtreviewed">04 марта 2016 в 21:32</time>
+									</div>						
+									<div class="reviews-films_i_question">			
+										<div class="reviews-films_i_question_t">Отзыв был полезен?</div>
+										<div class="reviews-films_i_question_cnt">
+											<a rel="nofollow" class="reviews-films_i_answer yes" href="#">
+												<span rel="nofollow" class="reviews-films_i_answer_n">Да</span>
+												<span rel="nofollow" class="reviews-films_i_answer_hover">+1</span>	
+											</a>
+											<span class="reviews-films_i_answer_value">123</span>
+											<a rel="nofollow" class="reviews-films_i_answer no" href="#">
+												<span rel="nofollow" class="reviews-films_i_answer_hover">-1</span>
+												<span rel="nofollow" class="reviews-films_i_answer_n">Нет</span>
+											</a>
+											<span class="reviews-films_i_answer_value">18</span>
+										</div>
+									</div>
+								</div>
+								<div itemprop="description" class="reviews-films_i_descr">очень прикольный экшен!Батлер в роли злодея ..... ммммм....держите меня семеро!Просто легкий динамичный фильм. Для нытиков жаждущих глубокой игры или драмы, фильм будет разочарованием, а если вы хотите приятно провести вечер посмотрев не напряжный фильм, то самое оно!</div>
+							</div>
+						</div>
+						<div class="reviews-films_i reviews-films_i_negative cf" itemscope="">
+							<div class="reviews-films_i_l">
+								<a rel="nofollow" style="background-image: url('images/review/3.jpg');" class="reviews-films_i_photo" href="#"></a>
+								<div class="reviews-films_i_evaluation">
+									<div class="btn">Моя оценка</div>
+									<div class="stars">8</div>
+								</div>
+							</div>
+							<div class="reviews-films_i_r">
+								<div class="reviews-films_i_r_h cf">
+									<a rel="nofollow" class="reviews-films_i_n-user" href="#">
+										<span itemprop="reviewer">D_Winchester</span>
+									</a>
+									<div class="reviews-films_i_time">
+										<time datetime="2016-03-04T21:32:26+03:00" itemprop="dtreviewed">04 марта 2016 в 21:32</time>
+									</div>						
+									<div class="reviews-films_i_question">			
+										<div class="reviews-films_i_question_t">Отзыв был полезен?</div>
+										<div class="reviews-films_i_question_cnt">
+											<a rel="nofollow" class="reviews-films_i_answer yes" href="#">
+												<span rel="nofollow" class="reviews-films_i_answer_n">Да</span>
+												<span rel="nofollow" class="reviews-films_i_answer_hover">+1</span>	
+											</a>
+											<span class="reviews-films_i_answer_value">123</span>
+											<a rel="nofollow" class="reviews-films_i_answer no" href="#">
+												<span rel="nofollow" class="reviews-films_i_answer_hover">-1</span>
+												<span rel="nofollow" class="reviews-films_i_answer_n">Нет</span>
+											</a>
+											<span class="reviews-films_i_answer_value">18</span>
+										</div>
+									</div>
+								</div>
+								<div itemprop="description" class="reviews-films_i_descr">Долго думал , понравилось ли мне или нет , но все же склонен чуть больше к нет. Я, являюсь поклонником фильмов данного жанра , то есть мифология , как Египетская так и Греческая , одна из любимых тем. Теперь о фильме. Сюжет изначально кажется интригующим, и с каждой минутой перерастает в очевидную , детскую сказку , при том , как мне лично показалось , сюжет очень при очень растянули , много лишних сцен не понятных. Съемки вообще ужаснули,полное Г. Для 2016 года , для сравнения приведу в пример фильм "Битва титанов" (2010)год , ну и соотвественно "Гнев титанов" , оба фильма так же про мифологию , но про греческую , но не суть, фильмы и сравнительно старее этого , и так же лучше по сюжету и съемкам. Фильм оцениваю на 6\10 с натяжкой , но все же для одноразового просмотра не рекомендую.</div>
+							</div>
+						</div>
+						<div class="button add-review_b">Добавить отзыв</div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-films_r">
+				<div class="banner">
+					<img src="images/banner.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="catalog-pager cf">
+			<div class="container">
+				<div class="catalog-pager_l">
+					<div class="catalog-pager_lst cf">	
+						<span class="catalog-pager_prev">
+							<a href="#">
+								<i class="fa fa-angle-left" aria-hidden="true"></i>
+							</a>
+						</span>
+						<ul>
+							<li class="active">
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<span>...</span>
+							</li>
+							<li>
+								<a href="#">12</a>
+							</li>
+						</ul>
+						<span class="catalog-pager_next">
+							<a href="#">
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="catalog-pager_r">
+					<div class="social-b cf">
+						<span>Поделиться с друзьями:</span>
+						<ul>
+							<li>
+								<a href="#" class="social-b-btn social-btn-f"></a>
+							</li>
+							<li>
+								<a href="#" class="social-b-btn social-btn-vk"></a>
+							</li>
+							<li>
+								<a href="#" class="social-b-btn social-btn-tw"></a>
+							</li>
+							<li>
+								<a href="#" class="social-b-btn social-btn-ok"></a>
+							</li>
+							<li>
+								<a href="#" class="social-b-btn social-btn-google"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="end"></div>
+</div>
+<footer>
+	<div class="footer_w">
+		<div class="container footer-static-page cf">
+			<div class="footer_l">
+				<div class="footer_logo">
+					<img src="images/logo.png" alt="Кинопарад">
+				</div>
+				<div class="footer-copyright">
+					<small>© Copyright 2058, Example Corporation</small>
+				</div>
+			</div>
+			<div class="footer_r">
+				<small>Смотреть фильм онлайн - довольно интересное занятие. Ведь с интернет - кинотеатром можно не ограничиваться обычным пассивным просмотром, но и оставлять отзывы, делиться впечатлениями, общаться в интерактивном режиме с другими пользователями и администрацией, узнавать последние новости. Подобрать подходящий фильм просто. Достаточно задать параметры поиска по дате выпуска и жанру ленты, расслабиться и смотреть лучшие произведения кинематографии в хорошем качестве. В каталоге легко найти и смотреть онлайн  не только широко известный фильм, но и редкие, не всегда доступные в  обычных кинотеатрах или на телеканалах произведения кино. Ещё одним преимуществом является то, что таким образом удобно смотреть любимые фильмы онлайн бесплатно  и не тратить деньги на билеты или дорогие лицензионные диски. Лёгкие комедии, психологические драмы, новейшие экранизации классических произведений и нашумевших бестселлеров, боевики с качественным изображением и звуком - все эти фильмы смотреть онлайн можно в любое время бесплатно. Фильмотека постоянно обновляется. </small>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="modal-content">
+	<ul class="modal-content_lk cf">
+		<li class="modal-content_lk_active" data-section="#registration">
+			<div class="modal-content_lk_i">
+				<a href="#">Регистрация</a>
+			</div>
+		</li>
+		<li data-section="#enter">
+			<div class="modal-content_lk_i">
+				<a href="#">Войти</a>
+			</div>
+		</li>
+	</ul>
+	<div class="modal-content_cnt">
+		<div id="registration" class="modal-content_cnt_section active">
+			<h3 class="modal-content_t">зарегистрируйтсь используя аккаунт из социальных сетей</h3>
+			<ul class="social_lk cf">
+				<li class="social_lk_i social_lk_i_fb">
+					<a href="#">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li class="social_lk_i social_lk_i_vk">
+					<a href="#">
+						<i class="fa fa-vk" aria-hidden="true"></i>
+						<span>Вконтакте</span>
+					</a>
+				</li>
+				<li class="social_lk_i social_lk_i_tw">
+					<a href="#">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<span>Twitter</span>
+					</a>
+				</li>
+			</ul>
+			<div class="modal_t_decor">Или</div>
+			<form action="action.php" method="post" class="registration-form">
+				<div class="form_inform_box"></div>
+				<div class="form-group cf">
+					<input class="input-m" type="text" placeholder="Ваше Имя" name="name">
+					<input class="input-m" type="email" placeholder="Ваш e-mail" name="email">
+				</div>
+				<div class="form-group">
+					<input class="input-big" type="text" placeholder="Пароль" name="password">
+				</div>
+				<div class="form_b">
+					<button value="Создать аккаунт" type="submit" class="button">Создать аккаунт</button>
+				</div>
+			</form>
+		</div>
+		<div id="enter" class="modal-content_cnt_section">
+			<h3 class="modal-content_t">Введите данные для входа на сайт</h3>
+			<form action="action.php"  method="post" class="account-form">
+				<div class="form_inform_box"></div>
+				<div class="form-group cf">
+					<input class="input-m" type="email" placeholder="Ваш e-mail" name="email">
+					<input class="input-m" type="password" placeholder="Пароль" name="password">
+				</div>
+				<div class="form_b">
+					<button value="Войти" type="submit" class="button">Войти</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<a class="arrow-b">
+	<div class="arrow-b_t">
+		<i class="fa fa-angle-up" aria-hidden="true"></i>
+	</div>
+</a>
+<div id="overlay" class="overlay"></div>
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/classie.js" type="text/javascript"></script>
+<script src="js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script src="js/jquery.sumoselect.min.js" type="text/javascript"></script>
+<script src="js/video.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -40,7 +40,7 @@ module.exports = function(grunt){
 					report: "gzip"
 				},
 				files: {
-					"build/css/styles.min.css":['build/css/styles.css','build/css/font-awesome.min.css','build/css/jquery.jscrollpane.css']
+					"build/css/styles.min.css":['build/css/styles.css']
 				}
 			}
 		},
@@ -53,18 +53,15 @@ module.exports = function(grunt){
 		concat: {
 			dist: {
 				src: [
-					'source/js/jquery-1.9.1.min.js',
-					'source/js/classie.js',
-					'source/js/jquery.jscrollpane.min.js',
 					'source/js/main.js'
 				],
-				dest: 'build/js/common.js',
+				dest: 'build/js/main.js',
 			}
 		},
 		uglify: {
 			build: {
-				src: 'build/js/common.js',
-				dest: 'build/js/common.min.js'
+				src: 'build/js/main.js',
+				dest: 'build/js/main.min.js'
 			}
 		},
 		imagemin: {
@@ -90,7 +87,12 @@ module.exports = function(grunt){
 						"images/**",
 						"fonts/**",
 						"css/**",
-						"index.html"
+						"js/**",
+						"videos/**",
+						"index.html",
+						"actor.html",
+						"catalog.html",
+						"film.html"
 					],
 					dest: "build"
 				}]
@@ -98,5 +100,5 @@ module.exports = function(grunt){
 		}
 	});
 	
-	grunt.registerTask('default', ['clean','copy','less','cmq','autoprefixer','cssmin','csscomb','concat','uglify', 'imagemin']);
+	grunt.registerTask('default', ['clean','copy','less','cmq','autoprefixer','cssmin','csscomb','concat','uglify','imagemin']);
 };

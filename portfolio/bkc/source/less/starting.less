@@ -1,0 +1,163 @@
+@import "mixins.less";
+@font-face {
+    font-family:'Montserrat-Bold';
+    src:url('../fonts/Montserrat-Bold/Montserrat-Bold.eot');
+    src:url('../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Bold/Montserrat-Bold.woff') format('woff'),
+    url('../fonts/Montserrat-Bold/Montserrat-Bold.ttf') format('opentype'),
+    url('../fonts/Montserrat-Bold/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'SegoeUI-SemiBold';
+    src:url('../fonts/SegoeUI-SemiBold/SegoeUI-SemiBold.eot');
+    src:url('../fonts/SegoeUI-SemiBold/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI-SemiBold/SegoeUI-SemiBold.woff') format('woff'),
+    url('../fonts/SegoeUI-SemiBold/SegoeUI-SemiBold.ttf') format('opentype'),
+    url('../fonts/SegoeUI-SemiBold/SegoeUI-SemiBold.svg#SegoeUI-SemiBold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'SegoeUI-Regular';
+    src:url('../fonts/SegoeUI-Regular/SegoeUI-Regular.eot');
+    src:url('../fonts/SegoeUI-Regular/SegoeUI-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI-Regular/SegoeUI-Regular.woff') format('woff'),
+    url('../fonts/SegoeUI-Regular/SegoeUI-Regular.ttf') format('opentype'),
+    url('../fonts/SegoeUI-Regular/SegoeUI-Regular.svg#SegoeUI-Regular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'SegoeUI-Bold';
+    src:url('../fonts/SegoeUI-Bold/SegoeUI-Bold.eot');
+    src:url('../fonts/SegoeUI-Bold/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI-Bold/SegoeUI-Bold.woff') format('woff'),
+    url('../fonts/SegoeUI-Bold/SegoeUI-Bold.ttf') format('opentype'),
+    url('../fonts/SegoeUI-Bold/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'SegoeUI-Italic';
+    src:url('../fonts/SegoeUI-Italic/SegoeUI-Italic.eot');
+    src:url('../fonts/SegoeUI-Italic/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SegoeUI-Italic/SegoeUI-Italic.woff') format('woff'),
+    url('../fonts/SegoeUI-Italic/SegoeUI-Italic.ttf') format('opentype'),
+    url('../fonts/SegoeUI-Italic/SegoeUI-Italic.svg#SegoeUI-Italic') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+body {
+  font-family: 'SegoeUI-SemiBold';
+  font-size: 13px;
+  color: #2f2f2f;
+  background-color: #ecf5fa;
+  background-image:url(../images/background.png);
+  background-position:right 112px;
+  background-repeat: repeat-y;
+  background-size:auto auto;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body,div, span, a, p, i, s, b, h1, h2, h3, h4, h5, img, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  text-decoration: none;
+}
+::-webkit-input-placeholder {
+ color: #010101;
+ opacity:1;
+ filter: alpha(opacity=100);
+}
+:-moz-placeholder { /* Firefox 18- */
+ color: #010101;
+ opacity:1;
+ filter: alpha(opacity=100);
+}
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #010101;
+ opacity:1;
+ filter: alpha(opacity=100);
+}
+:-ms-input-placeholder {
+ color: #010101;
+ opacity:1;
+ filter: alpha(opacity=100);
+}
+ul{
+  list-style-type: none;
+}
+li{
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+}
+input[type=text] { 
+  ._appearance(none);
+  background: transparent;
+  outline: none; 
+}
+img{
+  border:none;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+  outline:none;
+  &:active,&:visited{
+    text-decoration: none;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  text-transform: uppercase;
+  font-family:'SegoeUI-SemiBold';
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 22px;
+  color:#464646;
+  line-height: 1;
+  @media @mobile-area{
+    font-size: 22px;
+  }
+}
+figure{
+  margin: 0;
+  padding:0;
+}
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 18px;
+}
+p{
+  line-height: 16px;
+}

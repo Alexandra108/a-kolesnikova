@@ -1,5 +1,5 @@
 {
-  "name": "example-project",
+  "name": "Kinoparad",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -14,15 +14,16 @@
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-csscomb": "^3.1.1",
     "grunt-replace": "^1.0.1",
+    "grunt-sprite-generator": "0.0.5",
     "load-grunt-tasks": "^3.5.2"
   },
-	"browsers": {
-		"android": 4,
-		"chrome": 35,
-		"firefox": 30,
-		"ie": 10,
-		"ios": 6,
-		"opera": 12,
-		"safari": 5
-	}
+  "browsers": {
+    "android": 4,
+    "chrome": 35,
+    "firefox": 30,
+    "ie": 10,
+    "ios": 6,
+    "opera": 12,
+    "safari": 5
+  }
 }

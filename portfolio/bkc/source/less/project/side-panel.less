@@ -1,0 +1,48 @@
+
+/* ---------------------------------------------- /*
+ * SIDE-PANEL
+/* ---------------------------------------------- */
+.side-panel{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 112px;
+    z-index: 99;
+    background: #fff;
+    @media @mobile-area{
+        display: none;
+    }
+}
+.side-panel_emblem{
+    img{
+        vertical-align: top;
+    }
+}
+.side-panel_menu{
+    text-align: center;
+    li{
+        a{
+            display: block;
+            padding: 17px 10px;
+            &:hover{
+                background: #ecf5fa;
+                .side-panel_menu_i_t{
+                    text-decoration: underline;
+                }
+            }        
+        }
+        &:first-child{
+            a{
+              padding: 25px 10px 17px 10px;             
+            }
+        }
+    }
+}
+.side-panel_menu_i_t{
+    color:#2a2a2a;
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 7px;
+    text-transform: uppercase;
+}

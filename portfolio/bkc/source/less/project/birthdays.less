@@ -1,0 +1,243 @@
+
+/* ---------------------------------------------- /*
+ * BIRTHDAYS
+ /* ---------------------------------------------- */
+ .birthdays{
+    width:100%;
+    .container{
+        padding: 42px 90px 69px 75px;
+        @media(min-width : 1800px){
+            padding: 42px 0px 69px 0px;
+        }
+        @media @medium-devices{
+           padding: 42px 50px 69px;
+       }
+       @media @tablets{
+           padding: 42px 20px 69px;
+       }
+       @media @smartphones{
+           padding: 42px 10px 69px;
+       }
+       @media @mobile-area{
+        padding: 0 0 32px;
+    }
+}
+.page_caption_lks{
+    margin-left: 61px;
+    margin-top: 2px;
+    @media @mobile-area{
+        display: block;
+        margin-left: 0px;
+        margin-top: 33px;
+    }
+}
+}
+.birthdays_top{
+    @media @mobile-area{
+        background: #fff;
+        padding-left: 30px;
+    }
+}
+.birthdays_cnt_section {
+    font-size: 0;
+    height:205px;
+    visibility: hidden;
+    letter-spacing: -4px;
+    &.active{
+        visibility: visible;
+    }
+    @media(min-width : 1800px){
+        margin-left: 0;
+    }
+    .owl-controls{
+        .owl-dots{
+            .owl-dot{
+                span{
+                    background: #85c7f4;
+                }
+                &.active{
+                    span{
+                        background: #015198; 
+                    }
+                }
+            }
+        }
+        @media(max-width: 600px){
+            text-align: center;
+        }
+    }
+    .owl-item{
+        @media @mobile-area{
+            height:251px; 
+        }
+    }
+    @media @medium-devices,@tablets,@smartphones{
+        margin-left: 0px;
+    }
+    @media @mobile-area{
+       height:auto;
+       margin-left: 0px;
+   }
+}
+.birthdays_i{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 261px;
+    @media(min-width : 1800px){
+        margin-left: 0;
+        margin-right: 62px;
+    }
+    @media @medium-devices,@tablets,@smartphones,@mobile-area{
+        margin-left: 0px;
+    }
+    @media @mobile-area{
+        max-width: 100%;
+    }
+    @media(min-width: 860px){
+        width:100% !important;
+    }
+}
+@media(min-width: 1800px){
+    .birthdays_i{
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.birthdays_i_number{
+    font-family:'Montserrat-Bold';
+    font-size: 95px;
+    color:#65aecf;
+    line-height: 1;
+    @media @tablets{
+       font-size: 90px;
+   }
+   @media @smartphones{
+       font-size: 70px;
+   }
+   @media @mobile-area{
+    font-size: 90px;
+}
+}
+.birthdays_i_month{
+    font-size: 15px;
+    position: relative;
+    float: left;
+    color:#015198;
+    text-transform: uppercase;
+    line-height: 17px;
+    top: -58px;
+    @media @tablets,@smartphones{
+        top:0;
+    }
+    @media @mobile-area{
+        font-size: 24px;
+        top:10px;
+        font-weight: bold;
+        font-family:'SegoeUI-Regular';
+    }
+}
+.birthdays_i_top {
+    font-size: 0;
+    line-height: 1;
+    @media @tablets{
+        vertical-align: middle;
+    }
+    @media @mobile-area{
+        vertical-align: middle;
+        text-align: left;
+    }
+}
+.birthdays_i_n{
+    text-transform: uppercase;
+    font-size: 13px;
+    color:#464646;
+    text-decoration: none;
+    line-height: 1;
+    &:hover{
+      text-decoration: underline;
+  }
+  @media @tablets,@smartphones{
+    font-size: 14px;
+}
+@media @mobile-area{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+}
+.birthdays_i_date {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+    letter-spacing: normal;
+    position: relative;
+    @media @tablets,@smartphones{
+        margin-top: 0px;
+    }
+    @media @mobile-area{
+        margin-top: -49px;
+        text-align: center;
+    }
+}
+.birthdays_i_t {
+    max-width: 200px;
+    letter-spacing: normal;
+    padding-left: 11px;
+    @media @tablets,@smartphones{
+        padding-left: 0px;
+    }
+    @media @mobile-area{
+        padding-left: 0px;
+        text-align: left;
+        margin-top: 16px;
+        max-width: 100%;
+    }
+}
+.birthdays_i_post {
+    line-height: 16px;
+    font-size: 13px;
+    position: relative;
+    margin-top: 6px;
+    @media @mobile-area{
+        font-size: 19px;
+        line-height: 21px;
+        max-width: 290px;
+        margin-top: 13px;
+    }
+}
+.birthdays_i_img{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    svg{
+        display: block;
+    }
+    @media @mobile-area{
+        padding-left: 28px;
+        margin-left: 0px;
+    }
+}
+.birthdays_cnt{
+    margin-top: 49px;
+    position: relative;
+    @media @large-devices{
+        height: 216px;
+    }
+    @media @medium-devices,@tablets,@smartphones{
+        height: 208px;
+    }
+    @media @mobile-area{
+        margin-left: 31px;
+        margin-top: 46px;
+        height: 287px;
+    }
+}
+#birthdays-slider1,#birthdays-slider2{
+    display: none;
+}
+.birthdays_cnt_section_cnt{
+    left: 0;
+    position: absolute;
+    right: 0;
+}

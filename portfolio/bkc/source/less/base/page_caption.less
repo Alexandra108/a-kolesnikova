@@ -1,0 +1,65 @@
+/* ---------------------------------------------- /*
+ * PAGE_CAPTION
+ /* ---------------------------------------------- */
+ .page_caption{
+ 	h3{
+ 		display: inline-block;
+ 		vertical-align: middle;
+ 		@media @mobile-area{
+ 			color:#015197;
+ 		}
+ 	}
+ }
+ .page_caption_lks{
+ 	line-height: 1;
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	li{
+ 		float: left;
+ 		border-radius: 1px;
+ 		position: relative;
+ 		&:hover{
+ 			box-shadow: 0 0 0 1px rgb(0, 135, 255) inset;
+ 			@media @mobile-area{
+ 				box-shadow: 0 -3px 0 0 #015197 inset;
+ 				a{
+ 					color:#015197;     
+ 				}
+ 			}
+ 		}
+ 		&.active{
+ 			box-shadow: 0 0 0 1px rgb(0, 135, 255) inset;
+ 			@media @mobile-area{
+ 				box-shadow: 0 -3px 0 0 #015197 inset;
+ 				a{
+ 					color:#015197;
+ 				}
+ 			}
+ 		}
+ 		&:last-child{
+ 			margin-left: 24px;
+ 			@media @mobile-area{
+ 				margin: 0px;
+ 			}
+ 		}
+ 		@media @mobile-area{
+ 			border-radius: 0px;
+ 			margin: 0 47px 0 0;
+ 		}
+ 	}
+ }
+ .page_caption_lk_i{
+ 	a{
+ 		display: block;
+ 		line-height: 1;
+ 		padding: 7px 16px 10px;
+ 		text-decoration: none;
+ 		color: #464646;
+ 		@media @mobile-area{
+ 			font-family:'SegoeUI-Regular';
+ 			font-size: 20px;
+ 			padding: 7px 0 10px;
+ 			text-transform: uppercase;
+ 		}
+ 	}
+ }

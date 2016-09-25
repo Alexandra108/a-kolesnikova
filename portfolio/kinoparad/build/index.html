@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Кинопарад</title>
+	<title>Кинопарад Главная страница</title>
 	<meta name="keywords" content="Кинопарад">
 	<meta name="description" content="Кинопарад">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,7 +19,9 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	
-	<link rel="stylesheet" href="css/styles.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -492,13 +494,13 @@
 			</div>
 		</section>
 		<section class="look-online">
-			<div id="items-vm" class="items-view-switcher items-view-list container cf">
-				<div class="look-online_h cf">
-					<div class="look-online_h_l">
-						<h3 class="look-online_t">Смотреть on-line</h3>
+			<div id="catalog-card-filter-vm" class="catalog-card-view-switcher catalog-card-view-list container cf">
+				<div class="catalog-card-filter cf">
+					<div class="catalog-card-filter_h_l">
+						<h3 class="catalog-card-filter_t">Смотреть on-line</h3>
 					</div>
-					<div class="look-online_h_r">
-						<ul class="items-sort-by">
+					<div class="catalog-card-filter_h_r">
+						<ul class="catalog-card-filter-by-date">
 							<li class="active">
 								<a href="#">По дате обновления</a>
 							</li>
@@ -506,7 +508,7 @@
 								<a href="#">По году выпуска</a>
 							</li>
 						</ul>
-						<div class="items-sort-direction">
+						<div class="catalog-card-filter-by-direction">
 							<a href="#" class="active">
 								<i>&darr;</i>
 							</a>
@@ -514,37 +516,38 @@
 								<i>&uarr;</i>
 							</a>
 						</div>
-						<div class="items-view">
-							<a href="#" class="items-filter-grid" data-view="items-view-grid"></a>
-							<a href="#" class="items-filter-list selected" data-view="items-view-list"></a>
+						<div class="catalog-card-filter-by-view">
+							<a href="#" class="catalog-card-filter-grid" data-view="catalog-card-view-grid"></a>
+							<a href="#" class="catalog-card-filter-list selected" data-view="catalog-card-view-list"></a>
 						</div>
 					</div>
 				</div>
 				<div class="look-online_cnt cf">
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-1.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star1" name="star1">
-										<label for="star1"><span class="star"></span></label>
-										<input type="radio" id="star2" name="star1">
-										<label for="star2"><span class="star"></span></label>
-										<input type="radio" id="star3" name="star1">
-										<label for="star3"><span class="star"></span></label>
-										<input type="radio" id="star4" name="star1">
-										<label for="star4"><span class="star"></span></label>
-										<input type="radio" id="star5" name="star1">
-										<label for="star5"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-1-0" name="group-1" itemprop="ratingValue">
+										<label for="group-1-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-1-1" name="group-1" itemprop="ratingValue">
+										<label for="group-1-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-1-2" name="group-1" itemprop="ratingValue">
+										<label for="group-1-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-1-3" name="group-1" itemprop="ratingValue">
+										<label for="group-1-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-1-4" name="group-1" itemprop="ratingValue">
+										<label for="group-1-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -552,30 +555,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-2.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star11" name="star2">
-										<label for="star11"><span class="star"></span></label>
-										<input type="radio" id="star21" name="star2">
-										<label for="star21"><span class="star"></span></label>
-										<input type="radio" id="star31" name="star2">
-										<label for="star31"><span class="star"></span></label>
-										<input type="radio" id="star41" name="star2">
-										<label for="star41"><span class="star"></span></label>
-										<input type="radio" id="star51" name="star2">
-										<label for="star51"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-2-0" name="group-2" itemprop="ratingValue">
+										<label for="group-2-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-2-1" name="group-2" itemprop="ratingValue">
+										<label for="group-2-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-2-2" name="group-2" itemprop="ratingValue">
+										<label for="group-2-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-2-3" name="group-2" itemprop="ratingValue">
+										<label for="group-2-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-2-4" name="group-2" itemprop="ratingValue">
+										<label for="group-2-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -583,30 +587,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-3.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star12" name="star3">
-										<label for="star12"><span class="star"></span></label>
-										<input type="radio" id="star22" name="star3">
-										<label for="star22"><span class="star"></span></label>
-										<input type="radio" id="star32" name="star3">
-										<label for="star32"><span class="star"></span></label>
-										<input type="radio" id="star42" name="star3">
-										<label for="star42"><span class="star"></span></label>
-										<input type="radio" id="star52" name="star3">
-										<label for="star52"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-3-0" name="group-3" itemprop="ratingValue">
+										<label for="group-3-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-3-1" name="group-3" itemprop="ratingValue">
+										<label for="group-3-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-3-2" name="group-3" itemprop="ratingValue">
+										<label for="group-3-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-3-3" name="group-3" itemprop="ratingValue">
+										<label for="group-3-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-3-4" name="group-3" itemprop="ratingValue">
+										<label for="group-3-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -614,30 +619,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-4.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star13" name="star4">
-										<label for="star13"><span class="star"></span></label>
-										<input type="radio" id="star23" name="star4">
-										<label for="star23"><span class="star"></span></label>
-										<input type="radio" id="star33" name="star4">
-										<label for="star33"><span class="star"></span></label>
-										<input type="radio" id="star43" name="star4">
-										<label for="star43"><span class="star"></span></label>
-										<input type="radio" id="star53" name="star4">
-										<label for="star53"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-4-0" name="group-4" itemprop="ratingValue">
+										<label for="group-4-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-4-1" name="group-4" itemprop="ratingValue">
+										<label for="group-4-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-4-2" name="group-4" itemprop="ratingValue">
+										<label for="group-4-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-4-3" name="group-4" itemprop="ratingValue">
+										<label for="group-4-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-4-4" name="group-4" itemprop="ratingValue">
+										<label for="group-4-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -645,30 +651,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-5.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star14" name="star5">
-										<label for="star14"><span class="star"></span></label>
-										<input type="radio" id="star24" name="star5">
-										<label for="star24"><span class="star"></span></label>
-										<input type="radio" id="star34" name="star5">
-										<label for="star34"><span class="star"></span></label>
-										<input type="radio" id="star44" name="star5">
-										<label for="star44"><span class="star"></span></label>
-										<input type="radio" id="star54" name="star5">
-										<label for="star54"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-5-0" name="group-5" itemprop="ratingValue">
+										<label for="group-5-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-5-1" name="group-5" itemprop="ratingValue">
+										<label for="group-5-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-5-2" name="group-5" itemprop="ratingValue">
+										<label for="group-5-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-5-3" name="group-5" itemprop="ratingValue">
+										<label for="group-5-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-5-4" name="group-5" itemprop="ratingValue">
+										<label for="group-5-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -676,30 +683,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-6.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star15" name="star6">
-										<label for="star15"><span class="star"></span></label>
-										<input type="radio" id="star25" name="star6">
-										<label for="star25"><span class="star"></span></label>
-										<input type="radio" id="star35" name="star6">
-										<label for="star35"><span class="star"></span></label>
-										<input type="radio" id="star45" name="star6">
-										<label for="star45"><span class="star"></span></label>
-										<input type="radio" id="star55" name="star6">
-										<label for="star55"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-6-0" name="group-6" itemprop="ratingValue">
+										<label for="group-6-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-6-1" name="group-6" itemprop="ratingValue">
+										<label for="group-6-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-6-2" name="group-6" itemprop="ratingValue">
+										<label for="group-6-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-6-3" name="group-6" itemprop="ratingValue">
+										<label for="group-6-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-6-4" name="group-6" itemprop="ratingValue">
+										<label for="group-6-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -707,30 +715,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-7.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star16" name="star7">
-										<label for="star16"><span class="star"></span></label>
-										<input type="radio" id="star26" name="star7">
-										<label for="star26"><span class="star"></span></label>
-										<input type="radio" id="star36" name="star7">
-										<label for="star36"><span class="star"></span></label>
-										<input type="radio" id="star46" name="star7">
-										<label for="star46"><span class="star"></span></label>
-										<input type="radio" id="star56" name="star7">
-										<label for="star56"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-7-0" name="group-7" itemprop="ratingValue">
+										<label for="group-7-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-7-1" name="group-7" itemprop="ratingValue">
+										<label for="group-7-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-7-2" name="group-7" itemprop="ratingValue">
+										<label for="group-7-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-7-3" name="group-7" itemprop="ratingValue">
+										<label for="group-7-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-7-4" name="group-7" itemprop="ratingValue">
+										<label for="group-7-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -738,30 +747,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-8.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star17" name="star8">
-										<label for="star17"><span class="star"></span></label>
-										<input type="radio" id="star27" name="star8">
-										<label for="star27"><span class="star"></span></label>
-										<input type="radio" id="star37" name="star8">
-										<label for="star37"><span class="star"></span></label>
-										<input type="radio" id="star47" name="star8">
-										<label for="star47"><span class="star"></span></label>
-										<input type="radio" id="star57" name="star8">
-										<label for="star57"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-8-0" name="group-8" itemprop="ratingValue">
+										<label for="group-8-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-8-1" name="group-8" itemprop="ratingValue">
+										<label for="group-8-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-8-2" name="group-8" itemprop="ratingValue">
+										<label for="group-8-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-8-3" name="group-8" itemprop="ratingValue">
+										<label for="group-8-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-8-4" name="group-8" itemprop="ratingValue">
+										<label for="group-8-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -769,30 +779,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-8.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star18" name="star9">
-										<label for="star18"><span class="star"></span></label>
-										<input type="radio" id="star28" name="star9">
-										<label for="star28"><span class="star"></span></label>
-										<input type="radio" id="star38" name="star9">
-										<label for="star38"><span class="star"></span></label>
-										<input type="radio" id="star48" name="star9">
-										<label for="star48"><span class="star"></span></label>
-										<input type="radio" id="star58" name="star9">
-										<label for="star58"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-9-0" name="group-9" itemprop="ratingValue">
+										<label for="group-9-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-9-1" name="group-9" itemprop="ratingValue">
+										<label for="group-9-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-9-2" name="group-9" itemprop="ratingValue">
+										<label for="group-9-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-9-3" name="group-9" itemprop="ratingValue">
+										<label for="group-9-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-9-4" name="group-9" itemprop="ratingValue">
+										<label for="group-9-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -800,152 +811,31 @@
 							</div>
 						</div>
 					</div>
-					<div class="look-online_i">
-						<div class="look-online_i_cnt">
-							<div class="look-online_i_img">
+					<div class="catalog-card_i catalog-card_i_grid">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
 								<i></i>
 								<img src="images/look-online/image-8.jpg" alt="">
 							</div>
-							<div class="look-online_i_desc card-decription">
+							<div class="catalog-card_i_desc card-decription">
 								<div class="card-decription_n">Ограбление по-американски</div>
 								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
 								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
 								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
 								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star19" name="star10">
-										<label for="star19"><span class="star"></span></label>
-										<input type="radio" id="star29" name="star10">
-										<label for="star29"><span class="star"></span></label>
-										<input type="radio" id="star39" name="star10">
-										<label for="star39"><span class="star"></span></label>
-										<input type="radio" id="star49" name="star10">
-										<label for="star49"><span class="star"></span></label>
-										<input type="radio" id="star59" name="star10">
-										<label for="star59"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
-									</div>
-									<a href="#" class="review">23</a>
-									<div class="view-later">Смотреть позже</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="look-online_b cards">
-					<div class="cards_row cf">
-						<div class="cards_i">
-							<div class="cards_i_img">
-								<i></i>
-								<img src="images/look-online/image-1_sm.jpg" alt="">
-							</div>
-							<div class="cards_i_desc card-decription">
-								<div class="card-decription_n">Ограбление по-американски</div>
-								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
-								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
-								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
-								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star112" name="star11">
-										<label for="star112"><span class="star"></span></label>
-										<input type="radio" id="star212" name="star11">
-										<label for="star212"><span class="star"></span></label>
-										<input type="radio" id="star312" name="star11">
-										<label for="star312"><span class="star"></span></label>
-										<input type="radio" id="star412" name="star11">
-										<label for="star412"><span class="star"></span></label>
-										<input type="radio" id="star512" name="star11">
-										<label for="star512"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
-									</div>
-									<a href="#" class="review">23</a>
-									<div class="view-later">Смотреть позже</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards_i">
-							<div class="cards_i_img">
-								<i></i>
-								<img src="images/look-online/image-2_sm.jpg" alt="">
-							</div>
-							<div class="cards_i_desc card-decription">
-								<div class="card-decription_n">Ограбление по-американски</div>
-								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
-								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
-								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
-								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star113" name="star12">
-										<label for="star113"><span class="star"></span></label>
-										<input type="radio" id="star213" name="star12">
-										<label for="star213"><span class="star"></span></label>
-										<input type="radio" id="star313" name="star12">
-										<label for="star313"><span class="star"></span></label>
-										<input type="radio" id="star413" name="star12">
-										<label for="star413"><span class="star"></span></label>
-										<input type="radio" id="star513" name="star12">
-										<label for="star513"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
-									</div>
-									<a href="#" class="review">23</a>
-									<div class="view-later">Смотреть позже</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="cards_row cf">
-						<div class="cards_i">
-							<div class="cards_i_img">
-								<i></i>
-								<img src="images/look-online/image-3_sm.jpg" alt="">
-							</div>
-							<div class="cards_i_desc card-decription">
-								<div class="card-decription_n">Ограбление по-американски</div>
-								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
-								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
-								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
-								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star114" name="star13">
-										<label for="star114"><span class="star"></span></label>
-										<input type="radio" id="star214" name="star13">
-										<label for="star214"><span class="star"></span></label>
-										<input type="radio" id="star314" name="star13">
-										<label for="star314"><span class="star"></span></label>
-										<input type="radio" id="star414" name="star13">
-										<label for="star414"><span class="star"></span></label>
-										<input type="radio" id="star514" name="star13">
-										<label for="star514"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
-									</div>
-									<a href="#" class="review">23</a>
-									<div class="view-later">Смотреть позже</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards_i">
-							<div class="cards_i_img">
-								<i></i>
-								<img src="images/look-online/image-4_sm.jpg" alt="">
-							</div>
-							<div class="cards_i_desc card-decription">
-								<div class="card-decription_n">Ограбление по-американски</div>
-								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
-								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
-								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
-								<div class="card-decription_b">
-									<div class="rating">
-										<input type="radio" checked="checked" id="star115" name="star14">
-										<label for="star115"><span class="star"></span></label>
-										<input type="radio" id="star215" name="star14">
-										<label for="star215"><span class="star"></span></label>
-										<input type="radio" id="star315" name="star14">
-										<label for="star315"><span class="star"></span></label>
-										<input type="radio" id="star415" name="star14">
-										<label for="star415"><span class="star"></span></label>
-										<input type="radio" id="star515" name="star14">
-										<label for="star515"><span class="star"></span></label>
-										<span class="rating_t">7.8</span>
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-1-0" name="group-10" itemprop="ratingValue">
+										<label for="group-10-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-10-1" name="group-10" itemprop="ratingValue">
+										<label for="group-10-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-10-2" name="group-10" itemprop="ratingValue">
+										<label for="group-10-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-10-3" name="group-10" itemprop="ratingValue">
+										<label for="group-10-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-10-4" name="group-10" itemprop="ratingValue">
+										<label for="group-10-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
 									</div>
 									<a href="#" class="review">23</a>
 									<div class="view-later">Смотреть позже</div>
@@ -955,11 +845,143 @@
 					</div>
 				</div>
 			</div>
-			<div class="cards-pager cf">
+			<div class="look-online_b catalog-card-view-grid">
+				<div class="look-online_b_cnt container cf">
+					<div class="catalog-card_i">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
+								<i></i>
+								<img src="images/look-online/image-8.jpg" alt="">
+							</div>
+							<div class="catalog-card_i_desc card-decription">
+								<div class="card-decription_n">Ограбление по-американски</div>
+								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+								<div class="card-decription_b">
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-11-0" name="group-11" itemprop="ratingValue">
+										<label for="group-11-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-11-1" name="group-11" itemprop="ratingValue">
+										<label for="group-11-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-11-2" name="group-11" itemprop="ratingValue">
+										<label for="group-11-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-11-3" name="group-11" itemprop="ratingValue">
+										<label for="group-11-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-11-4" name="group-11" itemprop="ratingValue">
+										<label for="group-11-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
+									</div>
+									<a href="#" class="review">23</a>
+									<div class="view-later">Смотреть позже</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-card_i">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
+								<i></i>
+								<img src="images/look-online/image-8.jpg" alt="">
+							</div>
+							<div class="catalog-card_i_desc card-decription">
+								<div class="card-decription_n">Ограбление по-американски</div>
+								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+								<div class="card-decription_b">
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-12-0" name="group-12" itemprop="ratingValue">
+										<label for="group-12-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-12-1" name="group-12" itemprop="ratingValue">
+										<label for="group-12-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-12-2" name="group-12" itemprop="ratingValue">
+										<label for="group-12-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-12-3" name="group-12" itemprop="ratingValue">
+										<label for="group-12-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-12-4" name="group-12" itemprop="ratingValue">
+										<label for="group-12-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
+									</div>
+									<a href="#" class="review">23</a>
+									<div class="view-later">Смотреть позже</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-card_i">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
+								<i></i>
+								<img src="images/look-online/image-8.jpg" alt="">
+							</div>
+							<div class="catalog-card_i_desc card-decription">
+								<div class="card-decription_n">Ограбление по-американски</div>
+								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+								<div class="card-decription_b">
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-13-0" name="group-13" itemprop="ratingValue">
+										<label for="group-13-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-13-1" name="group-13" itemprop="ratingValue">
+										<label for="group-13-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-13-2" name="group-13" itemprop="ratingValue">
+										<label for="group-13-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-13-3" name="group-13" itemprop="ratingValue">
+										<label for="group-13-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-13-4" name="group-13" itemprop="ratingValue">
+										<label for="group-13-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
+									</div>
+									<a href="#" class="review">23</a>
+									<div class="view-later">Смотреть позже</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-card_i">
+						<div class="catalog-card_i_cnt">
+							<div class="catalog-card_i_img">
+								<i></i>
+								<img src="images/look-online/image-8.jpg" alt="">
+							</div>
+							<div class="catalog-card_i_desc card-decription">
+								<div class="card-decription_n">Ограбление по-американски</div>
+								<div class="card-decription_genre">драма / трилер / криминал / боевик</div>
+								<div class="card-decription_time">1 ч. 31 мин.<i>16+</i></div>
+								<div class="card-decription_tx">У Джеймса было темное прошлое, но сейчас он из всех сил пытается изменить свою жизнь — встречается с красивой девушкой, устроился работать автомехаником, мечтает о собственном бизнесе...</div>
+								<div class="card-decription_b">
+									<div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<meta itemprop="worstRating" content = "1"/>
+										<input type="radio" value="1" checked="checked" id="group-14-0" name="group-14" itemprop="ratingValue">
+										<label for="group-14-0"><span class="star"></span></label>
+										<input type="radio" value="2" id="group-14-1" name="group-14" itemprop="ratingValue">
+										<label for="group-14-1"><span class="star"></span></label>
+										<input type="radio" value="3" id="group-14-2" name="group-14" itemprop="ratingValue">
+										<label for="group-14-2"><span class="star"></span></label>
+										<input type="radio" value="4" id="group-14-3" name="group-14" itemprop="ratingValue">
+										<label for="group-14-3"><span class="star"></span></label>
+										<input type="radio" value="5" id="group-14-4" name="group-14" itemprop="ratingValue">
+										<label for="group-14-4"><span class="star"></span></label>
+										<span class="rating_t" itemprop="bestRating">7.8</span>
+									</div>
+									<a href="#" class="review">23</a>
+									<div class="view-later">Смотреть позже</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="catalog-pager cf">
 				<div class="container">
-					<div class="cards-pager_l">
-						<div class="cards-pager_lst cf">	
-							<span class="cards-pager_prev">
+					<div class="catalog-pager_l">
+						<div class="catalog-pager_lst cf">	
+							<span class="catalog-pager_prev">
 								<a href="#">
 									<i class="fa fa-angle-left" aria-hidden="true"></i>
 								</a>
@@ -984,14 +1006,14 @@
 									<a href="#">12</a>
 								</li>
 							</ul>
-							<span class="cards-pager_next">
+							<span class="catalog-pager_next">
 								<a href="#">
 									<i class="fa fa-angle-right" aria-hidden="true"></i>
 								</a>
 							</span>
 						</div>
 					</div>
-					<div class="cards-pager_r">
+					<div class="catalog-pager_r">
 						<div class="social-b cf">
 							<span>Поделиться с друзьями:</span>
 							<ul>
@@ -1072,28 +1094,30 @@
 					</li>
 				</ul>
 				<div class="modal_t_decor">Или</div>
-				<form action="action.php" class="registration-form">
+				<form action="action.php" method="post" class="registration-form">
+					<div class="form_inform_box"></div>
 					<div class="form-group cf">
-						<input class="input-m" type="text" placeholder="Ваше Имя">
-						<input class="input-m" type="text" placeholder="Ваш e-mail">
+						<input class="input-m" type="text" placeholder="Ваше Имя" name="name">
+						<input class="input-m" type="email" placeholder="Ваш e-mail" name="email">
 					</div>
 					<div class="form-group">
-						<input class="input-big" type="text" placeholder="Пароль">
+						<input class="input-big" type="text" placeholder="Пароль" name="password">
 					</div>
 					<div class="form_b">
-						<button value="Создать аккаунт" type="submit">Создать аккаунт</button>
+						<button value="Создать аккаунт" type="submit" class="button">Создать аккаунт</button>
 					</div>
 				</form>
 			</div>
 			<div id="enter" class="modal-content_cnt_section">
 				<h3 class="modal-content_t">Введите данные для входа на сайт</h3>
-				<form action="action.php" class="registration-form">
+				<form action="action.php"  method="post" class="account-form">
+					<div class="form_inform_box"></div>
 					<div class="form-group cf">
-						<input class="input-m" type="text" placeholder="Ваш e-mail">
-						<input class="input-m" type="text" placeholder="Пароль">
+						<input class="input-m" type="email" placeholder="Ваш e-mail" name="email">
+						<input class="input-m" type="password" placeholder="Пароль" name="password">
 					</div>
 					<div class="form_b">
-						<button value="Войти" type="submit">Войти</button>
+						<button value="Войти" type="submit" class="button">Войти</button>
 					</div>
 				</form>
 			</div>
@@ -1101,8 +1125,10 @@
 	</div>
 	<div id="overlay" class="overlay"></div>
 
-
-	<script src="js/common.min.js" type="text/javascript"></script>
+	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="js/classie.js" type="text/javascript"></script>
+	<script src="js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 
 </body>
 </html>
