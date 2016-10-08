@@ -88,6 +88,7 @@
 }
 .news_i{
     position: relative;
+    display: table;
     hr{
         width:157px;
         background: #fff;
@@ -100,6 +101,9 @@
             margin-top: 43px;
             width: 89px;
         }
+        @media(max-width : 500px){
+            width: 100%;
+        }
     }
     @media(min-width : 860px){
         width:100% !important;
@@ -111,9 +115,10 @@
 .news_i_l{
     padding: 82px 90px 38px 48px;
     width:421px;
+    display: table-cell;
+    vertical-align: top;
     letter-spacing: normal;
     background: #015198;
-    float:left;
     @media @smartphones,@mobile-area{
         bottom: 0;
         float: none;
@@ -128,6 +133,8 @@
 .news_i_r{
     margin-left: 421px;
     padding-left: 74px;
+    display: table-cell;
+    vertical-align: top;
     @media(min-width : 1800px){
         padding-left: 51px
     }
@@ -190,6 +197,7 @@
     margin-left: 61px;
     letter-spacing: normal;
     height: 410px;
+    position: relative;
     padding-right: 15px;
     vertical-align: top;
     width: 240px;
@@ -199,6 +207,12 @@
         margin-top: 16px;
         background: #015198;
     }
+    .news_i_d{
+        color: rgb(1, 81, 152);
+        font-size: 15px;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
     .news_i_n_t{
         color:#464646;
     }
@@ -207,21 +221,21 @@
     }
     &.second{
         .news_i_e_img{
-         margin-top: 18px;
-         margin-bottom: 0;
-     }
-     hr{
-        margin-bottom: 17px;
-        margin-top: 28px;
+            margin-top: 18px;
+            margin-bottom: 0;
+        }
+        hr{
+            margin-bottom: 17px;
+            margin-top: 28px;
+        }
     }
-}
-@media(min-width : 1800px){
-    margin-left: 16px;
-}
-@media @medium-devices{
-    margin-left: 10px;
-    width: 210px;
-}
+    @media(min-width : 1800px){
+        margin-left: 16px;
+    }
+    @media @medium-devices{
+        margin-left: 10px;
+        width: 210px;
+    }
 }
 .news_i_e_img{
     margin-bottom: 15px;
@@ -239,6 +253,9 @@
     text-transform: uppercase;
     &:hover{
         text-decoration: underline;
+    }
+    @media @medium-devices,@tablets,@smartphones,@mobile-area{
+        line-height: 15px;
     }
 }
 .news_i_r_cnt {

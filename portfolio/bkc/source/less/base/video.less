@@ -1,0 +1,52 @@
+/* ---------------------------------------------- /*
+ * VIDEO
+ /* ---------------------------------------------- */
+ .video{
+ 	.video_t{
+ 		background: #015198;
+ 		padding: 16px 18px 12px 20px;
+ 		h3{
+ 			display: inline-block;
+ 			font-family:'SegoeUI-Bold';
+ 			font-size: 16px;
+ 			color:#fff;
+ 			font-weight: normal;
+ 			letter-spacing: 3px;
+ 			padding-left: 29px;
+ 			position: relative;
+ 			&:before{
+ 				position: absolute;
+ 				left:0px;
+ 				top: 0px;
+ 				height:15px;
+ 				background: url("../images/sprite.png");
+ 				background-repeat: no-repeat;
+ 				background-position: -32px -122px;
+ 				width:17px;
+ 				content:"";
+ 			}
+ 		}
+ 	}
+ 	.video_i{
+ 		float: left;
+ 		position: relative;
+ 		width:385px;
+ 		img{
+ 			vertical-align: top;
+ 		}
+ 		&:nth-child(2n){
+ 			float: right;
+ 		}
+ 		&:last-child{
+ 			margin-bottom: 0px;
+ 		}
+ 		@media @medium-devices,@tablets,@smartphones,@mobile-area{
+ 			float:none;
+ 			margin-bottom: 14px;
+ 			width: 100%;
+ 		}
+ 	}
+ 	.video_cnt{
+ 		margin-top: 14px;
+ 	}
+ }

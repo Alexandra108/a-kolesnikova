@@ -1,0 +1,124 @@
+/* ---------------------------------------------- /*
+ * GALLERY
+ /* ---------------------------------------------- */
+ .gallery{
+ 	.gallery_cnt{
+ 		font-size: 0;
+ 		padding-bottom: 72px;
+ 		line-height: 1;
+ 		@media @tablets,@smartphones,@mobile-area{
+ 			padding-bottom: 40px;
+ 		}
+ 	}
+ 	.gallery_i{
+ 		float: left;
+ 		width: 23.48%;
+ 		margin-top: 14px;
+ 		margin-right: 2%;
+ 		height: 186px;
+ 		&:nth-child(4n){
+ 			margin-right: 0px;
+ 		}
+ 		@media @medium-devices,@tablets{
+ 			height: 150px;
+ 		}
+ 		@media @smartphones{
+ 			height: 75px;
+ 		}
+ 		@media @mobile-area{
+ 			height: 62px;
+ 		}
+ 	}
+ 	.gallery_i_img{
+ 		overflow: hidden;
+ 		position: relative;
+ 		width: 100%;
+ 		height: 186px;
+ 		img{
+ 			display: block;
+ 			height: auto;
+ 			left: 50%;
+ 			position: absolute;
+ 			top: 50%;
+ 			transition: all .2s linear;
+ 			transform: translate(-50%, -50%);
+ 			width: 100%;
+ 		}
+ 		&:hover{
+ 			.gallery_i_see{
+ 				opacity: 1;
+ 			}
+ 		}
+ 		@media @medium-devices,@tablets{
+ 			height: 150px;
+ 		}
+ 		@media @smartphones{
+ 			height: 75px;
+ 		}
+ 		@media @mobile-area{
+ 			height: 62px;
+ 		}
+ 	}
+ 	.gallery_t{
+ 		background: #015198;
+ 		padding: 16px 18px 12px 22px;
+ 		position: relative;
+ 		h3{
+ 			display: inline-block;
+ 			font-family:'SegoeUI-Bold';
+ 			font-size: 16px;
+ 			color:#fff;
+ 			font-weight: normal;
+ 			letter-spacing: 4px;
+ 			padding-right: 20px;
+ 			padding-left: 29px;
+ 			position: relative;
+ 			&:before{
+ 				position: absolute;
+ 				left:0px;
+ 				top: 0px;
+ 				height:16px;
+ 				width:16px;
+ 				background: url("../images/sprite.png");
+ 				background-position: -32px -137px;
+ 				background-repeat: no-repeat;
+ 				content:"";
+ 			}
+ 		}
+ 		i{
+ 			color:#fff;
+ 			font-size: 22px;
+ 			text-shadow: 0 0 0 rgb(255, 255, 255);
+ 			line-height: 1;
+ 			margin-top: -11px;
+ 			position: absolute;
+ 			right: 20px;
+ 			top: 50%;
+ 		}
+ 	}
+ 	.gallery_i_see{
+ 		height: 100%;
+ 		transition: all .45s ease;
+ 		opacity: 0;
+ 		left: 0;
+ 		position: absolute;
+ 		top: 0;
+ 		background: rgba(0, 0, 0, 0.4);
+ 		width: 100%;
+ 		z-index: 2;
+ 		&:before{
+ 			background: url("../images/sprite.png");
+ 			background-position: -0px -122px;
+ 			background-repeat: no-repeat;
+ 			content: "";
+ 			height: 23px;
+ 			left: 50%;
+ 			margin-left: -16px;
+ 			margin-top: -12px;
+ 			position: absolute;
+ 			text-align: center;
+ 			top: 50%;
+ 			width: 32px;
+ 		}
+ 	}
+ }

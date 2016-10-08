@@ -1,0 +1,198 @@
+/* ---------------------------------------------- /*
+ * CARD
+ /* ---------------------------------------------- */
+ .card{
+ 	width: 32.3%;
+ 	cursor: pointer;
+ 	margin-bottom: 15px;
+ 	vertical-align: top;
+ 	margin-right:15px;
+ 	border: 1px solid #bbd1dd;
+ 	background: #fff;
+ 	letter-spacing: normal;
+ 	transition:  all 0.2s ease-in-out; 
+ 	display:inline-block;
+ 	box-shadow: none;
+ 	&:nth-child(3n){
+ 		@media @large-devices{
+ 			margin-right:0px;
+ 		}
+ 	}
+ 	&:hover{
+ 		box-shadow: 0 0 5px 3px rgb(192, 211, 222);
+ 		@media @mobile-area{
+ 			box-shadow: 0 0px 0px 1px rgb(217, 229, 236) inset;
+ 		}
+ 	}
+ 	&:nth-child(2n){
+ 		@media @medium-devices,@tablets{
+ 			margin-right:0px;
+ 			float: right;
+ 		}
+ 	}  
+ 	@media @medium-devices,@tablets{
+ 		width: 49%;
+ 		margin-right:0px;
+ 	}
+ 	@media @smartphones,@mobile-area{
+ 		width:100%; 
+ 		margin-right:0px;
+ 	}
+ 	@media @mobile-area{
+ 		border: none;
+ 		margin-bottom: 27px;
+ 		box-shadow: 0 0px 0px 1px rgb(217, 229, 236) inset;
+ 	}
+ }
+ .card_l{
+ 	width:74px;
+ 	float:left;
+ 	padding-top: 5px;
+ 	@media @mobile-area{
+ 		width:111px;
+ 		padding: 0px;
+ 		height:129px;
+ 	}
+ }
+ .card_r{
+ 	margin-left: 74px;
+ 	padding-left: 22px;
+ 	@media @mobile-area{
+ 		margin-left: 111px;
+ 		padding-left: 52px;
+ 		padding-top: 13px;
+ 	}
+ }
+ .card_descr{
+ 	@media @mobile-area{
+ 		padding-left: 48px;
+ 	}
+ }
+ .card_cnt{
+ 	padding: 19px 18px 16px 20px;
+ 	@media @mobile-area{
+ 		padding: 13px 0 0 0px;
+ 	}
+ }
+ .card_img{
+ 	width:74px;
+ 	height:85px;
+ 	svg{
+ 		width:74px;
+ 		height:85px;
+ 	}
+ 	@media @mobile-area{
+ 		width:111px;
+ 		height:129px;
+ 		svg{
+ 			width:111px;
+ 			height:129px;
+ 		}
+ 	}
+ }
+ .card_t{
+ 	font-family: 'SegoeUI-SemiBold';
+ 	font-size: 18px;
+ 	line-height: 20px;
+ 	color: #015198;
+ 	@media @mobile-area{
+ 		font-size: 26px;
+ 		line-height: 30px;
+ 	}
+ }
+ .card_post{
+ 	font-family:'SegoeUI-Italic';
+ 	font-size: 13px;
+ 	line-height: 1;
+ 	margin-top: 14px;
+ 	padding-bottom: 16px;
+ 	font-weight: bold;
+ 	color:#030708;
+ 	@media @mobile-area{
+ 		font-size: 22px;
+ 		line-height: 22px;
+ 		margin-top: 16px;
+ 	}
+ }
+ .card_birthday{
+ 	margin-left: 74px;
+ 	margin-top: -3px;
+ 	padding-left: 22px;
+ 	@media @mobile-area{
+ 		padding: 0 0 0 74px;
+ 		box-shadow: 0 1px 0 0 rgb(217, 229, 236) inset;
+ 		margin: 14px 0 0;
+ 	}
+ }
+ .card_birthday_l{
+ 	float: left;
+ 	margin-top: 4px;
+ 	width: 80px;
+ 	@media @mobile-area{
+ 		margin-top: 25px;
+ 		width: auto;
+ 	}
+ }
+ .card_birthday_date{
+ 	color:#015198;
+ 	font-size: 12px;
+ 	font-family:'SegoeUI-Bold';
+ 	letter-spacing: 1px;
+ 	position: relative;
+ 	padding-left: 20px;
+ 	padding-top: 4px;
+ 	&:before{
+ 		position: absolute;
+ 		left:2px;
+ 		top: 0px;
+ 		height:16px;
+ 		width:15px;
+ 		background: url("../images/sprite.png");
+ 		background-position: -32px -185px;
+ 		background-repeat: no-repeat;
+ 		content:"";
+ 		@media @mobile-area{
+ 			background-position: -0px -322px;
+ 			height:32px;
+ 			width:30px;
+ 		}
+ 	}
+ 	@media @mobile-area{
+ 		padding-left: 47px;
+ 		font-size: 22px;
+ 		padding-top: 7px;
+ 	}
+ }
+ .card_birthday_r{
+ 	margin-left: 80px;
+ 	text-align: right;
+ 	a{
+ 		background: #015198;
+ 		color:#fff;
+ 		font-family: "SegoeUI-SemiBold";
+ 		font-size: 11px;
+ 		display:inline-block;
+ 		letter-spacing: normal;
+ 		cursor: pointer;
+ 		padding: 6px 0 7px;
+ 		text-align: center;
+ 		transition:  background 0.2s ease-in-out;
+ 		text-transform: lowercase;
+ 		vertical-align: middle;
+ 		width: 92px;
+ 		box-shadow: 0 0 0 1px #023e74 inset;
+ 		&:hover{
+ 			text-decoration: none;
+ 			background: #003c70;
+ 		}
+ 		@media @mobile-area{
+ 			padding: 32px 0 35px;
+ 			font-size: 20px;
+ 			letter-spacing: 1px;
+ 			width: 100%;
+ 		}
+ 	}
+ 	@media @mobile-area{
+ 		margin: 0 0 0 174px;
+ 	}
+ }

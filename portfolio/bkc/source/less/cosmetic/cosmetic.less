@@ -84,6 +84,7 @@
  	
  	.calendar{
  		float: none;
+ 		width: 254px;
  		& td, & th{
  			font-family: "SegoeUI-SemiBold";
  		}
@@ -104,16 +105,34 @@
  				}
  			}
  			&.prev{
+ 				position: relative;
  				i{
  					&:before{
- 						content: url("../images/arrow-left.png");
+ 						background: url("../images/sprite.png");
+ 						background-position: -31px -232px;
+ 						background-repeat: no-repeat;
+ 						content: "";
+					   height: 8px;
+					   left: 8px;
+					   position: absolute;
+					   top: 8px;
+					   width: 14px;
  					}
  				}
  			}
  			&.next{
+ 				position: relative;
  				i{
  					&:before{
- 						content: url("../images/arrow-right.png");
+ 						background: url("../images/sprite.png");
+ 						background-position: -31px -240px;
+ 						background-repeat: no-repeat;
+ 						content: "";
+					   height: 8px;
+					   right: 8px;
+					   position: absolute;
+					   top: 8px;
+					   width: 14px;
  					}
  				}
  			}
@@ -249,16 +268,20 @@
  		&:hover{
  			background: #f3f206;
  		}
- 		i{
- 			position: absolute;
- 			right:4px;
- 		}
  		&.applyBtn{
  			margin-right: 4px;
  			text-align: left;
  			i{
  				&:before{
- 					content: url("../images/applyBtn.png");
+ 					background: url("../images/sprite.png");
+        			background-position: -31px -285px;
+        			background-repeat: no-repeat;
+ 					content: "";
+				   height: 9px;
+				   position: absolute;
+				   right: 3px;
+				   top: 7px;
+				   width: 10px;
  				}
  			}
  		}
@@ -266,7 +289,15 @@
  			text-align: center;
  			i{
  				&:before{
- 					content: url("../images/cancelBtn.png");
+ 					background: url("../images/sprite.png");
+        			background-position: -30px -294px;
+        			background-repeat: no-repeat;
+ 					content: "";
+				   height: 9px;
+				   position: absolute;
+				   right: 6px;
+				   top: 7px;
+				   width: 9px;
  				}
  			}
  		}

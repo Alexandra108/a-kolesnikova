@@ -1,0 +1,825 @@
+/* ---------------------------------------------- /*
+* EMPLOYEE
+/* ---------------------------------------------- */
+.employee{
+    width:100%;
+    .container{
+        padding: 45px 78px 83px 79px;
+        @media @tablets,@smartphones{
+            padding: 38px 10px 83px 10px;
+        }
+        @media @mobile-area{
+            padding: 0 25px 72px 24px;
+        }
+    }
+    .page_caption{
+        @media @mobile-area{
+            display: none;
+        }
+    }
+}
+.employee_cnt_w{
+    display: table;
+    margin-bottom: 15px;
+    width: 100%;
+    @media @smartphones,@mobile-area{
+        box-shadow: -1px 0 0 0 rgb(217, 229, 236) inset, 0 1px 0 0 rgb(217, 229, 236) inset, 1px 0 0 0 rgb(217, 229, 236) inset;
+        margin-bottom: 0px;
+    }
+}
+.employee_cnt{
+    background: #dbeaf2;
+    position: relative;
+    margin-top: 39px;
+    padding: 37px 121px 125px 121px;
+    box-shadow: 0 0 0 1px #c0d3de inset;
+    .editing-field{
+        input{
+            border:none;
+            padding: 2px 10px;
+            box-shadow: 0 0 0 1px rgb(0, 135, 255) inset;
+            &:focus,&:hover{
+                box-shadow: 0 0 2px 0px rgb(0, 135, 255),0 0 0 1px rgb(0, 135, 255) inset;
+            }
+        }
+        i{
+            display: inline-block;
+            font: 14px/1 FontAwesome;
+            text-rendering: auto;
+            position: relative;
+            margin-left: 10px;
+            vertical-align: top;
+            background-image: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            &:before{
+                content: "\f044";
+            }
+        }
+    }
+    .gallery{
+        background: #fff;
+        box-shadow: 0 0 0 1px #bbd1dd inset;
+        @media @smartphones,@mobile-area{
+            box-shadow: 0 0 0 1px rgb(217, 229, 236) inset;
+        }
+    }
+    .gallery_cnt{
+        padding: 6px 18px 22px 20px;
+        @media @mobile-area{
+            padding: 3px 25px 25px 22px;
+        }
+    }
+    .gallery_i_img{
+        height: 173px;
+        @media @medium-devices{
+            height: 150px;
+        }
+        @media @tablets{
+            height: 100px;
+        }
+        @media @smartphones{
+            height:80px;
+        }
+        @media @mobile-area{
+            height:167px;
+        }
+        @media(max-width: 600px){
+            height: 100px;
+        }
+    }
+    .gallery_t{
+        h3{
+            &:before{
+                @media @smartphones,@mobile-area{
+                    background: url("../images/sprite.png") no-repeat;
+                    background-position: -0px -418px;
+                    height:30px;
+                    width:30px;
+                }
+            }
+            @media @smartphones,@mobile-area{
+                font-size: 20px;
+                height: 30px;
+                letter-spacing: 5px;
+                padding-top: 4px;
+                padding-left: 55px;
+            } 
+        }
+        @media @mobile-area{
+            padding: 21px 18px 20px 36px;       
+        }
+    }
+    .gallery_i{
+        height: 173px;
+        &:nth-child(3n){
+            @media @mobile-area{
+                margin-right: 0;
+            }
+        }
+        &:nth-child(4n){
+            @media @mobile-area{
+                margin-right: 4.7%;
+            }
+        }
+        @media @medium-devices{
+            height: 150px;
+        }
+        @media @tablets{
+            height: 100px;
+        }
+        @media @smartphones{
+            height:80px;
+            margin-top: 10px;
+        }
+        @media @mobile-area{
+            height:167px;
+            width: 30.2%;
+            margin-right: 4.7%;
+            margin-top: 20px;
+        }
+        @media(max-width: 600px){
+            height: 100px;
+        }
+    }
+    .all-list{
+        float: none;
+        position: absolute;
+        right: 39px;
+        top: 37px;
+        z-index: 1;
+        &:hover{
+            @media @smartphones,@mobile-area{
+                background-position: -0px -240px;
+            } 
+        }
+        @media @medium-devices,@tablets{
+            right: 20px;
+            top: 20px;
+        }
+        @media @smartphones,@mobile-area{
+            height:31px;
+            width:31px;
+            background: url("../images/sprite.png");
+            background-position: -0px -209px;
+            background-repeat: no-repeat;
+        }
+        @media @mobile-area{
+            right: 25px;
+            top: 26px;     
+        }
+    }
+    @media @medium-devices,@tablets{
+        padding: 36px 50px 50px;
+    }
+    @media @smartphones,@mobile-area{
+        box-shadow: none;
+        padding: 0;
+        background: #fff;
+    }
+    @media @mobile-area{
+        margin-top: 24px;
+    }
+}
+.employee_birthday_mobile{
+    display: none;
+    @media @smartphones,@mobile-area{
+        display: table;
+        width: 100%;
+    }
+}
+.employee_birthday_mobile_l{
+    background: rgb(1, 81, 152);
+    display: table-cell;
+    padding: 15px 0 11px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    span{
+        color:#fff;
+        font-size: 22px;
+        font-family:'SegoeUI-Bold';
+        letter-spacing: 1px;
+        padding-left: 48px;
+        position: relative;
+        &:before{
+            position: absolute;
+            left:0px;
+            top: -2px;
+            height:32px;
+            width:30px;
+            background: url("../images/sprite.png");
+            background-position: -0px -290px;
+            background-repeat: no-repeat;
+            content:"";
+        }
+    }
+}
+.employee_birthday_mobile_r{
+    display: table-cell;
+    vertical-align: middle;
+    border-left: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    width: 50%;
+    padding: 13px 0 14px;
+    background: rgb(1, 81, 152);
+    span{
+        font-family: 'SegoeUI-SemiBold';
+        font-size: 20px;
+        display: inline-block;
+        line-height: 21px;
+        color: #ffffff;
+        max-width: 162px;
+    }
+    &.edit{
+        padding: 13px 18px;
+        .SumoSelect{
+            vertical-align: top;
+            width:100%;
+            color:#010101;
+            &.open{
+                .CaptionCont{
+                    box-shadow: 0 0 0 4px rgb(0, 135, 255) inset;
+                }
+            }
+            .SumoUnder{
+                display:none;
+            }
+            & > .CaptionCont{
+                min-height: 27px;
+                border: none;
+                line-height: 18px;
+                border-radius: 0px;
+                padding: 4px 30px 4px 10px;
+                background: #fff; 
+                box-shadow:0 0 0 1px #0087ff inset;
+                span{
+                    padding-right: 0;
+                    text-align: left;
+                    font-size: 13px;
+                    color:#010101;
+                    font-family: "SegoeUI-Italic";
+                    &.placeholder{
+                        font-family: "SegoeUI-Italic";
+                        color: #010101;
+                        font-size: 13px;
+                        font-style: normal;
+                    }
+                }
+                label{
+                    i{
+                        background: url("../images/sprite.png");
+                        background-position: -28px -448px;
+                        background-repeat: no-repeat;
+                        width:21px;
+                        position: absolute;
+                        right: 6px;
+                        top:0px;
+                        height: 20px;
+                    }
+                }
+                @media @tablets{
+                    padding: 6px 32px 6px 12px;
+                }
+            }
+            & > .optWrapper{
+                border: medium none;
+                border-radius: 0px;
+                top: 29px;
+                box-shadow: 0 0 0 1px #0087ff inset;
+                background: #fff;
+                text-align: left;
+                &.isFloating{
+                    top: 0px;
+                    position: relative;
+                    width: 200px;
+                }
+                .options{
+                    border-radius: 0;
+                    padding: 0 10px;
+                    max-height: 100%;
+                    li{
+                        &.opt{
+                            font-size: 13px;
+                            line-height:17px;
+                            font-family:'SegoeUI-Regular';
+                            box-shadow: 0 1px 0 0 rgb(187, 209, 221);
+                            cursor: pointer;
+                            padding: 9px 0 12px;
+                            border: none;
+                            &.disabled * {
+                                color:#8f8f8f;
+                                opacity: 1;
+                            }
+                            &.selected,&:hover{
+                                color:#015198;
+                                background: none;
+                            }
+                        }
+                        label{
+                            white-space: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.employee_cnt_l,.employee_cnt_r{
+    vertical-align: top;
+    display: table-cell;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 0 1px #bbd1dd inset;
+    @media @smartphones,@mobile-area{
+        box-shadow: none;
+        background: none;
+    }
+}
+.employee_cnt_l{
+    width: 225px;
+    @media @smartphones,@mobile-area{
+        display: block;
+        width: 100%;
+        padding: 13px 25px 33px 49px;
+    }
+}
+.employee_mail_cnt{
+    @media @smartphones,@mobile-area{
+        padding: 0 25px 0 31px;   
+    }
+}
+.employee_phone_cnt {
+    @media @smartphones,@mobile-area{
+        padding: 0 25px 0 31px;   
+    }
+}
+.employee_cnt_r{
+    padding: 21px 18px 21px 24px;
+    border-left: 17px solid rgb(219, 234, 242);
+    button{
+        bottom: 0px;
+        position: relative;
+        float: right;
+        @media @smartphones,@mobile-area{
+            font-size: 19px;
+            margin-right: 10px;
+            margin-top: 20px;
+            padding: 5px 20px;
+        }
+    }
+    @media @smartphones,@mobile-area{
+        display: block;
+        width: 100%;
+        border-left:0px;
+        margin-bottom: 34px;
+        padding: 32px 0px 0px 0px;
+    }
+}
+.employee_t_mobile{
+    display: none;
+    @media @smartphones,@mobile-area{
+        display: block;
+        margin-left: 163px;
+        margin-top: 16px;
+    }
+    @media(max-width: 600px){
+        margin-left: 128px;
+        margin-top: 14px;
+    }
+}
+.employee_img{
+    padding: 28px 48px 30px 44px;
+    svg{
+        width:132px;
+        display: block;
+        height:151px;
+        @media @smartphones,@mobile-area{
+            width:112px;
+            height:129px; 
+        }
+        @media(max-width: 600px){
+            height: 103px;
+            width: 90px;
+        }
+    }
+    @media @smartphones,@mobile-area{
+        padding:0px;
+        float:left;
+        width: 112px;
+    }
+    @media(max-width: 600px){
+        width: 90px;
+    }
+}
+.employee_birthday_date{
+    background: #015198;
+    margin: 0 1px 1px;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0 13px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    span{
+        color:#fff;
+        font-size: 16px;
+        font-family:'SegoeUI-Bold';
+        letter-spacing: 1px;
+        padding-left: 27px;
+        position: relative;
+        &:before{
+            position: absolute;
+            left:2px;
+            top: 3px;
+            height:16px;
+            width:15px;
+            background: url("../images/sprite.png");
+            background-position: -32px -169px;
+            background-repeat: no-repeat;
+            content:"";
+        }
+    }
+    @media @smartphones,@mobile-area{
+        display: none;
+    }
+}
+.employee_t_cnt{
+    padding-bottom: 47px;
+    @media @smartphones,@mobile-area{
+        display: none;
+    }
+}
+.employee_t_l{
+    float: left;
+    min-width: 220px;
+}
+.employee_t_r {
+    float: right;
+    margin-right: 3px;
+    @media @tablets{
+        float: left;
+        margin-top: 5px;
+    }
+}
+.employee_t{
+    color: rgb(1, 81, 152);
+    font-family: "SegoeUI-SemiBold";
+    font-size: 21px;
+    line-height: 20px;
+    @media @smartphones{
+        font-size: 26px;
+        line-height: 23px;
+        max-width: 150px;
+    }
+    @media @mobile-area{
+        font-size: 26px;
+        max-width: 150px;
+        line-height: 28px;
+        margin-left: 2px;
+    }
+}
+.employee_post{
+    color: rgb(3, 7, 8);
+    letter-spacing: 1px;
+    font-family: "SegoeUI-Italic";
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    line-height: 1;
+    margin-top: 9px;
+    @media @smartphones{
+        font-size: 16px;
+    }
+    @media @mobile-area{
+        font-size: 22px;
+        letter-spacing: normal;
+        margin-top: 17px;
+    }
+    @media(max-width: 600px){
+        font-size: 18px;
+    }
+    &.edit{
+        font-size: 0;
+        input{
+            color: rgb(3, 7, 8);
+            font-family: "SegoeUI-Italic";
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        i{
+            margin-top: 5px;
+        }
+    }
+}
+.employee_department{
+    color: rgb(168, 168, 168);
+    font-family: "SegoeUI-Regular";
+    font-size: 14px;
+    position: relative;
+    line-height: 1;
+    .SumoSelect{
+        vertical-align: top;
+        width:200px;
+        color:#010101;
+        &.open{
+            .CaptionCont{
+                box-shadow: 0 0 0 4px rgb(0, 135, 255) inset;
+            }
+        }
+        .SumoUnder{
+            display:none;
+        }
+        & > .CaptionCont{
+            min-height: 27px;
+            border: none;
+            line-height: 18px;
+            border-radius: 0px;
+            padding: 4px 30px 4px 10px;
+            background: #fff; 
+            box-shadow:0 0 0 1px #0087ff inset;
+            span{
+                padding-right: 0;
+                text-align: left;
+                font-size: 13px;
+                font-family: "SegoeUI-Italic";
+                &.placeholder{
+                    font-family: "SegoeUI-Italic";
+                    color: #010101;
+                    font-size: 13px;
+                    font-style: normal;
+                }
+            }
+            label{
+                i{
+                    background: url("../images/sprite.png");
+                    background-position: -28px -448px;
+                    background-repeat: no-repeat;
+                    width:21px;
+                    position: absolute;
+                    right: 6px;
+                    top:0px;
+                    height: 20px;
+                }
+            }
+            @media @tablets{
+                padding: 6px 32px 6px 12px;
+            }
+        }
+        & > .optWrapper{
+            border: medium none;
+            border-radius: 0px;
+            top: 27px;
+            box-shadow: 0 0 0 1px #0087ff inset;
+            background: #fff;
+            text-align: left;
+            &.isFloating{
+                top: 0px;
+                position: relative;
+                width: 200px;
+            }
+            .options{
+                border-radius: 0;
+                padding: 0 10px;
+                max-height: 100%;
+                li{
+                    &.opt{
+                        font-size: 13px;
+                        line-height:17px;
+                        font-family:'SegoeUI-Regular';
+                        box-shadow: 0 1px 0 0 rgb(187, 209, 221);
+                        cursor: pointer;
+                        padding: 9px 0 12px;
+                        border: none;
+                        &.disabled * {
+                            color:#8f8f8f;
+                            opacity: 1;
+                        }
+                        &.selected,&:hover{
+                            color:#015198;
+                            background: none;
+                        }
+                    }
+                    label{
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+        @media @tablets{
+            width: 194px;
+        }
+    }
+}
+.employee_phone_l,.employee_mail_l{
+    width:97px;
+    float: left;
+    @media @smartphones,@mobile-area{
+        width: 135px;
+    }
+}
+.employee_phone_r,.employee_mail_r{
+    margin-left: 97px;
+    @media @smartphones,@mobile-area{
+        margin-left: 161px;
+    }
+    @media(max-width: 600px){
+        padding-top: 3px;
+    }
+}
+.employee_phone_t,.employee_mail_t{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family:'SegoeUI-Bold';
+    color:#000000;
+    position: relative;
+    @media @smartphones{
+        padding-top: 0px;
+        font-size: 17px;
+        line-height: 1;
+    }
+    @media @mobile-area{
+        font-size: 18px;
+        line-height: 1;
+        padding-top: 4px;
+    }
+}
+.employee_phone{
+    padding: 20px 0 24px;
+    box-shadow: 0 -1px 0 0 rgb(187, 209, 221);
+    @media @smartphones,@mobile-area{
+        padding: 0 0 31px;
+        box-shadow: 0 1px 0 0 rgb(187, 209, 221);
+    }
+}
+.employee_mail{
+    padding: 24px 0 0px 0;
+    box-shadow: 0 -1px 0 0 rgb(187, 209, 221);
+    @media @smartphones,@mobile-area{
+        box-shadow: none;
+    }
+    @media @mobile-area{
+        padding: 32px 0 0;
+    }
+}
+.employee_phone_t{
+    padding-left: 20px;
+    &:before{
+        position: absolute;
+        left:0px;
+        top: 1px;
+        height:15px;
+        width:15px;
+        background: url("../images/sprite.png");
+        background-repeat: no-repeat;
+        background-position: -31px -217px;
+        content:"";
+        @media @smartphones,@mobile-area{
+            background-position: -0px -512px;
+            width:28px;
+            height:28px;
+        }
+    }
+    @media @smartphones,@mobile-area{
+        padding-left: 45px;
+    }
+}
+.employee_mail_t{
+    padding-left: 33px;
+    &:before{
+        position: absolute;
+        left:0px;
+        top: 0px;
+        height:14px;
+        width:22px;
+        background: url("../images/sprite.png");
+        background-position: -24px -540px;
+        background-repeat: no-repeat;
+        content:"";
+        @media @smartphones{
+            background-position: -0px -271px;
+            width:31px;
+            left:4px;
+            top:1px;
+            height:19px;
+        }
+        @media @mobile-area{
+            background-position: -0px -271px;
+            width:31px;
+            left:4px;
+            top:4px;
+            height:19px;
+        }
+    }
+    @media @smartphones,@mobile-area{
+        padding-left: 58px;
+    }
+}
+.employee_phone_i{
+    margin-bottom: 9px;
+    margin-left: 2px;
+    font-size: 0;
+    line-height: 1;
+    a{
+        font-family:'SegoeUI-Regular';
+        font-size: 14px;
+        line-height: 1;
+        color:#000000;
+        @media @smartphones{
+            font-size: 15px;
+        }
+        @media @mobile-area{
+            font-size: 23px;
+        }
+        @media(max-width: 600px){
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+    }
+    span{
+        font-family:'SegoeUI-SemiBold';
+        color:#9e9e9f;
+        margin-left: 7px;
+        vertical-align: top;
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 1;
+        @media @smartphones{
+            margin-left: 12px;
+            font-size: 14px;
+        }
+        @media @mobile-area{
+            font-size: 20px;
+            margin-left: 5px;
+        }
+        @media(max-width: 600px){
+            display: block;
+            font-size: 18px;
+            margin-left: 0;
+            margin-top: 2px;
+        }
+    }
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    &.edit{
+        i{
+            display: inline-block;
+            font: 14px/1 FontAwesome;
+            text-rendering: auto;
+            margin-left: 10px;
+            vertical-align: middle;
+            margin-top: 3px;
+            background-image: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            &:before{
+                content: "\f044";
+            }
+        }
+        span{
+            vertical-align: middle;
+        }
+        .employee_phone_i_cnt{
+            vertical-align: middle;
+        }
+    }
+    @media @mobile-area{
+        margin-bottom: 27px;
+    }
+}
+.employee_phone_i_cnt{
+    vertical-align: top;
+    line-height: 1;
+    display: inline-block;
+    input{
+        font-family:'SegoeUI-Regular';
+        font-size: 14px;
+        line-height: 1;
+        color:#000000;
+        max-width: 95px;
+    }
+}
+.employee_mail_i{
+    display: inline-block;
+    font-family:'SegoeUI-Regular';
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 1;
+    margin-bottom: 12px;
+    color:#000000;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    @media @smartphones{
+        font-size: 15px;
+    }
+    @media @mobile-area{
+        font-size: 23px;
+    }
+    @media(max-width: 600px){
+        font-size: 18px;
+    }
+}

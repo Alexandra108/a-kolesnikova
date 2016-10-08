@@ -10,6 +10,10 @@
         display:block;
         top:26px;
         position:relative;
+        transition: all .2s linear;
+        &:hover{
+            opacity: 0.8;
+        }
         @media @smartphones{
             display: none;
         }
@@ -54,9 +58,7 @@
     &.active{
         .header_account-user_arrow{
             i{
-                &:before{
-                    content: "\f106";
-                }
+                transform:rotate(180deg);
             }
         }
     }
@@ -86,6 +88,9 @@
     line-height: 1;
     font-size: 20px;
     vertical-align: middle;
+    i{
+        transition:  all 0.2s ease-in-out; 
+    }
 }
 .header_account_dropdown{
     position: absolute;

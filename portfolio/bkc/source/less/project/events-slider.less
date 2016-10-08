@@ -85,6 +85,7 @@
         & > .CaptionCont{
             min-height: 32px;
             border: none;
+            line-height: 18px;
             border-radius: 1px;
             padding: 6px 24px 6px 11px;
             background: rgb(1, 81, 152); 
@@ -93,6 +94,13 @@
                 padding-right: 0;
                 text-align: left;
                 font-size: 13px;
+                &.placeholder{
+                   color: #fff;
+                   font-style: normal; 
+                    @media @mobile-area{
+                        color: rgb(70, 70, 70);
+                    }
+                }
                 @media @mobile-area{
                     font-family:'SegoeUI-Regular';
                     font-size: 22px;
@@ -180,6 +188,7 @@
         @media (min-width: 480px){
             margin-left: 0px !important;
             margin-right: 0;
+            width: 180px;
         }
         @media @mobile-area{
             vertical-align: bottom;
@@ -350,10 +359,13 @@
         top: 3px;
         height:15px;
         width:12px;
-        content:url("../images/location.png");
+        content:"";
+        background: url("../images/sprite.png");
+        background-repeat: no-repeat;
+        background-position: -31px -248px;
         @media @mobile-area{
             left:2px;
-            content:url("../images/location-big.png");
+            background-position: -0px -540px;
             width:24px;
             height:36px;
         }
