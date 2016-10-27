@@ -1,0 +1,83 @@
+
+/* ---------------------------------------------- /*
+* SHIPPING-AND-PAYMENT
+/* ---------------------------------------------- */
+.shipping-and-payment_t_l,.shipping-and-payment_t_r,.shipping-and-payment_b_l,.shipping-and-payment_b_r{
+    float: left;
+    width:50%;
+}
+.shipping-and-payment{
+    input{
+        box-shadow: 0 0 0 1px #d3d3d3 inset;
+        border-radius: 0;
+        color:#000000;
+        font-size: 17px;
+        line-height: 1;
+        height: 33px;
+        padding: 0 15px;
+    }
+    select{
+        width:100%;
+    }
+    .SumoSelect{
+        width:100%;
+        max-width: 316px;
+        & > .optWrapper{
+            .options{
+                padding: 7px 0;
+                li.opt{
+                    padding: 5px 10px;
+                }
+            } 
+        }
+        & > .CaptionCont{
+            padding: 8px 0 6px 12px;
+        }
+    }
+    .form_e{
+        text-align: right;
+        .title{
+            text-align: left;
+            width: 25%;
+            @media @medium-devices, @tablets, @smartphones{
+                margin-bottom: 5px;
+                width: 100%;
+            }
+        }
+        @media @medium-devices, @tablets, @smartphones{
+            text-align: left;
+        }
+    }
+    .form_field{
+        max-width: 316px;
+        width:100%;
+    }
+    button{
+        float: right;
+        padding: 0 70px 0 64px;
+        margin-top: 68px;
+    }
+    .form_e{
+        margin-bottom: 33px;
+    }
+}
+.shipping-and-payment_t_l {
+    padding-right: 47px;
+}
+.shipping-and-payment_t_r {
+    padding-left: 43px;
+}
+.shipping-and-payment_b{
+    margin-top: 66px;
+}
+.shipping-and-payment_b_l {
+    padding-right: 40px;
+}
+.shipping-and-payment_b_r {
+    padding-left: 43px;
+}
+.shipping-and-payment_b{
+    .form_e{
+        margin-bottom: 0px;
+    }
+}

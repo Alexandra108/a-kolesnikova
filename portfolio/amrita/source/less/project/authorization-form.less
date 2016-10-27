@@ -1,0 +1,54 @@
+/*AUTHORIZATION-FORM*/
+.authorization-form{
+    padding-right: 18px;
+    input{
+        padding: 0 17px;
+        height:35px;
+        font-family:'SegoeUI-Regular';
+        margin-bottom: 9px;
+        box-shadow: 0px 0px 0px 1px #d3d3d3 inset;
+        font-size: 14px;
+        &.error{
+            box-shadow: 0px 0px 0px 1px #e12d31 inset;
+        }
+        &.not_error{
+            box-shadow: 0px 0px 0px 1px #62b069 inset;
+        }
+        &.input-big{
+            width:100%;
+        }
+        &:focus{
+            box-shadow: 0px 0px 0px 1px #ff60aa inset;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    .form_b{
+        a.forgot-your-password{
+            display: block;
+            margin-top: 4px;
+            text-decoration: underline;
+            float: left;
+            font-family:'SegoeUI-Regular';
+            color:#333333;
+            font-size: 14px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        button{
+            width: 100px;
+            float: right;
+            @media @medium-devices, @tablets, @smartphones{
+                margin-top: 10px;
+            }
+        }
+    }
+    .form-group{
+        margin-bottom:19px;
+    }
+    .form_inform_box{
+        margin-bottom:19px;
+    }
+}

@@ -1,0 +1,60 @@
+/* ---------------------------------------------- /*
+ * SOCIAL-B
+ /* ---------------------------------------------- */
+ .social-b{
+ 	letter-spacing: normal;
+ 	span{
+ 		display: inline-block;
+ 		font-size: 26px;
+ 		font-family:'MyriadPro-Cond';
+ 		line-height: 1;
+ 		letter-spacing: 0.5px;
+ 		color:#727272;
+ 		margin-right: 20px;
+ 		vertical-align: middle;
+ 		@media @tablets{
+ 			display: none;
+ 		}
+ 	}
+ 	ul{
+ 		display: inline-block;
+ 		vertical-align: middle;
+ 		font-size: 0;
+ 		line-height: 1;
+ 		li{
+ 			display: inline-block;
+ 			margin-left: 16px;
+ 			&:first-child{
+ 				margin-left: 0px;
+ 			}
+ 		}   
+ 	}
+ 	.social-b-btn{
+ 		display: block;
+ 		width:33px;
+ 		height:33px;
+ 		&.social-btn-mail{
+ 			background:url('../images/social/1.png') no-repeat;  
+ 			background-position: 0 -33px;
+ 		}
+ 		&.social-btn-fb{
+ 			background:url('../images/social/2.png') no-repeat;
+ 			background-position: 0 -33px;
+ 		}
+ 		&.social-btn-youtube{
+ 			background:url('../images/social/3.png') no-repeat;
+ 			background-position: 0 -33px;
+ 		}
+ 		&.social-btn-vk{
+ 			background:url('../images/social/4.png') no-repeat;
+ 			background-position: 0 -33px;
+ 		}
+ 		&.social-btn-ok{
+ 			background:url('../images/social/5.png') no-repeat;
+ 			background-position: 0 -33px;
+ 		}
+ 		&:hover,&:active{
+ 			background-position: 0 0;
+ 		}
+ 	}
+}

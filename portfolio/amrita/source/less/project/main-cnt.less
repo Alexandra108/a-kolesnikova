@@ -1,0 +1,41 @@
+
+/* ---------------------------------------------- /*
+ * MAIN-CNT
+ /* ---------------------------------------------- */
+ .main-cnt{
+   width:100%;
+   background: #fff;
+   position: relative;
+   .container{
+      padding: 35px 0 33px;
+      @media @medium-devices,@tablets{
+         padding: 26px 0 33px;
+      }
+      @media @smartphones{
+         padding: 41px 0 0;
+      }
+   }
+}
+.main-cnt_r{
+	float: right;
+   width: 310px;
+   @media @smartphones{
+      float: none;
+      width:100%;
+   }
+}
+.main-cnt_l{
+	float: left;
+   margin-left: -310px;
+   width: 100%;
+   @media @smartphones{
+      float: none;
+      margin-left: 0;
+   }
+}
+.main-cnt_l_cnt{
+	margin-left: 310px;
+   @media @smartphones{
+      margin-left: 0;
+   }
+}

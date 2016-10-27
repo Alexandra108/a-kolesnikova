@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'MyriadPro-Cond';
+  src: url('../fonts/MyriadPro/MyriadPro-Cond/MyriadPro-Cond.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Cond/MyriadPro-Cond.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-Cond/MyriadPro-Cond.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-Cond/MyriadPro-Cond.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-Cond/MyriadPro-Cond.svg#MyriadPro-Cond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro/MyriadPro-Regular/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-Regular/MyriadPro-Regular.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-BoldCond';
+  src: url('../fonts/MyriadPro/MyriadPro-BoldCond/MyriadPro-BoldCond.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-BoldCond/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-BoldCond/MyriadPro-BoldCond.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-BoldCond/MyriadPro-BoldCond.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-BoldCond/MyriadPro-BoldCond.svg#MyriadPro-BoldCond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Italic';
+  src: url('../fonts/MyriadPro/MyriadPro-Italic/MyriadPro-Italic.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Italic/MyriadPro-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-Italic/MyriadPro-Italic.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-Italic/MyriadPro-Italic.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-Italic/MyriadPro-Italic.svg#MyriadPro-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('../fonts/MyriadPro/MyriadPro-Bold/MyriadPro-Bold.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-Bold/MyriadPro-Bold.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-Bold/MyriadPro-Bold.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-Bold/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url('../fonts/MyriadPro/MyriadPro-Light/MyriadPro-Light.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Light/MyriadPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-Light/MyriadPro-Light.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-Light/MyriadPro-Light.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Semibold';
+  src: url('../fonts/MyriadPro/MyriadPro-Semibold/MyriadPro-Semibold.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-Semibold/MyriadPro-Semibold.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-Semibold/MyriadPro-Semibold.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-SemiboldIt';
+  src: url('../fonts/MyriadPro/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.woff') format('woff'), url('../fonts/MyriadPro/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.ttf') format('opentype'), url('../fonts/MyriadPro/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.svg#MyriadPro-SemiboldIt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans-Light/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light/OpenSans-Light.woff') format('woff'), url('../fonts/OpenSans-Light/OpenSans-Light.ttf') format('opentype'), url('../fonts/OpenSans-Light/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUI-Regular';
+  src: url('../fonts/SegoeUI/SegoeUI-Regular/SegoeUI-Regular.eot');
+  src: url('../fonts/SegoeUI/SegoeUI-Regular/SegoeUI-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUI/SegoeUI-Regular/SegoeUI-Regular.woff') format('woff'), url('../fonts/SegoeUI/SegoeUI-Regular/SegoeUI-Regular.ttf') format('opentype'), url('../fonts/SegoeUI/SegoeUI-Regular/SegoeUI-Regular.svg#SegoeUI-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUI-Bold';
+  src: url('../fonts/SegoeUI/SegoeUI-Bold/SegoeUI-Bold.eot');
+  src: url('../fonts/SegoeUI/SegoeUI-Bold/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUI/SegoeUI-Bold/SegoeUI-Bold.woff') format('woff'), url('../fonts/SegoeUI/SegoeUI-Bold/SegoeUI-Bold.ttf') format('opentype'), url('../fonts/SegoeUI/SegoeUI-Bold/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUI-SemiBold';
+  src: url('../fonts/SegoeUI/SegoeUI-SemiBold/SegoeUI-SemiBold.eot');
+  src: url('../fonts/SegoeUI/SegoeUI-SemiBold/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUI/SegoeUI-SemiBold/SegoeUI-SemiBold.woff') format('woff'), url('../fonts/SegoeUI/SegoeUI-SemiBold/SegoeUI-SemiBold.ttf') format('opentype'), url('../fonts/SegoeUI/SegoeUI-SemiBold/SegoeUI-SemiBold.svg#SegoeUI-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'OpenSans-Light';
+  font-size: 16px;
+  color: #000000;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body,
+div,
+span,
+a,
+p,
+i,
+s,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+::-webkit-input-placeholder {
+  color: #aaaaaa;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #aaaaaa;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #aaaaaa;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+:-ms-input-placeholder {
+  color: #aaaaaa;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 16px;
+}
+textarea {
+  resize: none;
+}
+input[type=text] {
+  appearance: none;
+  background: transparent;
+  outline: none;
+}
+img {
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+}
+a:active,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'MyriadPro-Semibold';
+}
+h1 {
+  font-size: 24px;
+  line-height: 1;
+}
+h2 {
+  font-size: 24px;
+  line-height: 1;
+}
+h3 {
+  font-size: 24px;
+  color: #000000;
+  line-height: 1;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+  line-height: 23px;
+}

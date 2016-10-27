@@ -1,0 +1,112 @@
+/* ---------------------------------------------- /*
+* SELECT
+/* ---------------------------------------------- */
+.SumoSelect{
+    vertical-align: middle;
+    color:#000000;
+    &:hover,&:focus,&.open{
+        > .CaptionCont{
+            box-shadow: 0 0 0 1px rgb(211, 211, 211) inset;
+        }
+    }
+    &.open{
+        & > .optWrapper{
+            top: 32px;
+        }
+        .CaptionCont{
+            box-shadow: 0 0 0 1px rgb(211, 211, 211) inset;
+            z-index: 5;
+        }
+        i{
+            transform: rotate(180deg);
+        }
+    }
+    .SumoUnder{
+        display:none;
+    }
+    & > .CaptionCont{
+        min-height: 33px;
+        border: none;
+        line-height: 1;
+        border-radius: 0px;
+        padding: 8px 53px 6px 12px;
+        background: #fff; 
+        box-shadow: 0 0 0 1px rgb(211, 211, 211) inset;
+        span{
+            padding-right: 0;
+            text-align: left;
+            font-size: 17px;
+            font-family:'MyriadPro-Regular';
+            &.placeholder{
+                font-family:'MyriadPro-Regular';
+                color: #000000;
+                font-size: 17px;
+                font-style: normal;
+            }
+        }
+        label{
+            width:36px;
+            text-align: center;
+            cursor: pointer;
+            background: #e12d81;
+            i{
+                background: url("../images/sprite.png") no-repeat;
+                background-position: -54px -495px;
+                width:13px;
+                opacity: 1;
+                position: absolute;
+                right: 0px;
+                top:50%;
+                margin-top: -4px;
+                height: 8px;
+            }
+        }
+    }
+    & > .optWrapper{
+        border: medium none;
+        border-radius: 0px;
+        box-shadow: 0 0 0 1px rgb(211, 211, 211) inset, 0 0 20px 0 rgba(0, 0, 0, 0.11);
+        background: #ffffff;
+        text-align: left;
+        z-index: 3;
+        &.isFloating{
+            top: 0px;
+            position: relative;
+            width: 200px;
+        }
+        .options{
+            border-radius: 0;
+            max-height: 100%;
+            padding: 14px 0 7px;
+            li{
+                &.opt{
+                    font-size: 17px;
+                    line-height: 1;
+                    font-family:'MyriadPro-Regular';
+                    box-shadow: none;
+                    cursor: pointer;
+                    margin: 0 1px;
+                    padding: 19px 33px 20px 30px;
+                    border: none;
+                    &.disabled * {
+                        color:#474747;
+                        opacity: 1;
+                    }
+                    &.selected,&:hover{
+                        background: #f5f5f5;
+                    }
+                    &:first-child{
+                        border-radius: 0px;
+                    }
+                    &:last-child{
+                        border-radius: 0;
+                        margin: 0 1px 1px;
+                    }
+                }
+                label{
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}

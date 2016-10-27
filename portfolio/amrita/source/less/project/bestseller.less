@@ -1,0 +1,93 @@
+/* ---------------------------------------------- /*
+ * NEW-GOODS
+ /* ---------------------------------------------- */
+ .bestseller_cnt{
+ 	margin-top: 16px;
+ 	display: none;
+ 	box-shadow: 0 0 0 1px rgb(211, 211, 211) inset;
+ 	.card{
+ 		box-shadow:1px 0 0 0 rgb(211, 211, 211);
+ 		@media @smartphones{
+ 			box-shadow: -1px 0 0 0 rgb(211, 211, 211);
+ 		}
+ 	}
+ 	.owl-stage-outer{
+ 		&:after{
+ 			@media @smartphones{
+ 				bottom: 0;
+ 				box-shadow: -1px 0 0 0 #fff inset;
+ 				content: "";
+ 				height: 100%;
+ 				position: absolute;
+ 				right: 0;
+ 				top: 0;
+ 				width: 1px;
+ 				z-index: 0;
+ 			}
+ 		}
+ 	}
+ 	@media @smartphones{
+ 		padding: 0 15px;
+ 		box-shadow: 0 0 0 1px rgb(211, 211, 211);
+ 		margin-top: 28px;
+ 	}
+}
+ .bestseller{
+ 	margin-top: 35px;
+ 	h3{
+ 		letter-spacing: -0.7px;
+ 		@media @smartphones{
+ 			font-size: 32px;
+ 			padding-left: 35px;
+ 		}
+ 	}
+ 	.owl-carousel {
+ 		.owl-item img{
+ 			width:auto;
+ 		}
+ 		& .owl-prev,& .owl-next{
+ 			margin-top: 94px;
+ 			background: url("../images/sprite.png") no-repeat;
+ 			background-position: -0px -826px;
+ 			height:72px;
+ 			top:0;
+ 			width:36px;
+ 			text-indent: -9999px;
+ 			position: absolute;
+ 			transition: opacity .2s linear;
+ 			&:hover{
+ 				opacity: 0.8;
+ 			}
+ 			@media @smartphones{
+ 				background: url("../images/sprite.png") no-repeat;
+ 				background-position: -0px -210px;
+ 				width:54px;
+ 				margin-top:66px;
+ 				height:109px;
+ 			}
+ 		}
+ 		& .owl-prev{
+ 			left: 0px;
+ 			background-position: -0px -898px;
+ 			@media @smartphones{
+ 				background-position: -0px -319px;
+ 			}
+ 		}
+ 		& .owl-next{
+ 			right: 0px;
+ 			background-position: -0px -826px;
+ 			@media @smartphones{
+ 				background-position: -0px -210px;
+ 			}
+ 		}
+ 	}
+ 	@media @medium-devices{
+ 		margin-top: 44px;
+ 	}
+ 	@media @tablets{
+ 		margin-top: 44px;
+ 	}
+ 	@media @smartphones{
+ 		margin-top: 41px;
+ 	}
+}

@@ -1,0 +1,88 @@
+
+/* ---------------------------------------------- /*
+ * HEADER-MOBILE
+ /* ---------------------------------------------- */
+ .header-mobile{
+    display: none;
+    width:100%;
+    .container{
+        padding: 12px 3px 28px 23px;
+    }
+    .logo{
+        text-decoration:none;
+        display:inline-block;
+        cursor: pointer;
+        position:relative;
+        transition: all .2s linear;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    @media @smartphones{
+        display: block;
+    }
+}
+.header-mobile_l{
+    float: left;
+    width: 51px;
+}
+.header-mobile_r{
+    float:right;
+    width:100px;
+}
+.header-mobile_c{
+    margin: 0 100px 0 51px;
+    text-align: center;
+}
+.header-mobile_basket{
+    &.basket-sm{
+        text-align: center;
+        margin-top: 15px;
+        .basket-sm_cnt{
+            background: url("../images/sprite.png") no-repeat;
+            background-position: -0px -672px;
+            height:46px;
+            margin: 0 auto;
+            width:50px;
+            position: relative;
+            span{
+                position: absolute;
+                right:-16px;
+                line-height: 33px;
+                text-align: center;
+                font-size: 20px;
+                background: #42a62b;
+                width:33px;
+                height:33px;
+                color:#fff;
+                border-radius: 50%;
+                top: -6px;
+                font-family:'MyriadPro-Bold';
+            }
+        }
+        .basket-sm_t{
+            font-family:'MyriadPro-Light';
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-top: 16px;
+            color:#898989;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+        .basket-sm_amount{
+            color: rgb(137, 137, 137);
+            font-family: "MyriadPro-Light";
+            font-size: 14px;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-top: 1px;
+            text-transform: uppercase;
+            span{
+                color: rgb(1, 1, 1);
+                font-family: "MyriadPro-Bold";
+                font-size: 19px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

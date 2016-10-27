@@ -1,0 +1,64 @@
+/* ---------------------------------------------- /*
+* SOCIAL_LKS
+/* ---------------------------------------------- */
+.social_lks_t_cnt {
+  margin-top: 24px;
+}
+.social_lks_t{
+  font-family:'SegoeUI-Regular';
+  font-size: 14px;
+  color:#e12d81;
+  line-height: 1;
+}
+.social_lk_i{
+  border-radius: 2px;
+  cursor: pointer;
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 19px;
+  position: relative;
+  text-align: center;
+  width: 74px;
+  i{
+    font-size: 22px;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translate(0%, -50%);
+    vertical-align: middle;
+  }
+  a{
+    text-decoration: none;
+  }
+  &.social_lk_i_fb{
+    box-shadow: 0 0 0 1px #3948ab inset;
+    i{
+      color:#3948ab;
+    }
+  }
+  &.social_lk_i_vk{
+    box-shadow: 0 0 0 1px #4483b7 inset;
+    i{
+      color:#4483b7;
+    }
+  }
+  &.social_lk_i_ok{
+   box-shadow: 0 0 0 1px #e17d35 inset;
+   i{
+    color:#e17d35;
+  }
+}
+&:hover{
+  opacity: 0.7; 
+}
+&:last-child{
+  margin-right: 0;
+}
+@media @smartphones{
+  margin-right: 7px;
+}
+}

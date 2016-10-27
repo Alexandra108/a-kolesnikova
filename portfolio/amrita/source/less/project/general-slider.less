@@ -1,0 +1,85 @@
+/* ---------------------------------------------- /*
+ * GENERAL-SLIDER
+ /* ---------------------------------------------- */
+ .general-slider{
+    background-color: #fff;
+    background-image: url("../images/AjaxLoader.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height:394px;
+    position: relative;
+    & .owl-prev,& .owl-next{
+        margin-top: -43px;
+        background: url("../images/sprite.png") no-repeat;
+        background-position: -0px -32px;
+        height:71px;
+        width:71px;
+        text-indent: -9999px;
+        position: absolute;
+        transition: opacity .2s linear;
+        top: 50%;
+        &:hover{
+            opacity: 0.8;
+        }
+        @media @smartphones{
+            margin-top: 85px;
+            background: url("../images/sprite.png") no-repeat;
+            background-position: -0px -428px;
+            height:122px;
+            top:0;
+            width:53px;
+        }
+    }
+    & .owl-prev{
+        left: 112px;
+        background-position: -0px -103px;
+        @media @tablets{
+            left: 50px;
+        }
+        @media @smartphones{
+            background-position: -0px -550px;
+            left:0;
+        }
+    }
+    & .owl-next{
+        right: 112px;
+        background-position: -0px -32px;
+        @media @tablets{
+            right: 50px;
+        }
+        @media @smartphones{
+            right:0;
+            background-position: -0px -428px;
+        }
+    }
+    @media (max-width:1200px) {
+        min-height:auto; 
+    }
+}
+.general-slider_cnt{
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+    max-width: 1920px;
+}
+
+.general-slider_i{
+    position: relative;
+    display: block;
+    width: 100%;
+    @media @smartphones{
+        height:307px;
+        overflow: hidden;
+    }
+    img{
+        @media @smartphones{
+            display: block;
+            height: 100%;
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translate(-50%, 0px);
+            width: auto !important;
+        }
+    }
+}

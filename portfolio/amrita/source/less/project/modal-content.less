@@ -1,0 +1,131 @@
+/*MODAL-CONTENT*/
+.modal-content{
+    width:798px;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    top:0;
+    padding: 35px 83px 62px 75px;
+    left:50%;
+    z-index: 22;
+    margin: 0px 0 0 -399px;
+    background: #ffffff;
+    @media (max-width:850px) {
+        width:700px;
+        margin: 0px 0 0 -350px;
+        padding: 35px 35px 62px;
+    }
+    @media @smartphones{
+        width: 600px;
+        padding: 35px 25px 62px;
+        margin: 0px 0 0 -300px;
+    }
+}
+.modal-content_t{
+    font-family:'SegoeUI-SemiBold';
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    color:#000000;
+    padding-left: 4px;
+}
+.modal-content_l{
+    padding-right: 38px;
+    padding-left: 4px;
+    @media @smartphones{
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+}
+.modal-content_r{
+    padding-right: 4px;
+    position: relative;
+    padding-left: 44px;
+    button{
+        bottom: 0;
+        left: 0;
+        margin-left: 44px;
+        max-width: 272px;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        @media @smartphones{
+            max-width: 255px;
+            margin-left: 20px;
+        }
+    }
+    @media @smartphones{
+       padding-left: 20px; 
+       padding-right: 0px;
+    }
+}
+.modal-content_r_t{
+    padding-right: 35px;
+    font-family:'SegoeUI-Regular';
+    font-size: 14px;
+    line-height: 16px;
+    color:#e12d81;
+}
+.modal-content_r_tx{
+    font-family:'SegoeUI-Regular';
+    font-size: 14px;
+    margin-top: 18px;
+    padding-bottom: 34px;
+    color:#333333;
+    p{
+        padding-bottom: 16px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+.modal-content_l_t{
+    font-family:'SegoeUI-Regular';
+    font-size: 14px;
+    color:#e12d81;
+    line-height: 1;
+}
+.modal-content_l_tx{
+    font-family: "SegoeUI-SemiBold";
+    font-size: 14px;
+    margin-bottom: 22px;
+    line-height: 19px;
+    margin-top: 18px;
+    color:#000000;
+}
+.modal-content_cnt{
+    margin-top: 28px;
+    display: table;
+    position: relative;
+    .authorization-form{
+        margin-bottom: 17px;
+    }
+}
+.modal-content_l,.modal-content_r{
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+.overlay{
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: url("../images/bg_hover.png") repeat;
+}
+.modal-content_close{
+    background: url("../images/sprite.png") repeat;
+    background-position: 0px -1098px;
+    cursor: pointer;
+    height: 27px;
+    position: absolute;
+    right: 17px;
+    top: 19px;
+    width: 27px;
+    &:hover{
+        opacity: 0.7;
+    }
+}

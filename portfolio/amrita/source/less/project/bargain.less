@@ -1,0 +1,106 @@
+
+/* ---------------------------------------------- /*
+ * BARGAIN
+ /* ---------------------------------------------- */
+ .bargain{
+    @media @smartphones{
+        display:none; 
+    }
+ }
+ .bargain_t{
+    background: #e12d81;
+    color:#fff;
+    font-size: 19px;
+    line-height: 1;
+    padding: 18px 20px 20px;
+}
+.bargain_i{
+    width:33.33%;
+    padding: 43px 0 44px 23px;
+    float: left;
+    box-shadow:0 1px 0 0 rgb(210, 210, 210), 1px 0 0 0 rgb(210, 210, 210) inset, 1px 0 0 0 rgb(210, 210, 210);
+    @media @tablets{
+        width:50%;
+        padding: 43px 0 30px 23px;
+    }
+}
+.bargain_i_l{
+    float: left;
+    width:133px;
+}
+.bargain_i_r{
+    margin-left: 133px;
+    padding-left: 21px;
+    padding-right: 40px;
+}
+.bargain_i_img{
+    height: 206px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    img{
+        display: block;
+        height: auto;
+        left: 50%;
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+    }
+}
+.bargain_i_t{
+    color:#e12d81;
+    font-family:'MyriadPro-Bold';
+    font-size: 17px;
+    display: block;
+    line-height: 25px;
+    @media @tablets{
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+.bargain_i_buy{
+    &.button-green{
+        width: 111px;
+        padding: 17px 0 19px;
+        span{
+            @media @tablets{
+                font-size: 15px;
+            }
+        }
+        @media @tablets{
+            width:100%;
+        }   
+    }
+}
+.bargain_i_tx{
+    font-family:'MyriadPro-Regular';
+    font-size: 15px;
+    line-height: 23px;
+    color:#000000;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    @media @tablets{
+        font-size: 16px;
+    }
+}
+.bargain_i_price{
+    font-family:'MyriadPro-Bold';
+    font-size: 16px;
+    margin-bottom: 21px;
+    line-height: 1;
+    color:#000000;
+    span{
+        font-size: 14px;
+        line-height: 1;
+        margin-left: 5px;
+        @media @tablets{
+            font-size: 17px;
+        }
+    }
+    @media @tablets{
+        font-size: 27px;
+    }
+}

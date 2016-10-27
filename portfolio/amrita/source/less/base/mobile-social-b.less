@@ -1,0 +1,66 @@
+/* ---------------------------------------------- /*
+ * MOBILE-SOCIAL-B
+ /* ---------------------------------------------- */
+ .mobile-social-b{
+ 	letter-spacing: normal;
+ 	text-align: center;
+ 	display: none;
+ 	position: relative;
+ 	.container{
+ 		padding: 0px 0 30px;
+ 	}
+ 	ul{
+ 		font-size: 0;
+ 		line-height: 1;
+ 		li{
+ 			display: inline-block;
+ 			vertical-align: top;
+ 			margin-left: 11%;
+ 			&:first-child{
+ 				margin-left: 0px;
+ 			}
+ 		}   
+ 	}
+ 	.social-b-btn{
+ 		display: block;
+ 		width:59px;
+ 		height:59px;
+ 		&.social-btn-mail{
+ 			background:url('../images/social/1_b.png') no-repeat;  
+ 			background-position: 0 -59px;
+ 		}
+ 		&.social-btn-fb{
+ 			background:url('../images/social/2_b.png') no-repeat;
+ 			background-position: 0 -59px;
+ 		}
+ 		&.social-btn-youtube{
+ 			background:url('../images/social/3_b.png') no-repeat;
+ 			background-position: 0 -59px;
+ 		}
+ 		&.social-btn-vk{
+ 			background:url('../images/social/4_b.png') no-repeat;
+ 			background-position: 0 -59px;
+ 		}
+ 		&.social-btn-ok{
+ 			background:url('../images/social/5_b.png') no-repeat;
+ 			background-position: 0 -59px;
+ 		}
+ 		&:hover,&:active{
+ 			background-position: 0 0;
+ 		}
+ 	}
+ 	&:after{
+ 		box-shadow: 5px 9px 12px 0 rgba(0, 0, 0, 0.12);
+ 		content: "";
+ 		height: 12px;
+ 		left: 0;
+ 		position: absolute;
+ 		right: 0;
+ 		bottom: 0;
+ 		width: 100%;
+ 		z-index: 4;
+ 	}
+ 	@media @smartphones{
+ 		display: block;
+ 	}
+ }

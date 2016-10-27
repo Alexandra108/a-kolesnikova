@@ -1,0 +1,70 @@
+/* ---------------------------------------------- /*
+ * FORM
+ /* ---------------------------------------------- */
+ form{
+ 	input{
+        box-sizing: border-box;
+        color: #858585;
+        background: #fff;
+        border-radius: 2px;
+        background: #fff;
+        border: medium none;
+        width:100%;
+    }
+    .form_inform_box {
+        color: rgb(51, 51, 51);
+        font-size: 14px;
+        line-height: 17px;
+        font-family: "SegoeUI-Regular";
+        margin-bottom: 15px;
+    }
+    .form_e{
+        font-size: 0;
+        line-height: 1;
+        margin-bottom: 30px;
+        .title{
+            display: inline-block;
+            font-family:'MyriadPro-Regular';
+            font-size: 16px;
+            color:#000000;
+            overflow-wrap: break-word;
+            line-height: 18px;
+            vertical-align: middle;
+            width:26%;
+            &.required{
+                position: relative;
+                &:after{
+                    color:#e12d81;
+                    content: "*";
+                    font-size: 21px;
+                    line-height: 1;
+                    margin-left: 5px;
+                    position: absolute;
+                    top: 3px;
+                }
+            }
+        }
+    }
+}
+.form_field{
+    display: inline-block;
+    vertical-align: middle;
+    width:74%;
+}
+.form_note{
+    font-family:'MyriadPro-Light';
+    font-size: 16px;
+    line-height: 1;
+    margin-left: 5px;
+    margin-top: 58px;
+    color:#000000;
+    span{
+        color:#e12d81; 
+        font-size: 23px;
+        line-height: 1;
+        margin: 0 3px;
+        position: relative;
+        top: 3px;
+        vertical-align: middle;
+    }
+}

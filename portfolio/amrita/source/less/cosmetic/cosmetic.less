@@ -1,0 +1,84 @@
+/* ---------------------------------------------- /*
+ * Cosmetic
+ /* ---------------------------------------------- */
+ /*MORE-PAGE LINK*/
+ .more-page{
+    font-family:'MyriadPro-Semibold';
+    color:#000000;
+    float: left;
+    margin-top: 2px;
+    display: block;
+    font-size: 12px;
+    position: relative;
+    padding-right: 15px;
+    line-height: 1;
+    &:after{
+        line-height: 1;
+        position: absolute;
+        right:0;
+        margin-top: -4px;
+        content:"";
+        width:5px;
+        top: 50%;
+        height:8px;
+        background: url("../images/sprite.png") no-repeat;
+        background-position: -71px -45px;
+        @media @smartphones{
+            background: url("../images/sprite.png") no-repeat;
+            background-position: -54px -503px;
+            width:11px;
+            height:18px;
+            margin-top: -9px;
+        }
+    }
+    @media @smartphones{
+        font-size: 22px;
+        padding-right: 29px;
+        margin-top: 6px;
+    }
+}
+
+/*jPages*/
+.jp-next,
+.jp-previous{
+    text-indent: -9999px;
+    background: url("../images/sprite.png") no-repeat;
+    background-position: -0px -1040px;
+    width: 48px;
+    height: 48px;
+    display: block;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+.jp-next{
+    transform: rotate(180deg); 
+}
+
+/*jscrollpane*/
+.jspTrack{
+    background: #f7f7f7;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 1px;
+    position: absolute;
+    right:0;
+    -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    height: 100% !important;
+    box-sizing:        border-box;
+    width:6px;
+}
+.jspDrag{
+    background: #e12d81;
+}
+.jspVerticalBar{
+    width: 6px;
+    background: transparent;
+}
+.jspPane{
+    padding-right: 22px !important;
+    width: 100% !important;
+}
+.jspHorizontalBar{
+    height:6px;
+}

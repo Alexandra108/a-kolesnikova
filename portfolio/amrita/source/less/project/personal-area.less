@@ -1,0 +1,259 @@
+
+/* ---------------------------------------------- /*
+* PERSONAL AREA
+/* ---------------------------------------------- */
+.personal-area{
+    .container{
+        padding: 37px 0 0px;
+    }
+}
+.personal-area_cnt {
+    margin-top: 36px;
+}
+.personal-area_cnt_l{
+    width:290px;
+    float: left;
+    @media @smartphones{
+        float: none;
+        width: 100%;
+    }
+}
+.personal-area_cnt_r{
+    margin-left: 290px;
+    padding-left: 36px;
+    @media @smartphones{
+        padding: 0 41px 0 32px;
+        margin-left: 0px;
+    }
+}
+.personal-area-form{
+    input{
+        box-shadow: 0 0 0 1px #d3d3d3 inset;
+        border-radius: 0;
+        color:#000000;
+        max-width: 316px;
+        font-size: 17px;
+        line-height: 1;
+        height: 33px;
+        padding: 0 15px;
+        @media @tablets,@smartphones {
+            max-width: 100%;
+        }
+    }
+    .form_e{
+        &.postcode{
+            input{
+                font-family:'MyriadPro-SemiboldIt';
+                color:#bababa;
+                font-size: 17px;
+                line-height: 1;
+            }
+        }
+        &.country{
+            margin: 40px 0 37px;
+            .form_field{
+                span{
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    font-family:'MyriadPro-Regular';
+                    line-height: 1;
+                }
+            }
+            @media @tablets {
+                margin: 0 0 30px;
+            }
+        }
+        .title{
+            @media @tablets {
+                width: 100%;
+                margin-bottom: 5px;
+                display: block;
+            }
+        }
+    }
+    .form_field{
+        @media @tablets {
+            width:100%;
+        }
+    }
+    .form_note{
+        @media @tablets,@smartphones {
+            margin-left: 0px;
+            margin-top: 45px;
+        }
+    }
+    .radio-e{
+        @media @tablets {
+            margin-right: 35px;
+            margin-top: 10px;
+        }
+    }
+    select{
+        width:100%;
+    }
+    .SumoSelect{
+        width:100%;
+        max-width: 315px;
+        & > .optWrapper{
+            .options{
+                padding: 7px 0;
+                li.opt{
+                    padding: 5px 10px;
+                }
+            } 
+        }
+        & > .CaptionCont{
+            padding: 8px 0 6px 12px;
+        }
+        @media @tablets,@smartphones{
+            max-width: 100%;
+        }
+    }
+    .form_field{
+        .day{
+            margin-right: 13px;
+            float: left;
+            .SumoSelect{
+                width:95px;  
+            }
+        }
+        .month{
+            margin-right: 14px;
+            float: left;
+            .SumoSelect{
+                width:101px;
+            }
+        }
+        .year{
+            float: left;
+            .SumoSelect{
+                width:96px;
+            }
+        }
+    }
+    button{
+        width:113px;
+        height:54px;
+        font-size: 16px;
+        margin-left: 218px;
+        margin-top: 50px;
+        @media @tablets,@smartphones {
+            margin: 50px auto 0;
+        }
+    }
+}
+.personal-area_menu{
+    box-shadow: 0 0 0 1px #d3d3d3 inset;
+    padding-bottom: 10px;
+    @media @smartphones{
+        margin: 0 41px 40px 32px;
+        padding: 0;
+    }
+}
+.personal-area_menu_i{
+    padding: 18px 28px 27px 21px;
+    box-shadow: 0 1px 0 0 rgb(211, 211, 211) inset;
+    &.business{
+        padding: 29px 28px 19px 21px;
+    }
+    &.health{
+        padding: 26px 28px 25px 21px;
+    }
+    h4{
+        font-size: 19px;
+        font-family:'MyriadPro-Regular';
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    ul{
+        li{
+            margin-bottom: 28px;
+            position: relative;
+            padding-left:41px;
+            a{
+                font-family:'MyriadPro-Light';
+                font-size: 19px;
+                line-height: 1;
+                display: inline-block;
+                color: #000000;
+                &:hover{
+                    color:#e12d81;
+                }
+            }
+            &:before{
+                left:0;
+                content:"";
+                background:url('../images/sprite.png') no-repeat; 
+                top:50%;
+                position: absolute;
+            }
+            &.personal-data{
+                &:before{
+                    background-position: -55px -281px;
+                    height:20px;
+                    margin-top: -10px;
+                    width:20px;
+                }
+            }
+            &.purchases{
+                &:before{
+                    background-position: -55px -174px;
+                    height:26px;
+                    margin-top: -13px;
+                    width:24px;
+                }
+            }
+            &.questionnaires{
+                &:before{
+                    background-position: -55px -200px;
+                    height:26px;
+                    margin-top: -13px;
+                    width:23px;
+                }
+            }
+            &.diagnoses{
+                &:before{
+                    background-position: -55px -411px;
+                    height:24px;
+                    margin-top: -12px;
+                    width:18px;
+                }
+            }
+            &.newcomers{
+                &:before{
+                    background-position: -55px -301px;
+                    height:20px;
+                    margin-top: -10px;
+                    width:20px;
+                }
+            }
+            &.calendar{
+                &:before{
+                    background-position: -55px -260px;
+                    height:21px;
+                    margin-top: -10px;
+                    width:21px;
+                }
+            }
+            &.academy{
+                &:before{
+                    background-position: -55px -226px;
+                    height:23px;
+                    margin-top: -11px;
+                    width:23px;
+                }
+            }
+            &.reports{
+                &:before{
+                    background-position: -54px -435px;
+                    height:24px;
+                    margin-top: -12px;
+                    width:18px;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

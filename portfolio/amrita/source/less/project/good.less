@@ -1,0 +1,347 @@
+
+/* ---------------------------------------------- /*
+ * GOOD
+ /* ---------------------------------------------- */
+ .good{
+    padding: 53px 35px 67px 28px;
+    box-shadow: 0 0 0 1px rgb(211, 211, 211) inset;
+    display: inline-block;
+    vertical-align: top;
+    @media @tablets{
+        padding: 53px 35px 67px; 
+    }
+    @media @smartphones{
+        padding: 35px 15px 40px;
+        box-shadow: 0 0 0 1px rgb(183, 183, 183) inset;
+    }
+}
+.good_b_t {
+    @media @tablets,@medium-devices{
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.good_l{
+    float: left;
+    width:263px;
+    @media @tablets{
+        width: 100%;
+        float: none;
+    }
+    @media @smartphones{
+        width: 250px;
+    }
+}
+.good_r{
+    margin-left: 263px;
+    padding-left: 54px;
+    @media @tablets{
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    @media @smartphones{
+        padding-left: 0;
+        padding-right: 20px;
+    }
+}
+.good_img{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    height:386px;
+    img{
+       display: block;
+       height: auto;
+       left: 50%;
+       max-height: 100%;
+       max-width: 100%;
+       position: absolute;
+       top: 50%;
+       transform: translate(-50%, -50%);
+       width: auto;
+   }
+}
+.good_t{
+    font-family:'MyriadPro-Bold';
+    font-size: 27px;
+    line-height: 1;
+    color: #606060;
+}
+.good_tx{
+    margin-top: 37px;
+    font-family:'OpenSans-Light';
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 61px;
+    color: #000000;
+}
+.good_tx_i{
+    margin-bottom: 23px;
+    &:last-child{
+        margin: 0;
+    }
+}
+.good_b{
+    margin-top: 39px;
+    padding: 0 33px;
+}
+.good_b_l{
+    float: left;
+}
+.good_b_r{
+    float: right;
+}
+.good_liked{
+    width:20px;
+    height:19px;
+    background: url("../images/sprite.png") no-repeat;
+    background-position: -55px -321px;
+    display: block;
+    &:hover,&.active{
+        background: url("../images/sprite.png") no-repeat;
+        background-position: -55px -340px;
+    }
+}
+.good_zoom{
+    width:20px;
+    height:20px;
+    background: url("../images/sprite.png") no-repeat;
+    background-position: -55px -379px;
+    display: block;
+    &:hover,&.active{
+        opacity: 0.8;
+    }
+}
+.good_b_b{
+    margin-top: 48px;
+    .card-buy{
+        width:100%;
+        margin-left:0;
+        padding: 17px 0;
+        span{
+            font-size: 17px;
+            letter-spacing: 2.5px;
+        }
+    }
+    @media @tablets{
+        padding: 0 50px; 
+    }
+}
+.good_not-available{
+ border-radius: 3px;
+ box-shadow: 0 0 0 1px rgb(211, 211, 211) inset;
+ height: 55px;
+ line-height: 55px;
+ display: none;
+ text-align: center;
+ text-transform: uppercase;
+ width: 100%;
+ span{
+    color:#959595;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "MyriadPro-Bold";
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 17px;
+}
+}
+.good_btn{
+    border-radius: 3px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    transition: all 0.2s linear 0s;
+    margin-top: 30px;
+    box-shadow: 0 0 0 1px #39a836 inset;
+    span{
+        font-family:'MyriadPro-Semibold';
+        font-size: 13px;
+        color:#39a836;
+        line-height: 17px;
+        width: 102px;
+        vertical-align: middle;
+        text-align: left;
+        display: inline-block;
+    }
+    i{
+        vertical-align: middle;
+        display: inline-block;
+    }
+    &:hover{
+        background-color: #39a836;
+        text-decoration: none;
+        span{
+            color:#fff;
+        }
+    }
+}
+.good_instructions{
+    i{
+        width:35px;
+        height:35px;
+        background: url("../images/sprite.png") no-repeat;
+        background-position: -36px -922px;
+    }
+    &:hover{
+        i{
+            background: url("../images/sprite.png") no-repeat;
+            background-position: -36px -957px;
+        }
+    }
+}
+.good_certificate{
+    i{
+        width:35px;
+        height:35px;
+        background: url("../images/sprite.png") no-repeat;
+        background-position: -36px -852px;
+    }
+    &:hover{
+        i{
+            background: url("../images/sprite.png") no-repeat;
+            background-position: -36px -887px;
+        }
+    }
+}
+.good_descr{
+    box-shadow: 0 -1px 0 0px rgb(210, 210, 210) inset,0 1px 0 0px rgb(210, 210, 210) inset;
+    margin-right: 24px;
+    table{
+        border: medium none;
+        border-collapse:collapse;
+        width:100%;
+        tr{
+            box-shadow: 0 -1px 0 0px rgb(210, 210, 210) inset;
+        }
+        td{
+            width:50%;
+            font-family:'MyriadPro-Bold';
+            font-size: 14px;
+            padding: 21px 0 20px;
+            color:#898989;
+            line-height: 1;
+        }
+    }
+    .value{
+        text-transform: none;
+        @media @tablets{
+            text-align: right;
+        }
+    }
+    .packaging{
+        .value{
+            font-family:'MyriadPro-Regular';
+            font-size: 16px;
+            color:#000000;
+        }
+    }
+    .price{
+        .value{
+            font-family:'MyriadPro-Bold';
+            font-size: 23px;
+            color:#797979;
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+    .price_for_members{
+        .value{
+            font-family:'MyriadPro-Bold';
+            font-size: 23px;
+            color:#39a836;
+            span{
+                font-size: 14px
+            }
+        }
+    }
+    .addition{
+        .value{
+            font-family:'MyriadPro-Light';
+            font-size: 16px;
+            color:#000000;
+        }
+    }
+    @media @tablets{
+        margin-right: 0px;
+    }
+}
+.good_tabs_lks{
+    line-height: 1;
+    display: table;
+    width:100%;
+    li{
+        background: #ffffff;
+        box-shadow:  -1px 0 0 0 rgb(211, 211, 211), -1px 0 0 0 rgb(211, 211, 211) inset, 0 -1px 0 0 rgb(211, 211, 211);
+        width:20%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+        @media @smartphones{
+            box-shadow: -1px 0 0 0 rgb(183, 183, 183), -1px 0 0 0 rgb(183, 183, 183) inset, 0 -1px 0 0 rgb(183, 183, 183);   
+        }        
+    }
+    & .good_tabs_lk_active{
+        background: #fff;
+        box-shadow: -1px 0 0 0 rgb(211, 211, 211), 0 -1px 0 0 rgb(211, 211, 211), -1px 0 0 0 rgb(211, 211, 211) inset;
+        z-index: 2;
+        div {
+            a{
+                color: #e12d81;
+            }
+        }
+        @media @smartphones{
+            box-shadow: -1px 0 0 0 rgb(183, 183, 183), 0 -1px 0 0 rgb(183, 183, 183), -1px 0 0 0 rgb(183, 183, 183) inset;
+        }
+    }
+}
+.good_tabs_i{
+    padding: 20px 10px;
+    position: relative;
+    cursor: pointer;
+    a{
+        font-size: 18px;
+        line-height: 1;
+        display: block;
+        color: #898989;
+        font-family:'MyriadPro-Bold';
+        text-decoration: none;
+        vertical-align: middle;
+        @media @tablets,@smartphones{
+            font-size: 15px;
+        }
+    }
+}
+.good_tabs_cnt{
+    box-shadow: 0 -1px 0 0 rgb(211, 211, 211), 0 1px 0 0 rgb(211, 211, 211), -1px 0 0 0 rgb(211, 211, 211), -1px 0 0 0 rgb(211, 211, 211) inset;
+    padding: 49px 67px 66px 55px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    @media @tablets,@smartphones{
+        padding: 25px 30px 30px;
+    }
+    @media @smartphones{
+        box-shadow: 0 -1px 0 0 rgb(183, 183, 183), 0 1px 0 0 rgb(183, 183, 183), -1px 0 0 0 rgb(183, 183, 183), -1px 0 0 0 rgb(183, 183, 183) inset;
+    }
+}
+.good_tabs_section{
+    display: none;
+    min-height: 135px;
+    &.active{
+        display: block;
+    }
+    p{
+        margin-bottom: 23px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.good_tabs {
+    margin-top: 22px;
+}

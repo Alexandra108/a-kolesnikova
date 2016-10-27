@@ -1,0 +1,213 @@
+/* ---------------------------------------------- /*
+ * LAST-NEWS
+ /* ---------------------------------------------- */
+ .last-news{
+   h3{
+      letter-spacing: 4px;
+      display: inline-block;
+      vertical-align: middle; 
+      @media @smartphones{
+         letter-spacing: -0.7px;
+         font-size: 32px;
+         padding: 0 38px 0 35px;
+      }
+   }
+   .more-page{
+      padding-right: 18px;
+      top: 10px;
+      float: right;
+      @media @smartphones{
+         display: none;
+      }
+   }
+   .container{
+      padding-top: 31px;
+      @media @smartphones{
+         padding: 41px 0 0;
+      }
+   }
+}
+.last-news_i_img{
+   height: 166px;
+   overflow: hidden;
+   position: relative;
+   width: 164px;
+   img{
+      display: block;
+      height: auto;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s linear 0s;
+      width: 100%;
+   }
+    @media @tablets{
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+   }
+   @media @smartphones{
+      width:187px;
+      height: 186px;
+   }
+}
+.last-news_i{
+   box-shadow: 0 0 0 1px #d3d3d3 inset;
+   display: inline-block;
+   vertical-align: top;
+   cursor: pointer;
+   margin-right: 2%;
+   width: 32%;
+   &:last-child{
+      margin:0;
+   }
+   &:hover{
+      box-shadow: 0 0 6px 1px rgb(211, 211, 211),0 0 0 1px rgb(211, 211, 211) inset;
+      .last-news_i_t{
+         text-decoration: underline;
+      }
+   }
+   &:nth-child(2n){
+      @media @medium-devices,@tablets,@smartphones{
+         margin-right:0;
+      }
+   }
+   @media @medium-devices{
+      width:49%;
+      margin-bottom: 20px;
+      margin-right: 2%;
+   }
+   @media @tablets{
+      margin-right: 4%;
+      margin-bottom: 20px;
+      width: 48%;
+   }
+   @media @smartphones{
+      width: 100%;
+      margin-bottom: 35px;
+      margin-right: 0;
+   }
+}
+.last-news_i_date{
+   font-family:'MyriadPro-Regular';
+   font-size: 12px;
+   margin-top: -2px;
+   letter-spacing: 1px;
+   color:#919191;
+   span{
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: none;
+      @media @smartphones{
+         font-size: 20px;
+      }
+   }
+   @media @smartphones{
+      bottom: 0;
+      display: table-footer-group;
+      left: 0;
+      letter-spacing: 2px;
+      font-size: 20px;
+      padding: 10px 25px 8px 24px;
+      margin: 0 1px 1px 0;
+      position: absolute;
+      right: 0; 
+      background: #f4f4f4;
+   }
+}
+.last-news_cnt {
+   padding-top: 18px;
+   font-size: 0;
+   line-height: 1;
+   @media @smartphones{
+     padding: 29px 39px 0 36px;
+  }
+}
+.last-news_i_l{
+   float: left;
+   width:164px;
+   @media @tablets{
+      float: none;
+      height: 100px;
+      overflow: hidden;
+      width: 100%;
+   }
+   @media @smartphones{
+      float: none;
+      display: table-cell;
+      width: 187px;
+      vertical-align: top;
+   }
+}
+.last-news_i_r{
+   margin-left: 164px;
+   position: relative;
+   padding: 21px 9% 18px 4.5%;
+   @media @tablets{
+      margin-left: 0;
+      padding: 21px 4% 18px;
+   }
+   @media @smartphones{
+      margin-left: 0;
+      vertical-align: top;
+      padding: 18px 2% 0px 4.3%;
+      display: table-cell;
+   }
+}
+.last-news_i_t{
+   font-family:'MyriadPro-Regular';
+   font-size: 15px;
+   display: block;
+   padding-top: 10px;
+   line-height: 20px;
+   color:#000000;
+   @media @medium-devices{
+      font-size: 16px;
+      padding-top: 15px;
+   }
+   @media @smartphones{
+      font-size: 23px;
+      padding-top: 0px;
+      line-height: 29px;
+      display: table-header-group;
+   }
+}
+.last-news_i_tx{
+   padding-top: 11px;
+   font-family:'OpenSans-Light';
+   font-size: 13px;
+   position: relative;
+   line-height: 16px;
+   color:#000000;
+   @media @medium-devices{
+      padding-top: 20px;
+   }
+   @media @smartphones{
+      padding-top: 0px;
+      font-size: 25px;
+      line-height: 1;
+      top:4px;
+      display: table-header-group;
+   }
+}
+.last-news_b_mobile{
+   display: none;
+   margin-top: 41px;
+   background: #f4f4f4;
+   box-shadow: 0 -1px 0 0 #b7b7b7 inset;
+   padding: 23px 38px 22px 36px;
+   .more-page{
+      @media @smartphones{
+         display: block;
+         padding-right: 29px;
+         float: left;
+         position: relative;
+         top:0;
+         margin-top: 0px;
+      }
+   }
+   @media @smartphones{
+      display: block;
+   }
+}

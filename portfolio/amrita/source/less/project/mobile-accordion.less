@@ -1,0 +1,79 @@
+/* ---------------------------------------------- /*
+ * MOBILE-ACCORDION
+ /* ---------------------------------------------- */
+ .mobile-accordion{
+    overflow:hidden;
+    box-shadow: 0 1px 0 0 #b7b7b7;
+    background:#f7f7f7;
+    display: none;
+    margin-bottom: 43px;
+    @media @smartphones{
+        display: block;
+    }
+}
+
+.mobile-accordion_t {
+    width:100%;
+    padding: 27px 65px 23px 32px;
+    display:inline-block;
+    box-shadow: 0 -1px 0 0 #b7b7b7 inset;
+    background:#f7f7f7;
+    line-height: 1;
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    transition:all linear 0.15s;
+    font-size:30px;
+    color:#000000;
+    font-family:'MyriadPro-Regular';
+    &:hover{
+        text-decoration: none;
+    }
+    i{
+        margin-top: -8px;
+        position: absolute;
+        right: 40px;
+        top:50%;
+        width:26px;
+        height:16px;
+        background:url('../images/sprite.png') no-repeat; 
+        background-position: -50px -755px; 
+        transition:  all 0.2s ease-in-out;
+    }
+    &.active{
+        text-decoration: none;
+        i{
+            transform:rotate(180deg);
+        }
+    }
+}
+.mobile-accordion_section{
+    &:last-child{
+        .mobile-accordion_t{
+            box-shadow:none;
+        }
+    }
+}
+.mobile-accordion_cnt {
+    padding:0px 0 0 71px;
+    display:none;
+    box-shadow: 0 -1px 0 0 rgb(183, 183, 183) inset;
+    background: #efefef;
+    ul{
+        li{
+            box-shadow: 0 -1px 0 0 rgb(183, 183, 183) inset;
+            text-align: left;
+            padding: 28px 24px 21px 0;
+            a{
+                font-size:30px;
+                display: block;
+                line-height: 1;
+                font-family:'MyriadPro-Regular';
+                color:#000000;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
