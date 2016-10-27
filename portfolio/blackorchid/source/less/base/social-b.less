@@ -1,0 +1,54 @@
+/*SOCIAL-B*/
+.social-b{
+  font-size: 0;
+  text-align: left;
+  line-height: 1;
+  ul{
+    display: inline-block;
+    vertical-align: middle;
+    li{
+      display: inline-block;
+      margin-left: 13px;
+      &:first-child{
+        margin-left: 0px;
+      }
+      @media @mobile-area{
+        margin-bottom: 10px;
+      }
+    }   
+  }
+  @media @mobile-area{
+    text-align: center;
+  }
+}
+.social-b-btn{
+  display: block;
+  width:41px;
+  height:41px;
+  transition: all 0.3s ease-in-out 0s;
+  background: url("../images/social/socilal-sprite.png") no-repeat;
+  &.social-btn-fb{
+    background-position: -0px -0px;
+  }
+  &.social-btn-tw{
+    background-position: -0px -123px;
+  }
+  &.social-btn-google{
+    background-position: -41px -0px;
+  }
+  &.social-btn-youtube{
+    background-position: -41px -123px;
+  }
+  &.social-btn-pinterest{
+    background-position: -0px -82px;
+  }
+  &.social-btn-in{
+    background-position: -0px -41px;
+  }
+  &.social-btn-instagram{
+    background-position: -41px -41px;
+  }
+  &.social-btn-rss{
+    background-position: -41px -82px;
+  }
+}

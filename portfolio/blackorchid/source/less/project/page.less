@@ -1,0 +1,239 @@
+/* ---------------------------------------------- /*
+* PAGE
+/* ---------------------------------------------- */
+.page_t{
+  margin-top: 25px;
+  h2{
+    color:#ebe392;
+    text-transform: uppercase;
+    margin-top: 28px;
+    margin-left: 1px;
+  }
+}
+.page_cnt{
+ margin-top: 32px; 
+}
+.page-map{
+  height:434px;
+  padding: 0 0 0 1px;
+}
+.page-search{
+	padding: 28px 32px 30px 31px;
+	background: linear-gradient(0deg, rgba(204,183,82,1) 0%, rgba(234,213,111,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ead56f', endColorstr='#ccb752',GradientType=0 ); /* ie6-9 */ 
+}
+.page-search_l{
+	float: left;
+ margin-left: -313px;
+ width: 100%;
+}
+.page-search_l_cnt{
+  padding-right: 27px;
+  margin-left: 313px;
+}
+.page-search_r{
+	width:313px;
+  font-size: 0;
+  float: right;
+}
+.page-contacts {
+  margin-top: 12px;
+}
+.page-contacts_child{
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgb(79, 71, 91), 0 0 0 3px rgb(59, 56, 64) inset, 0 4px 12px 0 rgba(24, 24, 25, 0.8);
+  /*height: 73px;*/
+  background: #2b292f;
+  margin-bottom: 12px;
+  overflow: hidden;
+  & > a{
+    font-family:'SegoeUI-SemiBold';
+    display: block;
+    font-size: 20px;
+    padding: 27px 10px 26px 84px;
+    color:#ebe392;
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      left:17px;
+      top:50%;
+      margin-top: -24px;
+      height:49px;
+      width:49px;
+      background: url("../images/sprite.png") no-repeat;
+      background-position: 0px -238px;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      right: 33px;
+      top:50%;
+      margin-top: -4px;
+      height:8px;
+      width:13px;
+      background: url("../images/sprite.png") no-repeat;
+      background-position: 0px -287px;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.page-contacts_child_cnt{
+  padding: 12px 29px 26px 17px;
+}
+.page-contacts_child_cnt_l{
+  float: left;
+  width:170px;
+}
+.page-contacts_information_e {
+  float: left;
+  width: 50%;
+  &:first-child{
+    padding-right:32px;
+  }
+  &:last-child{
+    padding-left:15px;
+  }
+}
+.page-contacts_child_cnt_r{
+  margin-left: 170px;
+  padding-left: 43px;
+}
+.page-contacts_information{
+  padding-bottom: 35px;
+}
+.page-contacts_information_i{
+  font-family:'SegoeUI-SemiBold';
+  font-size: 16px;
+  padding-left: 63px;
+  line-height: 1;
+  margin-bottom: 30px;
+  min-height: 49px;
+  padding-top: 6px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 7px;
+  vertical-align: top;
+  color: #ffffff;
+  &:last-child{
+    margin: 0;
+  }
+  a{
+    color: #2da540;
+    display: inline-block;
+    position: relative;
+    &:after{
+      position: absolute;
+      bottom: -6px;
+      content: "";
+      width: 100%;
+      left:0;
+      height: 1px;
+      border-bottom: 1px dotted #2da540;
+    }
+    &:hover{
+      text-decoration: none;
+      &:after{
+        display: none;
+      }
+    }
+  }
+  &:before{
+    height:49px;
+    width:46px;
+    position: absolute;
+    left:0;
+    content: "";
+    top:0;
+    background-image: url("../images/sprite.png");
+    background-repeat:  no-repeat;
+  }
+  &.location{
+    &:before{
+      background-position: 0px -344px;
+    }
+  }
+  &.time{
+    line-height: 26px;
+    span{
+      color:#ebe392;
+    }
+    &:before{
+      background-position: 0px -540px;
+    }
+  }
+  &.e-mail{
+    &:before{
+      background-position: 0px -393px;
+    }
+  }
+  &.coffee{
+    &:before{
+      background-position: 0px -295px;
+    }
+  }
+  &.phone{
+    font-size: 20px;
+    &:before{
+      background-position: 0px -442px;
+    }
+  }
+  &.site{
+    &:before{
+      background-position: 0px -491px;
+    }
+  }
+}
+.page-contacts_stocked{
+  background: #847034;
+  margin-bottom: 27px;
+  padding: 23px 10px 31px 28px;
+}
+.page-contacts_stocked_l{
+  width:193px;
+  float: left;
+}
+.page-contacts_stocked_r{
+  margin-left: 193px;
+  padding-left: 28px;
+  padding-top: 7px;
+}
+.page-contacts_stocked_t{
+  font-family:'MyriadPro-Regular';
+  font-size: 20px;
+  color:#ebe392;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+}
+.page-contacts_stocked_lst{
+  background-image: url("../images/shadow.png");
+  background-repeat:  no-repeat;
+  background-position: top left;
+  padding-top: 31px;
+  padding-left: 5px;
+  ul{
+    li{
+      color:#fff;
+      font-family:'SegoeUI-Semilight';
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 22px;
+      &:before {
+        content: '\2022 ';
+        font-size: 23px;
+        color: #19a52e;
+        position: relative;
+        top: 2px;
+        padding-right: 17px;
+      }
+      &:after{
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

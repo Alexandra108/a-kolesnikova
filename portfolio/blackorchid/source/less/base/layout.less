@@ -1,0 +1,56 @@
+
+/* ---------------------------------------------- /*
+ * LAYOUT
+ /* ---------------------------------------------- */
+ .wrapper {
+    position:relative;
+    min-height:100%;
+    &:after{
+        clear:both;
+    }
+    &:before,&:after{
+        content:' ';
+        display:table;
+    }
+}
+main{
+  background: #2b292e;
+  background-image: url("../images/bg.png"),url("../images/bg_b.png");
+  background-position: center 108px,center bottom;
+  background-repeat: no-repeat,no-repeat;
+  background-size: auto auto,auto auto;
+  min-height: 100%;
+  position: relative;
+  &.inside-page{
+    background-image: url("../images/bg_inner.png"),url("../images/bg_b.png");
+  }
+}
+.container{
+    margin:0 auto;
+    position:relative;
+    max-width: 1920px;
+    width:1200px;
+    min-width:320px;
+    transition: width 0.2s ease 0s;
+    @media @medium-devices{
+        width:1000px;
+    }
+    @media @tablets {
+        width:748px;
+    }
+    @media @smartphones{
+        width:100%;
+        padding: 0 20px;
+    }
+    @media @mobile-area{
+      width:320px;
+      padding: 0 20px;
+    }
+}
+.end{
+    height:147px;
+    position: relative;
+    @media @mobile-area{
+      height:auto;
+    }
+}

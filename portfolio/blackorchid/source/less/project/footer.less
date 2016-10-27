@@ -1,0 +1,117 @@
+
+/* ---------------------------------------------- /*
+ * FOOTER
+ /* ---------------------------------------------- */
+ .footer{
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1920px;
+    position: absolute;
+    right: 0;
+    width:100%;
+    & > .container{
+        height:147px;
+        padding-bottom: 36px;
+        margin-top:-147px;
+        position:relative;
+        @media @mobile-area{
+          height:auto;
+          margin-top:0px;
+      }
+  }
+  @media @mobile-area{
+    position: relative;
+}
+}
+.footer_l{
+    float: left;
+    padding-left: 2px;
+    @media @mobile-area{
+        float: none;
+    }
+}
+.footer_r{
+    float: right;
+    padding-top: 4px;
+    @media @tablets{
+        width: 200px;
+    }
+    @media @smartphones,@mobile-area{
+        display: none;
+    }
+}
+.footer_logo{
+    margin-bottom: 6px;
+    img{
+        vertical-align: top;
+        width:100%;
+    }
+    &:last-child{
+        margin: 0;
+    }
+}
+.footer_menu{
+    margin-bottom: 49px;
+    ul{
+        li{
+            float: left;
+            position: relative;
+            margin-right: 16px;
+            padding: 1px 16px 0 0;
+            a{
+                font-family:'MyriadPro-Regular';
+                font-size: 16px;
+                letter-spacing: -0.3px;
+                line-height: 1;
+                display: block;
+                color:#fff;
+                @media @mobile-area{
+                    text-transform: uppercase;
+                    display: inline-block;
+                }      
+            }
+            &:after{
+                content: "";
+                background: #fff;
+                height: 16px;
+                width:1px;
+                position: absolute;
+                right:0;
+                top:50%;
+                margin-top: -6px;
+                @media @mobile-area{
+                    display: none;
+                } 
+            }   
+            &:last-child{
+                padding-right: 0px;
+                margin-right: 0px;
+                &:after{
+                    display: none;
+                }
+            }
+            &:nth-child(3){
+                margin-left: 2px;
+                margin-right: 17px;
+                padding-right: 19px;
+            }
+            &:nth-child(4){
+                padding-right: 18px;
+            }
+            &:nth-child(5){
+                padding-right: 20px;
+            }
+            @media @mobile-area{
+                line-height: 1;
+                float: none;
+                margin-right: 0px;
+                padding: 1px 0px 1px 0;
+            }
+        }
+    }
+    @media @mobile-area{
+        text-align: left;
+    }
+}

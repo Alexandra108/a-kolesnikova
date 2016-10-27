@@ -1,0 +1,107 @@
+/* ---------------------------------------------- /*
+* SELECT
+/* ---------------------------------------------- */
+.SumoSelect{
+    vertical-align: middle;
+    color:#fff;
+    &:hover,&:focus,&.open{
+        > .CaptionCont{
+            box-shadow: none;
+        }
+    }
+    &.open{
+        & > .optWrapper{
+            top: 32px;
+        }
+        .CaptionCont{
+            box-shadow: none;
+            z-index: 5;
+            border-radius: 3px 0 0 0px;
+        }
+    }
+    .SumoUnder{
+        display:none;
+    }
+    & > .CaptionCont{
+        min-height: 48px;
+        border: none;
+        line-height: 1;
+        border-radius: 3px 0 0 3px;
+        padding: 15px 45px 17px 37px;
+        box-shadow: 0 3px 3px 0 rgba(24, 24, 25, 0.17) inset;
+        background: #3a3739; 
+        span{
+            padding-right: 0;
+            text-align: left;
+            font-size: 16px;
+            font-family:'SegoeUI-Semilight';
+            &.placeholder{
+                font-family:'SegoeUI-Semilight';
+                color: #000000;
+                font-size: 16px;
+                font-style: normal;
+            }
+        }
+        label{
+            width:36px;
+            text-align: center;
+            cursor: pointer;
+            i{
+                background: url("../images/sprite.png") no-repeat;
+                background-position: 0px -230px;
+                width:13px;
+                opacity: 1;
+                position: absolute;
+                right: 0px;
+                top:50%;
+                margin-top: -4px;
+                height: 8px;
+            }
+        }
+    }
+    & > .optWrapper{
+        border: medium none;
+        border-radius: 0px;
+        background: #3a3739;
+        text-align: left;
+        z-index: 3;
+        &.isFloating{
+            top: 0px;
+            position: relative;
+            width: 200px;
+        }
+        .options{
+            border-radius: 0;
+            max-height: 100%;
+            padding: 14px 0 7px;
+            li{
+                &.opt{
+                    font-size: 16px;
+                    line-height: 1;
+                    color:#fff;
+                    font-family:'SegoeUI-Semilight';
+                    box-shadow: none;
+                    cursor: pointer;
+                    padding: 16px 45px 17px 37px;
+                    border: none;
+                    &.disabled * {
+                        color:#959595;
+                        opacity: 1;
+                    }
+                    &.selected,&:hover{
+                        background: #2f2c30;
+                    }
+                    &:first-child{
+                        border-radius: 0px;
+                    }
+                    &:last-child{
+                        border-radius: 0;
+                    }
+                }
+                label{
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}

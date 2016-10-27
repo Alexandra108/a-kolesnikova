@@ -1,0 +1,49 @@
+/* ---------------------------------------------- /*
+ * BREADCRUMBS
+ /* ---------------------------------------------- */
+ .breadcrumbs{
+    ul{
+        font-size: 0;
+        line-height: 1;
+    }
+    li{
+        display: inline-block; 
+        position: relative;
+        margin-right: 11px;
+        padding-right: 16px;
+        vertical-align: top;
+        a{
+            display: block;
+            font-size: 13px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family:'SegoeUI-SemiBold';
+            line-height: 1;
+            &:hover{
+                text-decoration: none;
+                color:#d0c566;
+            }
+        }
+        &:after{
+            content:"\203A";
+            font-family: "SegoeUI-SemiBold";
+            font-size: 16px;
+            line-height: 1;
+            margin-top: -8px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+        }
+        &.active{
+            a{
+                color:#d0c566;
+                &:hover{
+                    cursor: default;
+                }
+            }
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
